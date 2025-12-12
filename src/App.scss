@@ -1,0 +1,22 @@
+@import './styles/theme.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-secondary;
+  color: $text-dark;
+  background-color: $background-light;
+}
+
+.App {
+  min-height: 100vh;
+  
+  .main-content {
+    min-height: 100vh;
+  }
+}
+

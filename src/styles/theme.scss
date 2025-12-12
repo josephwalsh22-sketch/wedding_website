@@ -1,0 +1,44 @@
+// Color Palette
+$primary-color: #8B7355;
+$secondary-color: #D4AF37;
+$accent-color: #E8DCC4;
+$text-dark: #2C2C2C;
+$text-light: #FFFFFF;
+$background-light: #FAF8F5;
+
+// Typography
+$font-primary: 'Georgia', serif;
+$font-secondary: 'Helvetica Neue', Arial, sans-serif;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 3rem;
+$spacing-xl: 4rem;
+
+// Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin section-padding {
+  padding: $spacing-xl $spacing-md;
+  
+  @media (max-width: $breakpoint-mobile) {
+    padding: $spacing-lg $spacing-sm;
+  }
+}
+
+@mixin heading-style {
+  font-family: $font-primary;
+  color: $primary-color;
+  margin-bottom: $spacing-md;
+}
+

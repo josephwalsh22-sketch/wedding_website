@@ -1,0 +1,333 @@
+@import "../styles/theme.scss";
+
+.home-page {
+  .hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -80px; // Offset for fixed nav
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      @include flex-center;
+    }
+
+    .hero-content {
+      text-align: center;
+      color: $text-light;
+      padding: $spacing-md;
+
+      .couple-names {
+        font-family: $font-primary;
+        font-size: 4rem;
+        margin-bottom: $spacing-md;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 2.5rem;
+        }
+      }
+
+      .wedding-date {
+        font-family: $font-secondary;
+        font-size: 1.5rem;
+        margin-bottom: $spacing-xs;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1.2rem;
+        }
+      }
+
+      .wedding-location {
+        font-family: $font-secondary;
+        font-size: 1.3rem;
+        margin-bottom: $spacing-md;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        font-style: italic;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1.1rem;
+        }
+      }
+
+      .save-date {
+        font-family: $font-primary;
+        font-size: 1.2rem;
+        font-style: italic;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  .welcome-section {
+    @include section-padding;
+    background-color: $background-light;
+    text-align: center;
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h2 {
+        @include heading-style;
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-family: $font-secondary;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: $text-dark;
+      }
+    }
+  }
+
+  .location-section {
+    background-color: white;
+    padding: $spacing-xl $spacing-md;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-xl;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-tablet) {
+      grid-template-columns: 1fr;
+      gap: $spacing-lg;
+    }
+
+    .location-image {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      order: 2;
+
+      @media (max-width: $breakpoint-tablet) {
+        order: 1;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    .location-content {
+      order: 1;
+
+      @media (max-width: $breakpoint-tablet) {
+        order: 2;
+      }
+
+      h2 {
+        @include heading-style;
+        font-size: 2.5rem;
+        text-align: left;
+
+        @media (max-width: $breakpoint-tablet) {
+          text-align: center;
+        }
+      }
+
+      p {
+        font-family: $font-secondary;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: $text-dark;
+
+        @media (max-width: $breakpoint-tablet) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .preview-section {
+    background-color: white;
+    padding: $spacing-xl $spacing-md;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-xl;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-tablet) {
+      grid-template-columns: 1fr;
+      gap: $spacing-lg;
+    }
+
+    .preview-image {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    .preview-content {
+      h2 {
+        @include heading-style;
+        font-size: 2.5rem;
+        text-align: left;
+
+        @media (max-width: $breakpoint-tablet) {
+          text-align: center;
+        }
+      }
+
+      p {
+        font-family: $font-secondary;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: $text-dark;
+
+        @media (max-width: $breakpoint-tablet) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .evening-section {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $breakpoint-tablet) {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+
+    .evening-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .evening-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: $spacing-xl $spacing-md;
+      text-align: center;
+      color: $text-light;
+
+      h2 {
+        @include heading-style;
+        font-size: 3rem;
+        color: $text-light;
+        margin-bottom: $spacing-md;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 2rem;
+        }
+      }
+
+      p {
+        font-family: $font-secondary;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .explore-section {
+    @include section-padding;
+    background-color: $background-light;
+
+    h2 {
+      @include heading-style;
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: $spacing-xl;
+      color: $primary-color;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 2rem;
+      }
+    }
+
+    .explore-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: $spacing-lg;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      @media (max-width: $breakpoint-tablet) {
+        grid-template-columns: 1fr;
+        gap: $spacing-md;
+      }
+
+      .explore-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          display: block;
+        }
+
+        .explore-card-content {
+          padding: $spacing-md;
+
+          h3 {
+            font-family: $font-primary;
+            font-size: 1.5rem;
+            color: $secondary-color;
+            margin-bottom: $spacing-sm;
+          }
+
+          p {
+            font-family: $font-secondary;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: $text-dark;
+          }
+        }
+      }
+    }
+  }
+}

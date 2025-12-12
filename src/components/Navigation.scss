@@ -1,0 +1,67 @@
+@import '../styles/theme.scss';
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: $spacing-sm 0;
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $breakpoint-mobile) {
+      flex-direction: column;
+      gap: $spacing-sm;
+    }
+  }
+
+  .nav-brand {
+    a {
+      font-family: $font-primary;
+      font-size: 1.5rem;
+      color: $primary-color;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: $spacing-md;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: $breakpoint-mobile) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: $spacing-sm;
+    }
+
+    li {
+      a {
+        font-family: $font-secondary;
+        color: $text-dark;
+        text-decoration: none;
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
