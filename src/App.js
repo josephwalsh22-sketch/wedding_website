@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Accommodation from "./pages/Accommodation";
 import Location from "./pages/Location";
@@ -24,6 +25,7 @@ function App() {
             <Route path="/photos" element={<Photos />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );

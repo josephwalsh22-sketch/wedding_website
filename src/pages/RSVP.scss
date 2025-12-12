@@ -59,17 +59,21 @@
 
       .rsvp-intro {
         font-family: $font-secondary;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
+        font-weight: 300;
         text-align: center;
-        color: $text-dark;
+        color: $text-medium;
         margin-bottom: $spacing-lg;
+        line-height: 1.8;
       }
 
       .rsvp-form {
-        background: white;
-        padding: $spacing-lg;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        @include card-style;
+        padding: $spacing-xl;
+
+        @media (max-width: $breakpoint-mobile) {
+          padding: $spacing-lg;
+        }
 
         .form-group {
           margin-bottom: $spacing-md;
@@ -77,9 +81,12 @@
           label {
             display: block;
             font-family: $font-secondary;
-            font-weight: 600;
+            font-weight: 500;
+            font-size: 0.9rem;
             color: $primary-color;
             margin-bottom: $spacing-xs;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
           }
 
           input,
@@ -89,13 +96,18 @@
             padding: $spacing-sm;
             font-family: $font-secondary;
             font-size: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            font-weight: 300;
+            border: 1px solid $border-subtle;
+            border-radius: 2px;
             box-sizing: border-box;
+            transition: all 0.3s ease;
+            background-color: $accent-light;
 
             &:focus {
               outline: none;
-              border-color: $secondary-color;
+              border-color: $primary-color;
+              background-color: white;
+              box-shadow: 0 0 0 3px rgba(90, 111, 125, 0.1);
             }
           }
 
@@ -107,20 +119,26 @@
         .submit-btn {
           width: 100%;
           padding: $spacing-md;
-          background-color: $secondary-color;
-          color: $text-dark;
+          background-color: $primary-color;
+          color: $text-light;
           font-family: $font-secondary;
-          font-size: 1.1rem;
-          font-weight: 600;
+          font-size: 0.95rem;
+          font-weight: 500;
           text-transform: uppercase;
-          letter-spacing: 1px;
+          letter-spacing: 2px;
           border: none;
-          border-radius: 4px;
+          border-radius: 2px;
           cursor: pointer;
-          transition: background-color 0.3s ease;
+          transition: all 0.3s ease;
 
           &:hover {
-            background-color: darken($secondary-color, 10%);
+            background-color: darken($primary-color, 8%);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(90, 111, 125, 0.3);
+          }
+
+          &:active {
+            transform: translateY(0);
           }
         }
       }

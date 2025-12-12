@@ -11,6 +11,11 @@ import comoVillage from "../images/wedding backgrounds/como-village.jpg";
 const Home = () => {
   return (
     <div className="home-page">
+      <div className="floating-hearts">
+        <div className="heart heart-1">♥</div>
+        <div className="heart heart-2">♥</div>
+        <div className="heart heart-3">♥</div>
+      </div>
       <div
         className="hero-section"
         style={{ backgroundImage: `url(${villaComoCity})` }}

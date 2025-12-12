@@ -1,14 +1,18 @@
-// Color Palette
-$primary-color: #8B7355;
-$secondary-color: #D4AF37;
-$accent-color: #E8DCC4;
-$text-dark: #2C2C2C;
-$text-light: #FFFFFF;
-$background-light: #FAF8F5;
+// Color Palette - Refined & Delicate
+$primary-color: #5a6f7d; // Soft slate blue-grey
+$secondary-color: #b8a398; // Warm taupe
+$accent-color: #d4c5b9; // Soft beige
+$accent-light: #f5f1ed; // Barely-there cream
+$text-dark: #3a3a3a;
+$text-medium: #6a6a6a;
+$text-light: #ffffff;
+$background-light: #fdfcfb;
+$border-subtle: rgba(90, 111, 125, 0.15);
 
-// Typography
-$font-primary: 'Georgia', serif;
-$font-secondary: 'Helvetica Neue', Arial, sans-serif;
+// Typography - Elegant & Refined
+$font-primary: "Cormorant Garamond", "Georgia", serif;
+$font-secondary: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+$font-accent: "Italiana", "Georgia", serif;
 
 // Spacing
 $spacing-xs: 0.5rem;
@@ -30,7 +34,7 @@ $breakpoint-tablet: 1024px;
 
 @mixin section-padding {
   padding: $spacing-xl $spacing-md;
-  
+
   @media (max-width: $breakpoint-mobile) {
     padding: $spacing-lg $spacing-sm;
   }
@@ -40,5 +44,33 @@ $breakpoint-tablet: 1024px;
   font-family: $font-primary;
   color: $primary-color;
   margin-bottom: $spacing-md;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
+@mixin card-style {
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid $border-subtle;
+}
+
+@mixin elegant-overlay {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.5)
+    );
+    z-index: 0;
+  }
+}
