@@ -7,7 +7,7 @@ import Accommodation from "./pages/Accommodation";
 import Location from "./pages/Location";
 import RSVP from "./pages/RSVP";
 import GettingThere from "./pages/GettingThere";
-import Photos from "./pages/Photos";
+import TheDay from "./pages/TheDay";
 import "./App.scss";
 
 function App() {
@@ -18,11 +18,11 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/the-day" element={<TheDay />} />
             <Route path="/accommodation" element={<Accommodation />} />
             <Route path="/location" element={<Location />} />
             <Route path="/rsvp" element={<RSVP />} />
             <Route path="/getting-there" element={<GettingThere />} />
-            <Route path="/photos" element={<Photos />} />
           </Routes>
         </main>
         <Footer />

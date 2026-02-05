@@ -235,6 +235,7 @@
         display: flex;
         gap: $spacing-md;
         flex-wrap: wrap;
+        margin-bottom: $spacing-md;
 
         .detail-item {
           display: flex;
@@ -250,83 +251,182 @@
           }
         }
       }
+
+      .hotel-link {
+        display: inline-block;
+        font-family: $font-secondary;
+        font-size: 0.95rem;
+        font-weight: 400;
+        color: $primary-color;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+          color: $secondary-color;
+          border-bottom-color: $secondary-color;
+        }
+      }
     }
   }
 
-  .rentals-section {
+  .apartments-section {
     padding: $spacing-xl 0;
     background: white;
 
     .container {
-      max-width: 900px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 0 $spacing-md;
 
-      .rentals-content {
-        @include card-style;
-        padding: $spacing-xl;
-        background: linear-gradient(
-          135deg,
-          rgba(255, 255, 255, 1) 0%,
-          rgba(245, 241, 237, 0.5) 100%
-        );
+      .section-title {
+        font-family: $font-accent;
+        font-size: 3rem;
+        font-weight: 300;
+        color: $primary-color;
+        text-align: center;
+        margin: 0 0 $spacing-sm 0;
+        letter-spacing: 2px;
 
         @media (max-width: $breakpoint-mobile) {
-          padding: $spacing-lg;
+          font-size: 2rem;
         }
+      }
 
-        .rentals-text {
-          h2 {
-            font-family: $font-accent;
-            font-size: 2.5rem;
-            font-weight: 300;
-            color: $primary-color;
-            margin: 0 0 $spacing-md 0;
-            letter-spacing: 2px;
+      .section-subtitle {
+        font-family: $font-secondary;
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: $text-medium;
+        text-align: center;
+        margin: 0 0 $spacing-xl 0;
+        letter-spacing: 0.5px;
+        font-style: italic;
 
-            @media (max-width: $breakpoint-mobile) {
-              font-size: 2rem;
-            }
-          }
-
-          p {
-            font-family: $font-secondary;
-            font-size: 1.05rem;
-            font-weight: 300;
-            line-height: 1.9;
-            color: $text-dark;
-            margin-bottom: $spacing-md;
-          }
-
-          .areas-list {
-            list-style: none;
-            padding: 0;
-            margin: $spacing-md 0 0 0;
-
-            li {
-              font-family: $font-secondary;
-              font-size: 1rem;
-              font-weight: 300;
-              line-height: 2.2;
-              color: $text-dark;
-              padding-left: $spacing-md;
-              position: relative;
-
-              &::before {
-                content: "•";
-                position: absolute;
-                left: 0;
-                color: $secondary-color;
-                font-size: 1.2rem;
-              }
-
-              strong {
-                font-weight: 400;
-                color: $primary-color;
-              }
-            }
-          }
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1rem;
         }
+      }
+
+      .hotel-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: $spacing-lg;
+
+        @media (max-width: $breakpoint-mobile) {
+          grid-template-columns: 1fr;
+          gap: $spacing-md;
+        }
+      }
+    }
+  }
+
+  .other-sources-section {
+    padding: $spacing-xl 0;
+    background: $background-light;
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 $spacing-md;
+
+      .section-title {
+        font-family: $font-accent;
+        font-size: 3rem;
+        font-weight: 300;
+        color: $primary-color;
+        text-align: center;
+        margin: 0 0 $spacing-sm 0;
+        letter-spacing: 2px;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 2rem;
+        }
+      }
+
+      .section-subtitle {
+        font-family: $font-secondary;
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: $text-medium;
+        text-align: center;
+        margin: 0 0 $spacing-xl 0;
+        letter-spacing: 0.5px;
+        font-style: italic;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1rem;
+        }
+      }
+
+      .sources-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: $spacing-lg;
+
+        @media (max-width: $breakpoint-mobile) {
+          grid-template-columns: 1fr;
+          gap: $spacing-md;
+        }
+      }
+    }
+  }
+
+  .source-card {
+    @include card-style;
+    padding: $spacing-xl;
+    text-align: center;
+    transition: all 0.4s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .source-icon {
+      font-size: 3.5rem;
+      margin-bottom: $spacing-md;
+      line-height: 1;
+    }
+
+    h3 {
+      font-family: $font-primary;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: $primary-color;
+      margin: 0 0 $spacing-sm 0;
+      letter-spacing: 0.5px;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 1.4rem;
+      }
+    }
+
+    p {
+      font-family: $font-secondary;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: $text-dark;
+      margin: 0 0 $spacing-md 0;
+    }
+
+    .hotel-link {
+      display: inline-block;
+      font-family: $font-secondary;
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: $primary-color;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      border-bottom: 1px solid transparent;
+      margin-top: $spacing-sm;
+
+      &:hover {
+        color: $secondary-color;
+        border-bottom-color: $secondary-color;
       }
     }
   }

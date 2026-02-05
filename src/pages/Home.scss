@@ -85,57 +85,89 @@
 
       .couple-names {
         font-family: $font-accent;
-        font-size: 5rem;
-        font-weight: 400;
+        font-size: 7.5rem;
+        font-weight: 600;
         margin-bottom: $spacing-md;
-        text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.3);
-        letter-spacing: 3px;
+        text-shadow:
+          2px 3px 8px rgba(0, 0, 0, 0.5),
+          0 0 40px rgba(0, 0, 0, 0.3);
+        letter-spacing: 5px;
         animation: fadeInUp 1.8s ease-out 0.3s both;
 
         @media (max-width: $breakpoint-mobile) {
-          font-size: 2.8rem;
-          letter-spacing: 2px;
+          font-size: 3.8rem;
+          letter-spacing: 3px;
         }
       }
 
       .wedding-date {
         font-family: $font-secondary;
-        font-size: 1.2rem;
-        font-weight: 300;
+        font-size: 1.8rem;
+        font-weight: 600;
         margin-bottom: $spacing-xs;
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-        letter-spacing: 2px;
+        text-shadow:
+          2px 2px 6px rgba(0, 0, 0, 0.5),
+          0 0 20px rgba(0, 0, 0, 0.3);
+        letter-spacing: 4px;
         text-transform: uppercase;
         animation: fadeInUp 1.2s ease-out 0.6s both;
 
         @media (max-width: $breakpoint-mobile) {
-          font-size: 1rem;
+          font-size: 1.3rem;
+          letter-spacing: 2px;
         }
       }
 
       .wedding-location {
         font-family: $font-secondary;
-        font-size: 1.1rem;
-        font-weight: 300;
+        font-size: 1.6rem;
+        font-weight: 500;
         margin-bottom: $spacing-md;
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        text-shadow:
+          2px 2px 6px rgba(0, 0, 0, 0.5),
+          0 0 20px rgba(0, 0, 0, 0.3);
         font-style: italic;
-        letter-spacing: 1px;
+        letter-spacing: 3px;
         animation: fadeInUp 1.2s ease-out 0.6s both;
 
         @media (max-width: $breakpoint-mobile) {
-          font-size: 1rem;
+          font-size: 1.2rem;
+          letter-spacing: 1.5px;
         }
       }
 
       .save-date {
         font-family: $font-primary;
-        font-size: 1.1rem;
-        font-weight: 300;
+        font-size: 1.6rem;
+        font-weight: 500;
         font-style: italic;
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-        letter-spacing: 0.5px;
-        animation: fadeInUp 1.2s ease-out 0.6s both;
+        text-shadow:
+          2px 2px 6px rgba(0, 0, 0, 0.5),
+          0 0 20px rgba(0, 0, 0, 0.3);
+        letter-spacing: 2px;
+        animation: fadeInUp 1.2s ease-out 0.9s both;
+        margin-bottom: $spacing-xs;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1.2rem;
+          letter-spacing: 1px;
+        }
+      }
+
+      .actual-date {
+        font-family: $font-secondary;
+        font-size: 2rem;
+        font-weight: 600;
+        text-shadow:
+          2px 2px 6px rgba(0, 0, 0, 0.5),
+          0 0 20px rgba(0, 0, 0, 0.3);
+        letter-spacing: 3px;
+        animation: fadeInUp 1.2s ease-out 1.2s both;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1.4rem;
+          letter-spacing: 2px;
+        }
       }
     }
   }

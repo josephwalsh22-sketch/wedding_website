@@ -22,17 +22,18 @@ const Home = () => {
       >
         <div className="hero-overlay">
           <div className="hero-content">
-            <h1 className="couple-names">Joseph & Cinzia</h1>
+            <h1 className="couple-names">Cinzia & Joseph</h1>
             <p className="wedding-date">We're Getting Married!</p>
             <p className="wedding-location">Lake Como, Italy</p>
             <p className="save-date">Save the Date</p>
+            <p className="actual-date">17th October 2026</p>
           </div>
         </div>
       </div>
 
       <section className="welcome-section">
         <div className="container">
-          <h2>Welcome to Our Wedding Website</h2>
+          <h2>Sposiamo!</h2>
           <p>
             We are so excited to celebrate our special day with you at the
             beautiful Lake Como in Italy! Please explore our website to learn

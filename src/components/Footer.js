@@ -6,10 +6,10 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-names">
-          <span className="couple-initials">J & C</span>
+          <span className="couple-initials">C & J</span>
         </div>
         <div className="footer-details">
-          <p className="footer-date">Lake Como, Italy · 2025</p>
+          <p className="footer-date">Lake Como, Italy · 2026</p>
         </div>
         <div className="footer-message">
           <p>With love and anticipation</p>
@@ -20,4 +20,3 @@ function Footer() {
 }
 
 export default Footer;
-

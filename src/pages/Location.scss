@@ -1,19 +1,19 @@
 @import "../styles/theme.scss";
 
-.wedding-details-page {
+.lakecomo-page {
   padding-top: 80px;
 
   .page-header {
     background-size: cover;
     background-position: center;
     position: relative;
-    min-height: 400px;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     @media (max-width: $breakpoint-mobile) {
-      min-height: 300px;
+      min-height: 350px;
     }
 
     .header-overlay {
@@ -26,22 +26,22 @@
       width: 100%;
 
       h1 {
-        font-family: $font-primary;
-        font-size: 3rem;
-        margin: 0;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-family: $font-accent;
+        font-size: 4rem;
+        font-weight: 300;
+        margin: 0 0 $spacing-sm 0;
+        text-shadow: 2px 3px 12px rgba(0, 0, 0, 0.5);
+        letter-spacing: 4px;
 
         @media (max-width: $breakpoint-mobile) {
-          font-size: 2rem;
+          font-size: 2.5rem;
         }
       }
 
-      .location-subtitle {
+      .header-subtitle {
         font-family: $font-secondary;
-        font-size: 1.2rem;
-        margin-top: $spacing-sm;
-        font-style: italic;
-        opacity: 0.9;
+        font-size: 1.3rem;
+        margin: 0;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 
         @media (max-width: $breakpoint-mobile) {
@@ -51,99 +51,379 @@
     }
   }
 
-  .location-showcase {
-    background-color: white;
-    padding: $spacing-xl $spacing-md;
+  .intro-section {
+    padding: $spacing-xl 0;
+    background: white;
 
-    .showcase-image {
-      max-width: 1200px;
-      margin: 0 auto $spacing-lg;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-
-      img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-    }
-
-    .showcase-text {
-      max-width: 800px;
+    .container {
+      max-width: 900px;
       margin: 0 auto;
-      text-align: center;
+      padding: 0 $spacing-md;
 
-      h2 {
-        @include heading-style;
-        font-size: 2.5rem;
-        margin-bottom: $spacing-md;
-      }
-
-      p {
-        font-family: $font-secondary;
+      .intro-text {
+        font-family: $font-primary;
         font-size: 1.2rem;
-        line-height: 1.8;
-        color: $text-dark;
+        font-weight: 300;
+        line-height: 2;
+        color: $text-medium;
+        text-align: center;
+        letter-spacing: 0.3px;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1.05rem;
+          line-height: 1.8;
+        }
       }
     }
   }
 
-  .details-section {
-    @include section-padding;
-    background-color: $background-light;
+  .exploring-section,
+  .exploring-lake-section,
+  .recommended-plates-section {
+    padding: calc($spacing-xl * 1.5) 0;
+    background: $background-light;
+
+    &:nth-of-type(even) {
+      background: white;
+    }
 
     .container {
       max-width: 1000px;
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: $spacing-lg;
+      padding: 0 $spacing-md;
 
-      .detail-card {
+      .section-title {
+        font-family: $font-accent;
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: $primary-color;
+        margin: 0 0 $spacing-xl 0;
+        letter-spacing: 2px;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 2rem;
+          margin-bottom: $spacing-lg;
+        }
+      }
+
+      .content-with-image {
+        position: relative;
+
+        p {
+          font-family: $font-secondary;
+          font-size: 1.05rem;
+          color: $text-dark;
+          line-height: 1.8;
+          margin-bottom: $spacing-lg;
+          text-align: justify;
+
+          @media (max-width: $breakpoint-mobile) {
+            text-align: left;
+            font-size: 1rem;
+          }
+        }
+
+        .floating-image-right,
+        .floating-image-left {
+          width: 45%;
+          margin-bottom: $spacing-lg;
+
+          @media (max-width: $breakpoint-mobile) {
+            width: 100%;
+            float: none !important;
+            margin: 0 0 $spacing-lg 0;
+          }
+
+          .explore-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            transition:
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+
+            &:hover {
+              transform: translateY(-4px);
+              box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+            }
+          }
+        }
+
+        .floating-image-right {
+          float: right;
+          margin-left: $spacing-xl;
+          margin-top: $spacing-sm;
+
+          @media (max-width: $breakpoint-mobile) {
+            margin-left: 0;
+            margin-top: 0;
+          }
+        }
+
+        .floating-image-left {
+          float: left;
+          margin-right: $spacing-xl;
+          margin-top: $spacing-sm;
+
+          @media (max-width: $breakpoint-mobile) {
+            margin-right: 0;
+            margin-top: 0;
+          }
+        }
+
+        &::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+      }
+
+      .subsection-title {
+        font-family: $font-primary;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $secondary-color;
+        margin: calc($spacing-xl * 1.5) 0 $spacing-lg 0;
+        padding-top: $spacing-xl;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1.5rem;
+          margin-top: $spacing-xl;
+        }
+      }
+
+      .recommendations-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: $spacing-lg;
+        margin-top: $spacing-lg;
+
+        @media (max-width: $breakpoint-mobile) {
+          grid-template-columns: 1fr;
+        }
+
+        .recommendation-card {
+          background: white;
+          padding: $spacing-lg;
+          border-radius: 8px;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+          border-left: 3px solid $secondary-color;
+          transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+
+          &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+          }
+
+          h4 {
+            font-family: $font-primary;
+            font-size: 1.3rem;
+            color: $primary-color;
+            margin: 0 0 $spacing-xs 0;
+          }
+
+          .recommendation-type {
+            font-family: $font-secondary;
+            font-size: 0.9rem;
+            color: $secondary-color;
+            font-style: italic;
+            margin: 0 0 $spacing-sm 0;
+            font-weight: 500;
+          }
+
+          p {
+            font-family: $font-secondary;
+            font-size: 0.95rem;
+            color: $text-dark;
+            line-height: 1.6;
+            margin: 0;
+
+            &:not(.recommendation-type) {
+              margin-top: $spacing-sm;
+            }
+          }
+        }
+      }
+
+      .plates-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: $spacing-lg;
+        margin-top: $spacing-lg;
+
+        @media (max-width: $breakpoint-mobile) {
+          grid-template-columns: 1fr;
+        }
+
+        .plate-card {
+          background: white;
+          padding: 0;
+          border-radius: 8px;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+          border-left: 3px solid $primary-color;
+          transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+          overflow: hidden;
+
+          &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+          }
+
+          .plate-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+          }
+
+          h4 {
+            font-family: $font-primary;
+            font-size: 1.3rem;
+            color: $primary-color;
+            margin: 0 0 $spacing-sm 0;
+            padding: $spacing-lg $spacing-lg 0 $spacing-lg;
+          }
+
+          p {
+            font-family: $font-secondary;
+            font-size: 0.95rem;
+            color: $text-dark;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 $spacing-lg $spacing-lg $spacing-lg;
+          }
+        }
+      }
+    }
+  }
+
+  .transport-section {
+    padding: calc($spacing-xl * 1.5) 0;
+    background: white;
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 $spacing-md;
+
+      .travel-card {
         background: white;
-        padding: $spacing-lg;
+        padding: $spacing-xl;
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
         h2 {
           @include heading-style;
-          font-size: 1.8rem;
-          text-align: center;
+          font-size: 2rem;
+          margin-bottom: $spacing-lg;
+          color: $primary-color;
+        }
+
+        h3 {
+          font-family: $font-primary;
+          font-size: 1.3rem;
+          color: $secondary-color;
+          margin-top: 0;
+          margin-bottom: $spacing-sm;
+        }
+
+        p {
+          font-family: $font-secondary;
+          font-size: 1rem;
+          color: $text-dark;
+          line-height: 1.7;
           margin-bottom: $spacing-md;
-        }
 
-        .detail-info {
-          p {
-            font-family: $font-secondary;
-            font-size: 1rem;
-            line-height: 1.6;
-            color: $text-dark;
-            margin-bottom: $spacing-sm;
-
-            strong {
-              color: $primary-color;
-            }
-          }
-
-          .detail-description {
-            margin-top: $spacing-md;
-            font-style: italic;
+          &:last-child {
+            margin-bottom: 0;
           }
         }
 
-        &.with-image {
-          .card-image {
-            margin: -$spacing-lg -$spacing-lg $spacing-md -$spacing-lg;
-            overflow: hidden;
-            border-radius: 8px 8px 0 0;
+        .section-intro {
+          font-size: 1.05rem;
+          margin-bottom: $spacing-lg;
+          color: $text-medium;
+          line-height: 1.8;
+        }
 
-            img {
+        .content-with-image {
+          position: relative;
+
+          .floating-image-right,
+          .floating-image-left {
+            width: 45%;
+            margin-bottom: $spacing-lg;
+
+            @media (max-width: $breakpoint-mobile) {
               width: 100%;
-              height: 250px;
-              object-fit: cover;
-              display: block;
+              float: none !important;
+              margin: 0 0 $spacing-lg 0;
             }
+
+            .travel-map {
+              width: 100%;
+              height: auto;
+              border-radius: 8px;
+              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+              transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+              &:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+              }
+            }
+          }
+
+          .floating-image-right {
+            float: right;
+            margin-left: $spacing-xl;
+            margin-top: $spacing-sm;
+
+            @media (max-width: $breakpoint-mobile) {
+              margin-left: 0;
+              margin-top: 0;
+            }
+          }
+
+          .floating-image-left {
+            float: left;
+            margin-right: $spacing-xl;
+            margin-top: $spacing-sm;
+
+            @media (max-width: $breakpoint-mobile) {
+              margin-right: 0;
+              margin-top: 0;
+            }
+          }
+
+          .transport-info {
+            margin-bottom: $spacing-lg;
+            padding: $spacing-md;
+            background: $background-light;
+            border-radius: 6px;
+            border-left: 3px solid $secondary-color;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            h3 {
+              margin-top: 0;
+            }
+          }
+
+          &::after {
+            content: "";
+            display: table;
+            clear: both;
           }
         }
       }

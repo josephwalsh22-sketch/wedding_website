@@ -1,9 +1,6 @@
 import React from "react";
 import "./Accommodation.scss";
 import villaRoomView from "../images/wedding backgrounds/villa-room-view.webp";
-import lakeComo from "../images/wedding backgrounds/laike-como-panorama.jpg";
-import comoBrunate from "../images/wedding backgrounds/como-city-brunate.jpg";
-import comoVillage from "../images/wedding backgrounds/como-village.jpg";
 
 const Accommodation = () => {
   return (
@@ -22,9 +19,14 @@ const Accommodation = () => {
         <div className="container">
           <p className="intro-text">
             Lake Como offers a wonderful selection of accommodations, from
-            luxurious lakeside hotels to charming vacation rentals. We've
-            curated our favorite options to help you find the perfect place to
-            stay during our celebration.
+            luxurious lakeside hotels to charming vacation apartments. Our
+            wedding planner curated options to help you find the perfect place
+            to stay during our celebration.
+          </p>
+          <p className="intro-text">
+            We recommend spending the night of the wedding in Como city, because
+            public transport typically stops at midnight. The villa is easily
+            reachable on foot from almost any part of the city.
           </p>
         </div>
       </section>
@@ -38,113 +40,321 @@ const Accommodation = () => {
 
           <div className="hotel-grid">
             <div className="hotel-card">
-              <div
-                className="hotel-image"
-                style={{ backgroundImage: `url(${lakeComo})` }}
-              >
-                <div className="hotel-badge">5-Star Luxury</div>
-              </div>
               <div className="hotel-content">
-                <h3>Grand Hotel Tremezzo</h3>
+                <h3>Palace Hotel</h3>
                 <p className="hotel-description">
-                  A legendary 5-star hotel on the shores of Lake Como, offering
-                  breathtaking views, world-class spa facilities, and exquisite
-                  dining. The perfect blend of historic elegance and modern
-                  luxury.
+                  An elegant palazzo liberty building in Como's historic center,
+                  directly on the lake. Features the renowned Antica Darsena
+                  restaurant and offers a perfect blend of historic charm and
+                  lakeside luxury.
                 </p>
                 <div className="hotel-details">
                   <span className="detail-item">
-                    <span className="detail-icon">📍</span> 8 km from venue
+                    <span className="detail-icon">📍</span> Como Historic Center
                   </span>
                   <span className="detail-item">
-                    <span className="detail-icon">⏱️</span> 15 min drive
+                    <span className="detail-icon">🌊</span> On the Lake
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">💰</span> $$$$$
                   </span>
                 </div>
+                <a
+                  href="https://www.palacehotel.it/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hotel-link"
+                >
+                  Visit Website →
+                </a>
               </div>
             </div>
 
             <div className="hotel-card">
-              <div
-                className="hotel-image"
-                style={{ backgroundImage: `url(${comoBrunate})` }}
-              >
-                <div className="hotel-badge">Boutique</div>
-              </div>
-              <div className="hotel-content">
-                <h3>Hotel Villa Flori</h3>
-                <p className="hotel-description">
-                  An elegant boutique hotel nestled in beautiful gardens with
-                  direct lake access. Experience the perfect harmony of historic
-                  Italian charm and contemporary comfort.
-                </p>
-                <div className="hotel-details">
-                  <span className="detail-item">
-                    <span className="detail-icon">📍</span> 5 km from venue
-                  </span>
-                  <span className="detail-item">
-                    <span className="detail-icon">⏱️</span> 12 min drive
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="hotel-card">
-              <div
-                className="hotel-image"
-                style={{ backgroundImage: `url(${comoVillage})` }}
-              >
-                <div className="hotel-badge">Great Value</div>
-              </div>
               <div className="hotel-content">
                 <h3>Albergo Terminus</h3>
                 <p className="hotel-description">
-                  A comfortable and welcoming hotel near Como San Giovanni
-                  station. Ideal for guests arriving by train, offering
-                  excellent value with easy access to the lake and city center.
+                  A beautiful liberty building located on Lungo Lario Trieste,
+                  right on the lakefront in Como's historic center. Features the
+                  charming Bar delle Terme and offers stunning lake views.
                 </p>
                 <div className="hotel-details">
                   <span className="detail-item">
-                    <span className="detail-icon">📍</span> 6 km from venue
+                    <span className="detail-icon">📍</span> Lungo Lario Trieste
+                    14
                   </span>
                   <span className="detail-item">
-                    <span className="detail-icon">⏱️</span> 13 min drive
+                    <span className="detail-icon">🌊</span> Lakefront Location
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">💰</span> $$$$
                   </span>
                 </div>
+                <a
+                  href="https://albergoterminus.it/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hotel-link"
+                >
+                  Visit Website →
+                </a>
+              </div>
+            </div>
+
+            <div className="hotel-card">
+              <div className="hotel-content">
+                <h3>Hotel Engadina</h3>
+                <p className="hotel-description">
+                  A welcoming 24-room hotel in Como city center, just 5 minutes
+                  from the train station and close to the lake. Perfect for
+                  exploring the city while enjoying comfortable accommodations.
+                </p>
+                <div className="hotel-details">
+                  <span className="detail-item">
+                    <span className="detail-icon">📍</span> Como City Center
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">🚂</span> 5 min from station
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">💰</span> $$$$$
+                  </span>
+                </div>
+                <a
+                  href="http://hotelengadina.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hotel-link"
+                >
+                  Visit Website →
+                </a>
+              </div>
+            </div>
+
+            <div className="hotel-card">
+              <div className="hotel-content">
+                <h3>La Perla By Sedar</h3>
+                <p className="hotel-description">
+                  A collection of 12 stylish design apartments in Como center,
+                  near the lake. Features a rooftop terrace with stunning views
+                  and an on-site gelateria for authentic Italian gelato.
+                </p>
+                <div className="hotel-details">
+                  <span className="detail-item">
+                    <span className="detail-icon">📍</span> Como Center
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">🏠</span> 12 Apartments
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">💰</span> $$$
+                  </span>
+                </div>
+                <a
+                  href="https://laperlabysedar.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hotel-link"
+                >
+                  Visit Website →
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="rentals-section">
+      <section className="apartments-section">
         <div className="container">
-          <div className="rentals-content">
-            <div className="rentals-text">
-              <h2>Vacation Rentals</h2>
+          <h2 className="section-title">Recommended Apartments</h2>
+          <p className="section-subtitle">
+            Spacious apartments perfect for families or groups
+          </p>
+
+          <div className="hotel-grid">
+            <div className="hotel-card">
+              <div className="hotel-content">
+                <h3>Valli</h3>
+                <p className="hotel-description">
+                  A spacious 3-room apartment accommodating up to 6 guests with
+                  2 bedrooms. Located in a quiet residential area near the lake,
+                  perfect for families or groups seeking comfort and
+                  tranquility.
+                </p>
+                <div className="hotel-details">
+                  <span className="detail-item">
+                    <span className="detail-icon">📍</span> Via Ludovico
+                    Zamenhof 9
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">🛏️</span> 2 Bedrooms
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">💰</span> $$$
+                  </span>
+                </div>
+                <a
+                  href="https://www.myhomeincomo.com/valli"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hotel-link"
+                >
+                  View Details →
+                </a>
+              </div>
+            </div>
+
+            <div className="hotel-card">
+              <div className="hotel-content">
+                <h3>Midnight Borgo</h3>
+                <p className="hotel-description">
+                  A bright and welcoming 3-room apartment for up to 4 guests
+                  with 2 bedrooms. Conveniently located near Como's old town,
+                  offering easy access to historic sites and local restaurants.
+                </p>
+                <div className="hotel-details">
+                  <span className="detail-item">
+                    <span className="detail-icon">📍</span> Via Borgo Vico 114
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">🛏️</span> 2 Bedrooms
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">💰</span> $$$
+                  </span>
+                </div>
+                <a
+                  href="https://www.myhomeincomo.com/midnight-borgo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hotel-link"
+                >
+                  View Details →
+                </a>
+              </div>
+            </div>
+
+            <div className="hotel-card">
+              <div className="hotel-content">
+                <h3>Casa Olmo</h3>
+                <p className="hotel-description">
+                  A modern 2-room apartment accommodating up to 4 guests with 1
+                  bedroom. Located near the lake in a peaceful setting, ideal
+                  for couples or small families.
+                </p>
+                <div className="hotel-details">
+                  <span className="detail-item">
+                    <span className="detail-icon">📍</span> Via Ludovico
+                    Zamenhof 9
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">🛏️</span> 1 Bedroom
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">💰</span> $$
+                  </span>
+                </div>
+                <a
+                  href="https://www.myhomeincomo.com/casa-olmo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hotel-link"
+                >
+                  View Details →
+                </a>
+              </div>
+            </div>
+
+            <div className="hotel-card">
+              <div className="hotel-content">
+                <h3>The Gallery</h3>
+                <p className="hotel-description">
+                  A stylish modern 2-room apartment for up to 4 guests with 1
+                  bedroom, featuring contemporary art throughout. Located near
+                  Como's historic center for easy exploration.
+                </p>
+                <div className="hotel-details">
+                  <span className="detail-item">
+                    <span className="detail-icon">📍</span> Via Prato Pasquè 2
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">🛏️</span> 1 Bedroom
+                  </span>
+                  <span className="detail-item">
+                    <span className="detail-icon">💰</span> $$
+                  </span>
+                </div>
+                <a
+                  href="https://www.myhomeincomo.com/TheGallery"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hotel-link"
+                >
+                  View Details →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="other-sources-section">
+        <div className="container">
+          <h2 className="section-title">Other Sources</h2>
+          <p className="section-subtitle">
+            Additional resources for finding accommodation in Lake Como
+          </p>
+
+          <div className="sources-grid">
+            <div className="source-card">
+              <div className="source-icon">🏠</div>
+              <h3>My Home In Como</h3>
               <p>
-                For those seeking more space or traveling with family, Lake Como
-                offers beautiful vacation rentals with authentic Italian charm.
-                We recommend exploring options on Airbnb and VRBO in these
-                picturesque areas:
+                Curated selection of quality apartments in Como city center and
+                surrounding areas
               </p>
-              <ul className="areas-list">
-                <li>
-                  <strong>Como Centro</strong> — Historic city center with
-                  restaurants and shops
-                </li>
-                <li>
-                  <strong>Cernobbio</strong> — Elegant lakeside village with
-                  stunning villas
-                </li>
-                <li>
-                  <strong>Brunate</strong> — Hillside town with panoramic lake
-                  views
-                </li>
-                <li>
-                  <strong>Torno</strong> — Charming fishing village on the
-                  eastern shore
-                </li>
-              </ul>
+              <a
+                href="https://www.myhomeincomo.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hotel-link"
+              >
+                Visit Website →
+              </a>
+            </div>
+
+            <div className="source-card">
+              <div className="source-icon">🏨</div>
+              <h3>Booking.com</h3>
+              <p>
+                Wide range of hotels, apartments, and B&Bs with verified reviews
+                and flexible booking
+              </p>
+              <a
+                href="https://www.booking.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hotel-link"
+              >
+                Visit Website →
+              </a>
+            </div>
+
+            <div className="source-card">
+              <div className="source-icon">🌍</div>
+              <h3>Airbnb</h3>
+              <p>
+                Unique homes and experiences hosted by locals throughout the
+                Lake Como region
+              </p>
+              <a
+                href="https://www.airbnb.it/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hotel-link"
+              >
+                Visit Website →
+              </a>
             </div>
           </div>
         </div>

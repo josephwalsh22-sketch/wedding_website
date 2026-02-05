@@ -7,26 +7,26 @@ const Navigation = () => {
     <nav className="navigation">
       <div className="nav-container">
         <div className="nav-brand">
-          <Link to="/">Joseph & Cinzia</Link>
+          <Link to="/">Cinzia & Joseph</Link>
         </div>
         <ul className="nav-links">
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/accommodation">Accommodation</Link>
-          </li>
-          <li>
-            <Link to="/location">Location</Link>
-          </li>
-          <li>
-            <Link to="/rsvp">RSVP</Link>
+            <Link to="/the-day">The Day</Link>
           </li>
           <li>
             <Link to="/getting-there">Getting There</Link>
           </li>
           <li>
-            <Link to="/photos">Photos</Link>
+            <Link to="/accommodation">Accommodation</Link>
+          </li>
+          <li>
+            <Link to="/location">Lake Como</Link>
+          </li>
+          <li>
+            <Link to="/rsvp">RSVP</Link>
           </li>
         </ul>
       </div>
