@@ -53,6 +53,7 @@ const TheDay = () => {
                 src={villaSide}
                 alt="Villa Parravicini side view"
                 className="venue-image"
+                loading="lazy"
               />
             </div>
             <div className="venue-map-wrapper">
@@ -72,6 +73,7 @@ const TheDay = () => {
                 src={villaChairsInside}
                 alt="Villa interior with lake view"
                 className="venue-image"
+                loading="lazy"
               />
             </div>
           </div>

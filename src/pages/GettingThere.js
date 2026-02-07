@@ -37,6 +37,7 @@ const GettingThere = () => {
               src={airportDirections}
               alt="Airport and train directions to Lake Como"
               className="travel-directions-map"
+              loading="lazy"
             />
           </div>
 

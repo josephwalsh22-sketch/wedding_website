@@ -1,8 +1,8 @@
 import React from "react";
 import "./Location.scss";
-import varennaPanorama from "../images/explore/varenna-panorama.jpg";
-import lakeBellagio from "../images/wedding backgrounds/lake-como-bellagio.avif";
-import lakeNesso from "../images/wedding backgrounds/lake-como-nesso.avif";
+import varennaPanorama from "../images/varenna-panorama.webp";
+import lakeBellagio from "../images/lake-como-bellagio.webp";
+import lakeNesso from "../images/lake-como-nesso.webp";
 import ferries from "../images/ferries.webp";
 import pizzocheri from "../images/foods/pizzocheri.jpeg";
 import ossobuco from "../images/foods/ossobuco.jpg";
@@ -10,8 +10,8 @@ import risotto from "../images/foods/risotto.jpeg";
 import cotoletta from "../images/foods/cotoletta.jpeg";
 import polenta from "../images/foods/polenta.jpg";
 import tagliatelle from "../images/foods/tagliatelle.jpeg";
-import comoCity from "../images/explore/como-city.jpg";
-import brunate from "../images/explore/brunate.jpeg";
+import comoCity from "../images/como-city.webp";
+import brunate from "../images/brunate.webp";
 
 const Location = () => {
   return (
@@ -46,7 +46,12 @@ const Location = () => {
 
           <div className="content-with-image">
             <div className="floating-image-right">
-              <img src={comoCity} alt="Como city" className="explore-image" />
+              <img
+                src={comoCity}
+                alt="Como city"
+                className="explore-image"
+                loading="lazy"
+              />
             </div>
 
             <p>
@@ -70,6 +75,7 @@ const Location = () => {
                 src={brunate}
                 alt="Brunate hillside village"
                 className="explore-image"
+                loading="lazy"
               />
             </div>
 
@@ -168,7 +174,12 @@ const Location = () => {
 
           <div className="plates-grid">
             <div className="plate-card">
-              <img src={pizzocheri} alt="Pizzoccheri" className="plate-image" />
+              <img
+                src={pizzocheri}
+                alt="Pizzoccheri"
+                className="plate-image"
+                loading="lazy"
+              />
               <h4>Pizzoccheri</h4>
               <p>
                 A hearty buckwheat pasta dish from the nearby Valtellina valley,
@@ -179,7 +190,12 @@ const Location = () => {
             </div>
 
             <div className="plate-card">
-              <img src={ossobuco} alt="Ossobuco" className="plate-image" />
+              <img
+                src={ossobuco}
+                alt="Ossobuco"
+                className="plate-image"
+                loading="lazy"
+              />
               <h4>Ossobuco</h4>
               <p>
                 Braised veal shanks cooked slowly in white wine, broth, and
@@ -194,6 +210,7 @@ const Location = () => {
                 src={risotto}
                 alt="Risotto alla Milanese"
                 className="plate-image"
+                loading="lazy"
               />
               <h4>Risotto alla Milanese</h4>
               <p>
@@ -209,6 +226,7 @@ const Location = () => {
                 src={cotoletta}
                 alt="Cotoletta alla Milanese"
                 className="plate-image"
+                loading="lazy"
               />
               <h4>Cotoletta alla Milanese</h4>
               <p>
@@ -219,7 +237,12 @@ const Location = () => {
             </div>
 
             <div className="plate-card">
-              <img src={polenta} alt="Polenta" className="plate-image" />
+              <img
+                src={polenta}
+                alt="Polenta"
+                className="plate-image"
+                loading="lazy"
+              />
               <h4>Polenta</h4>
               <p>
                 A cornerstone of northern Italian mountain cuisine, this
@@ -235,6 +258,7 @@ const Location = () => {
                 src={tagliatelle}
                 alt="Tagliatelle con Porcini"
                 className="plate-image"
+                loading="lazy"
               />
               <h4>Tagliatelle con Porcini</h4>
               <p>
@@ -259,6 +283,7 @@ const Location = () => {
                 src={lakeBellagio}
                 alt="Bellagio on Lake Como"
                 className="explore-image"
+                loading="lazy"
               />
             </div>
 
@@ -282,6 +307,7 @@ const Location = () => {
                 src={lakeNesso}
                 alt="Nesso waterfall"
                 className="explore-image"
+                loading="lazy"
               />
             </div>
 

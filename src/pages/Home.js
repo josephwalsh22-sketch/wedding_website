@@ -1,12 +1,12 @@
 import React from "react";
 import "./Home.scss";
-import villaComoCity from "../images/wedding backgrounds/villa-como-city.jpg";
+import villaComoCity from "../images/villa-como-city.webp";
 import villaAboveHigher from "../images/wedding backgrounds/villa-above-higher.webp";
 import villaSide from "../images/wedding backgrounds/villa-side.webp";
 import villaWithLights from "../images/wedding backgrounds/villa-with-lights.webp";
-import lakePanorama from "../images/wedding backgrounds/laike-como-panorama.jpg";
-import comoCafe from "../images/wedding backgrounds/como-cafe.jpg";
-import comoVillage from "../images/wedding backgrounds/como-village.jpg";
+import lakePanorama from "../images/lake-panorama.webp";
+import comoCafe from "../images/como-cafe.webp";
+import comoVillage from "../images/como-village.webp";
 
 const Home = () => {
   return (

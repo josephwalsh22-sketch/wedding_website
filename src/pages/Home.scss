@@ -83,6 +83,10 @@
       padding: $spacing-md;
       animation: fadeInUp 1.5s ease-out;
 
+      @media (max-width: $breakpoint-mobile) {
+        padding-top: 120px;
+      }
+
       .couple-names {
         font-family: $font-accent;
         font-size: 7.5rem;
