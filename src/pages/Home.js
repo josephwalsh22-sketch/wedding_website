@@ -33,11 +33,11 @@ const Home = () => {
 
       <section className="welcome-section">
         <div className="container">
-          <h2>Sposiamo!</h2>
+          <h2>Ci Sposiamo!</h2>
           <p>
-            We are so excited to celebrate our special day with you at the
-            beautiful Lake Como in Italy! Please explore our website to learn
-            more about our story, wedding details, and more.
+            We are so excited to celebrate our special day with you at beautiful
+            Lake Como in Italy! Please explore our website to learn more about
+            the wedding details, accommodation, and things to do.
           </p>
         </div>
       </section>
@@ -47,12 +47,10 @@ const Home = () => {
           <img src={villaAboveHigher} alt="Villa from Above" />
         </div>
         <div className="location-content">
-          <h2>A Stunning Location</h2>
+          <h2>Our Marriage Ceremony</h2>
           <p>
-            Nestled in the heart of Lake Como, our villa offers breathtaking
-            views of the Italian Alps and the crystal-clear waters below. This
-            historic venue combines old-world charm with modern elegance,
-            creating the perfect backdrop for our celebration.
+            Join us for our symbolic ceremony in Como. We would be delighted to
+            share this moment with you!
           </p>
         </div>
       </section>
@@ -64,10 +62,10 @@ const Home = () => {
         <div className="preview-content">
           <h2>Join Us in Italy</h2>
           <p>
-            We invite you to join us for a celebration of love at a stunning
-            villa overlooking Lake Como. It will be a weekend filled with joy,
-            laughter, and unforgettable memories in one of the most beautiful
-            places on earth.
+            We have a private event in the heart of Como, where we'll eat,
+            drink, and dance the day away. So many of us are spread throughout
+            the world and we don't see each other often anymore—it will be
+            fantastic to have a day with you all.
           </p>
         </div>
       </section>
@@ -91,6 +89,7 @@ const Home = () => {
 
       <section className="explore-section">
         <h2>Explore Lake Como</h2>
+        <p>Stay for a few days and enjoy Cinzia's homeland!</p>
         <div className="explore-grid">
           <div className="explore-card">
             <img src={lakePanorama} alt="Lake Como Panorama" />

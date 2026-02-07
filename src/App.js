@@ -6,7 +6,6 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Accommodation from "./pages/Accommodation";
 import Location from "./pages/Location";
-import RSVP from "./pages/RSVP";
 import GettingThere from "./pages/GettingThere";
 import TheDay from "./pages/TheDay";
 import "./App.scss";
@@ -23,7 +22,6 @@ function App() {
             <Route path="/the-day" element={<TheDay />} />
             <Route path="/accommodation" element={<Accommodation />} />
             <Route path="/location" element={<Location />} />
-            <Route path="/rsvp" element={<RSVP />} />
             <Route path="/getting-there" element={<GettingThere />} />
           </Routes>
         </main>

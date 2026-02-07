@@ -25,9 +25,6 @@ const Navigation = () => {
           <li>
             <Link to="/location">Lake Como</Link>
           </li>
-          <li>
-            <Link to="/rsvp">RSVP</Link>
-          </li>
         </ul>
       </div>
     </nav>

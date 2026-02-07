@@ -97,7 +97,7 @@ const TheDay = () => {
                 <h3>Welcome</h3>
                 <p>
                   Welcome to Villa Parravicini Revel! Join us for a welcome
-                  drink as you arrive and take in the beautiful surroundings.
+                  drink as you arrive and take in the surroundings.
                 </p>
               </div>
             </div>
@@ -110,8 +110,8 @@ const TheDay = () => {
               <div className="timeline-content">
                 <h3>Ceremony</h3>
                 <p>
-                  Join us for our ceremony at the villa, overlooking the
-                  stunning Lake Como.
+                  Join us for our symbolic ceremony at the villa, overlooking
+                  Lake Como.
                 </p>
               </div>
             </div>
@@ -123,10 +123,7 @@ const TheDay = () => {
               </div>
               <div className="timeline-content">
                 <h3>Aperitif</h3>
-                <p>
-                  Enjoy aperitivo with drinks and canapés on the terrace with
-                  breathtaking views of the lake and mountains.
-                </p>
+                <p>Enjoy aperitivo with drinks and canapés on the terrace.</p>
               </div>
             </div>
 
@@ -180,10 +177,7 @@ const TheDay = () => {
               </div>
               <div className="timeline-content">
                 <h3>Saluto di Mezzanotte</h3>
-                <p>
-                  Tutti a casa come Cenerentola! Midnight farewell—everyone home
-                  like Cinderella!
-                </p>
+                <p>Midnight farewell - everyone goes home like Cinderella!</p>
               </div>
             </div>
           </div>
