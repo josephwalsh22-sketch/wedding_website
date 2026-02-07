@@ -1,8 +1,13 @@
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../translations/translations";
 import "./Accommodation.scss";
 import villaRoomView from "../images/wedding backgrounds/villa-room-view.webp";
 
 const Accommodation = () => {
+  const { language } = useLanguage();
+  const t = translations[language].accommodation;
+
   return (
     <div className="accommodation-page">
       <div
@@ -10,33 +15,22 @@ const Accommodation = () => {
         style={{ backgroundImage: `url(${villaRoomView})` }}
       >
         <div className="header-overlay">
-          <h1>Accommodation</h1>
-          <p className="header-subtitle">Where to Stay in Lake Como</p>
+          <h1>{t.title}</h1>
+          <p className="header-subtitle">{t.subtitle}</p>
         </div>
       </div>
 
       <section className="intro-section">
         <div className="container">
-          <p className="intro-text">
-            Lake Como offers a wonderful selection of accommodations, from
-            luxurious lakeside hotels to charming vacation apartments. Our
-            wedding planner curated options to help you find the perfect place
-            to stay during our celebration.
-          </p>
-          <p className="intro-text">
-            We recommend spending the night of the wedding in Como city, because
-            public transport typically stops at midnight. The villa is easily
-            reachable on foot from almost any part of the city.
-          </p>
+          <p className="intro-text">{t.introText1}</p>
+          <p className="intro-text">{t.introText2}</p>
         </div>
       </section>
 
       <section className="hotels-section">
         <div className="container">
-          <h2 className="section-title">Recommended Hotels</h2>
-          <p className="section-subtitle">
-            Elegant accommodations with stunning lake views
-          </p>
+          <h2 className="section-title">{t.hotelsTitle}</h2>
+          <p className="section-subtitle">{t.hotelsSubtitle}</p>
 
           <div className="hotel-grid">
             <div className="hotel-card">
@@ -65,7 +59,7 @@ const Accommodation = () => {
                   rel="noopener noreferrer"
                   className="hotel-link"
                 >
-                  Visit Website →
+                  {t.visitWebsite}
                 </a>
               </div>
             </div>
@@ -96,7 +90,7 @@ const Accommodation = () => {
                   rel="noopener noreferrer"
                   className="hotel-link"
                 >
-                  Visit Website →
+                  {t.visitWebsite}
                 </a>
               </div>
             </div>
@@ -126,7 +120,7 @@ const Accommodation = () => {
                   rel="noopener noreferrer"
                   className="hotel-link"
                 >
-                  Visit Website →
+                  {t.visitWebsite}
                 </a>
               </div>
             </div>
@@ -156,7 +150,7 @@ const Accommodation = () => {
                   rel="noopener noreferrer"
                   className="hotel-link"
                 >
-                  Visit Website →
+                  {t.visitWebsite}
                 </a>
               </div>
             </div>
@@ -166,10 +160,8 @@ const Accommodation = () => {
 
       <section className="apartments-section">
         <div className="container">
-          <h2 className="section-title">Recommended Apartments</h2>
-          <p className="section-subtitle">
-            Spacious apartments perfect for families or groups
-          </p>
+          <h2 className="section-title">{t.apartmentsTitle}</h2>
+          <p className="section-subtitle">{t.apartmentsSubtitle}</p>
 
           <div className="hotel-grid">
             <div className="hotel-card">
@@ -300,10 +292,8 @@ const Accommodation = () => {
 
       <section className="other-sources-section">
         <div className="container">
-          <h2 className="section-title">Other Sources</h2>
-          <p className="section-subtitle">
-            Additional resources for finding accommodation in Lake Como
-          </p>
+          <h2 className="section-title">{t.otherSourcesTitle}</h2>
+          <p className="section-subtitle">{t.otherSourcesText}</p>
 
           <div className="sources-grid">
             <div className="source-card">
@@ -319,7 +309,7 @@ const Accommodation = () => {
                 rel="noopener noreferrer"
                 className="hotel-link"
               >
-                Visit Website →
+                {t.visitWebsite}
               </a>
             </div>
 
@@ -336,7 +326,7 @@ const Accommodation = () => {
                 rel="noopener noreferrer"
                 className="hotel-link"
               >
-                Visit Website →
+                {t.visitWebsite}
               </a>
             </div>
 
@@ -353,7 +343,7 @@ const Accommodation = () => {
                 rel="noopener noreferrer"
                 className="hotel-link"
               >
-                Visit Website →
+                {t.visitWebsite}
               </a>
             </div>
           </div>

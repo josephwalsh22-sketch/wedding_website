@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: $spacing-md;
 
     @media (max-width: $breakpoint-mobile) {
       flex-direction: column;
@@ -88,6 +89,30 @@
           }
         }
       }
+    }
+  }
+
+  .language-toggle {
+    background: transparent;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    font-family: $font-secondary;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $text-light;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      margin-top: $spacing-xs;
     }
   }
 }

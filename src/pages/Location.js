@@ -1,4 +1,6 @@
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../translations/translations";
 import "./Location.scss";
 import varennaPanorama from "../images/varenna-panorama.webp";
 import lakeBellagio from "../images/lake-como-bellagio.webp";
@@ -14,6 +16,9 @@ import comoCity from "../images/como-city.webp";
 import brunate from "../images/brunate.webp";
 
 const Location = () => {
+  const { language } = useLanguage();
+  const t = translations[language].location;
+
   return (
     <div className="lakecomo-page">
       <div
@@ -21,28 +26,20 @@ const Location = () => {
         style={{ backgroundImage: `url(${varennaPanorama})` }}
       >
         <div className="header-overlay">
-          <h1>Lake Como</h1>
-          <p className="header-subtitle">Explore the Area</p>
+          <h1>{t.title}</h1>
+          <p className="header-subtitle">{t.subtitle}</p>
         </div>
       </div>
 
       <section className="intro-section">
         <div className="container">
-          <p className="intro-text">
-            Lake Como is one of Italy's most enchanting destinations, nestled in
-            the foothills of the Alps. Known for its dramatic scenery, elegant
-            villas, and charming lakeside towns, it has been a retreat for
-            artists, writers, and celebrities for centuries. Whether you're
-            exploring the cobblestone streets of Como city, taking a boat to
-            picturesque villages, or simply enjoying an aperitivo by the water,
-            Lake Como offers unforgettable experiences at every turn.
-          </p>
+          <p className="intro-text">{t.introText}</p>
         </div>
       </section>
 
       <section className="exploring-section">
         <div className="container">
-          <h2 className="section-title">Exploring Como City</h2>
+          <h2 className="section-title">{t.exploringComoTitle}</h2>
 
           <div className="content-with-image">
             <div className="floating-image-right">
@@ -54,21 +51,9 @@ const Location = () => {
               />
             </div>
 
-            <p>
-              Como is a pretty little city nestled amongst the foothills of the
-              Alps, with the stunning backdrop of Lake Como creating a
-              picturesque setting. The historic center is a delightful maze of
-              narrow cobblestone streets, lined with elegant clothes shops,
-              inviting cafes, lively bars, and authentic restaurants.
-            </p>
+            <p>{t.comoPara1}</p>
 
-            <p>
-              Take a leisurely walk along the lakefront promenade, where you can
-              enjoy spectacular views all the way to the charming village of
-              Cernobbio—an easy and scenic stroll. Visit the magnificent Duomo
-              di Como, the city's historic cathedral that beautifully blends
-              Gothic and Renaissance architecture.
-            </p>
+            <p>{t.comoPara2}</p>
 
             <div className="floating-image-left">
               <img
@@ -79,16 +64,10 @@ const Location = () => {
               />
             </div>
 
-            <p>
-              For breathtaking panoramic views, take the funicular railway up to
-              Brunate, a hillside village offering stunning vistas of the lake
-              and surrounding mountains. Art and history enthusiasts can explore
-              Como's beautiful villas, such as the neoclassical Villa Olmo with
-              its lakeside gardens and rotating art exhibitions.
-            </p>
+            <p>{t.comoPara3}</p>
           </div>
 
-          <h3 className="subsection-title">Recommended Restaurants & Bars</h3>
+          <h3 className="subsection-title">{t.restaurantsTitle}</h3>
 
           <div className="recommendations-grid">
             <div className="recommendation-card">
@@ -162,15 +141,9 @@ const Location = () => {
 
       <section className="recommended-plates-section">
         <div className="container">
-          <h3 className="subsection-title">Recommended Plates</h3>
+          <h3 className="subsection-title">{t.recommendedPlatesTitle}</h3>
 
-          <p className="intro-text">
-            Como's cuisine reflects its location in the foothills of the Alps,
-            blending mountain and alpine traditions with northern Italian
-            flavors. The region is known for hearty, rustic dishes that showcase
-            local ingredients like polenta, lake fish, and rich meats. Here are
-            some must-try traditional dishes during your visit:
-          </p>
+          <p className="intro-text">{t.platesIntro}</p>
 
           <div className="plates-grid">
             <div className="plate-card">
@@ -275,7 +248,7 @@ const Location = () => {
 
       <section className="exploring-lake-section">
         <div className="container">
-          <h2 className="section-title">Exploring Lake Como</h2>
+          <h2 className="section-title">{t.exploringLakeTitle}</h2>
 
           <div className="content-with-image">
             <div className="floating-image-left">
@@ -287,20 +260,9 @@ const Location = () => {
               />
             </div>
 
-            <p>
-              Lake Como is dotted with picturesque villages, all easily
-              accessible by boat from the ferry terminal in Como city. Each
-              village offers its own unique charm and character, making boat
-              hopping a delightful way to explore the region.
-            </p>
+            <p>{t.lakePara1}</p>
 
-            <p>
-              Bellagio, the main tourist attraction, is known as the "Pearl of
-              Lake Como" and sits at the point where the lake splits into two
-              branches. This beautiful village enchants visitors with its
-              winding cobblestone streets, colorful buildings, elegant gardens,
-              and stunning lakeside views.
-            </p>
+            <p>{t.lakePara2}</p>
 
             <div className="floating-image-right">
               <img
@@ -311,21 +273,9 @@ const Location = () => {
               />
             </div>
 
-            <p>
-              Closer to Como, you'll find charming Torno, a very pretty village
-              perfect for a peaceful visit, and Cernobbio with its lovely
-              lakefront promenade. Further up the lake, Bellano features a
-              dramatic large waterfall, while Varenna captivates with its
-              beautiful waterfront lined with pastel-colored houses.
-            </p>
+            <p>{t.lakePara3}</p>
 
-            <p>
-              For a unique cultural experience, visit the historic Abbazia
-              Cistercense di Santa Maria di Piona, a Cistercian monastery high
-              up the lake dating back to 1138. This peaceful sanctuary offers a
-              glimpse into centuries of monastic life and stunning views of the
-              surrounding landscape.
-            </p>
+            <p>{t.lakePara4}</p>
           </div>
         </div>
       </section>
@@ -333,13 +283,8 @@ const Location = () => {
       <section className="transport-section">
         <div className="container">
           <div className="travel-card local-transport-card">
-            <h2>Local Transportation</h2>
-            <p className="section-intro">
-              Once at Lake Como, boats, buses and taxis are the primary means of
-              transportation between towns. The villa is easily accessible by
-              foot from anywhere in Como city and from the pier, if you stay in
-              another village and take a boat.
-            </p>
+            <h2>{t.localTransportTitle}</h2>
+            <p className="section-intro">{t.transportIntro}</p>
 
             <div className="content-with-image">
               <div className="floating-image-right">
@@ -351,41 +296,22 @@ const Location = () => {
               </div>
 
               <div className="transport-info">
-                <h3>Boats</h3>
-                <p>
-                  Boats are cheap and affordable. Every town has a pier and
-                  boats are relatively frequent. There is a fast boat
-                  (hydrofoil) that is convenient if journeying higher up the
-                  lake (beyond Bellagio), but it sells out fast and you cannot
-                  book boat tickets online.
-                </p>
-                <p>
-                  If you plan to travel higher up the lake, you should get up
-                  early on the day and go to the pier to book the fast boat.
-                </p>
-                <p>The boat service typically ends at 22:00.</p>
+                <h3>{t.boatsTitle}</h3>
+                <p>{t.boatsPara1}</p>
+                <p>{t.boatsPara2}</p>
+                <p>{t.boatsPara3}</p>
               </div>
 
               <div className="transport-info">
-                <h3>Buses</h3>
-                <p>
-                  Buses are also a cheap and convenient way to travel around the
-                  lake. They are not as frequent as boats but they are a good
-                  option if you want to avoid the crowds at the pier.
-                </p>
-                <p>The bus service typically ends at 00:00.</p>
+                <h3>{t.busesTitle}</h3>
+                <p>{t.busesPara1}</p>
+                <p>{t.busesPara2}</p>
               </div>
 
               <div className="transport-info">
-                <h3>Taxis</h3>
-                <p>
-                  Taxis are readily available but very expensive. A fifteen
-                  minute journey can cost €60.
-                </p>
-                <p>
-                  Uber and other taxi-like services are not readily available or
-                  reliable in Como.
-                </p>
+                <h3>{t.taxisTitle}</h3>
+                <p>{t.taxisPara1}</p>
+                <p>{t.taxisPara2}</p>
               </div>
             </div>
           </div>

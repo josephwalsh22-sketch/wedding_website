@@ -1,8 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../translations/translations";
 import "./Navigation.scss";
 
 const Navigation = () => {
+  const { language, toggleLanguage } = useLanguage();
+  const t = translations[language].nav;
+
   return (
     <nav className="navigation">
       <div className="nav-container">
@@ -11,21 +16,24 @@ const Navigation = () => {
         </div>
         <ul className="nav-links">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">{t.home}</Link>
           </li>
           <li>
-            <Link to="/the-day">The Day</Link>
+            <Link to="/the-day">{t.theDay}</Link>
           </li>
           <li>
-            <Link to="/getting-there">Getting There</Link>
+            <Link to="/getting-there">{t.gettingThere}</Link>
           </li>
           <li>
-            <Link to="/accommodation">Accommodation</Link>
+            <Link to="/accommodation">{t.accommodation}</Link>
           </li>
           <li>
-            <Link to="/location">Lake Como</Link>
+            <Link to="/location">{t.lakeComo}</Link>
           </li>
         </ul>
+        <button className="language-toggle" onClick={toggleLanguage}>
+          {language === "en" ? "IT" : "EN"}
+        </button>
       </div>
     </nav>
   );

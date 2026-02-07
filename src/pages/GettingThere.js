@@ -1,9 +1,14 @@
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../translations/translations";
 import "./GettingThere.scss";
 import comoCitySquare from "../images/wedding backgrounds/como-city-square.jpg";
 import airportDirections from "../images/airport-directions.webp";
 
 const GettingThere = () => {
+  const { language } = useLanguage();
+  const t = translations[language].gettingThere;
+
   return (
     <div className="getting-there-page">
       <div
@@ -11,22 +16,15 @@ const GettingThere = () => {
         style={{ backgroundImage: `url(${comoCitySquare})` }}
       >
         <div className="header-overlay">
-          <h1>Getting There</h1>
-          <p className="header-subtitle">Travel Information for Lake Como</p>
+          <h1>{t.title}</h1>
+          <p className="header-subtitle">{t.subtitle}</p>
         </div>
       </div>
 
       <section className="intro-section">
         <div className="container">
-          <p className="intro-text">
-            Lake Como is easily accessible from Milan and other major European
-            cities. Here's everything you need to know about traveling to our
-            wedding.
-          </p>
-          <p className="intro-text">
-            Cars can be rented at airports. If you rent a car when booking your
-            airline ticket, it is much cheaper.
-          </p>
+          <p className="intro-text">{t.introText1}</p>
+          <p className="intro-text">{t.introText2}</p>
         </div>
       </section>
 
@@ -44,79 +42,50 @@ const GettingThere = () => {
           <div className="travel-cards">
             <div className="travel-card air-travel-card">
               <h2>
-                By Air
+                {t.byAir}
                 <span className="travel-icon">✈️</span>
               </h2>
 
               <div className="airport-info">
-                <h3>Milan Malpensa Airport (MXP)</h3>
-                <p>
-                  The closest major international airport, approximately 1 hour
-                  from Lake Como. Direct flights available from most major
-                  cities worldwide.
-                </p>
+                <h3>{t.malpensaTitle}</h3>
+                <p>{t.malpensaText}</p>
               </div>
 
               <div className="airport-info">
-                <h3>Milan Linate Airport (LIN)</h3>
-                <p>
-                  Closer to Milan city center, about 1 hour by car from Lake
-                  Como. Good option for European flights.
-                </p>
+                <h3>{t.linateTitle}</h3>
+                <p>{t.linateText}</p>
               </div>
 
               <div className="airport-info">
-                <h3>Milan Bergamo Airport (BGY)</h3>
-                <p>
-                  Popular with budget airlines, approximately 1 hour from Lake
-                  Como. Often has competitive fares from European cities.
-                </p>
+                <h3>{t.bergamoTitle}</h3>
+                <p>{t.bergamoText}</p>
               </div>
             </div>
 
             <div className="travel-card train-travel-card">
               <h2>
-                By Train
+                {t.byTrain}
                 <span className="travel-icon">🚂</span>
               </h2>
 
               <div className="train-info">
-                <h3>From Milan Malpensa Airport</h3>
-                <p>
-                  Take the train from Malpensa to Milano Centrale, then connect
-                  to Como. Total journey approximately 1 hour. Alternatively,
-                  take the train to Mendrisio in Switzerland and transfer to
-                  Como Lago.
-                </p>
+                <h3>{t.fromMalpensaTitle}</h3>
+                <p>{t.fromMalpensaText}</p>
               </div>
 
               <div className="train-info">
-                <h3>From Milan Linate Airport</h3>
-                <p>
-                  Take the metro from Linate to San Babila (blue line), change
-                  to the red line to reach Milano Cadorna station (approximately
-                  15 minutes). From Cadorna, take the train to Como Lago
-                  (approximately 45 minutes).
-                </p>
+                <h3>{t.fromLinateTitle}</h3>
+                <p>{t.fromLinateText}</p>
               </div>
 
               <div className="train-info">
-                <h3>From Milan Bergamo Airport</h3>
-                <p>
-                  Take the airport bus to Milano Centrale station (approximately
-                  1 hour). From Milano Centrale, take the train to Como
-                  (approximately 1 hour).
-                </p>
+                <h3>{t.fromBergamoTitle}</h3>
+                <p>{t.fromBergamoText}</p>
               </div>
 
               <div className="train-info">
-                <h3>Direct to Como</h3>
-                <p>
-                  Como has two main train stations: Como San Giovanni (for
-                  trains from Milano Centrale) and Como Lago (for trains from
-                  Milano Cadorna). Como Lago is closer to the city center and
-                  the lakefront.
-                </p>
+                <h3>{t.directToComoTitle}</h3>
+                <p>{t.directToComoText}</p>
               </div>
             </div>
           </div>

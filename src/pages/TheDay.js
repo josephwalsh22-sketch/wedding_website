@@ -1,4 +1,6 @@
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../translations/translations";
 import "./TheDay.scss";
 import villaWithLights from "../images/wedding backgrounds/villa-with-lights.webp";
 import villaAboveHigher from "../images/wedding backgrounds/villa-above-higher.webp";
@@ -7,6 +9,9 @@ import villaSide from "../images/wedding backgrounds/villa-side.webp";
 import villaChairsInside from "../images/wedding backgrounds/villa-chairs-inside.webp";
 
 const TheDay = () => {
+  const { language } = useLanguage();
+  const t = translations[language].theDay;
+
   return (
     <div className="theday-page">
       <div
@@ -14,37 +19,26 @@ const TheDay = () => {
         style={{ backgroundImage: `url(${villaAboveHigher})` }}
       >
         <div className="header-overlay">
-          <h1>The Day</h1>
-          <p className="header-subtitle">17th October 2026</p>
+          <h1>{t.title}</h1>
+          <p className="header-subtitle">{t.subtitle}</p>
         </div>
       </div>
 
       <section className="intro-section">
         <div className="container">
-          <p className="intro-text">
-            Join us for a day of celebration, love, and unforgettable memories
-            at our beautiful Lake Como wedding. Here's what to expect on our
-            special day.
-          </p>
+          <p className="intro-text">{t.introText}</p>
         </div>
       </section>
 
       <section className="venue-section">
         <div className="container">
-          <h2 className="section-title">The Venue</h2>
+          <h2 className="section-title">{t.venue}</h2>
 
-          <p className="venue-description">
-            Our wedding will take place at the stunning Villa Parravicini, a
-            historic 18th-century villa nestled in the heart of Como city,
-            overlooking the magnificent Lake Como. This elegant neoclassical
-            villa features beautiful terraced gardens, breathtaking lake views,
-            and timeless Italian architecture—the perfect romantic setting for
-            our special day.
-          </p>
+          <p className="venue-description">{t.venueDescription}</p>
 
           <div className="venue-address">
-            <p>Villa Parravicini Revel</p>
-            <p>Via Museo Giovio, 6, 22100 Como CO, Italy</p>
+            <p>{t.venueTitle}</p>
+            <p>{t.venueAddress}</p>
           </div>
 
           <div className="venue-images">
@@ -82,102 +76,84 @@ const TheDay = () => {
 
       <section className="timeline-section">
         <div className="container">
-          <h2 className="section-title">Schedule of Events</h2>
-          <p className="section-subtitle">
-            A day filled with love, laughter, and celebration
-          </p>
+          <h2 className="section-title">{t.scheduleTitle}</h2>
+          <p className="section-subtitle">{t.scheduleSubtitle}</p>
 
           <div className="timeline">
             <div className="timeline-item">
               <div className="timeline-time">
                 <span className="time-icon">🥂</span>
-                <span className="time-text">15:30</span>
+                <span className="time-text">{t.welcomeTime}</span>
               </div>
               <div className="timeline-content">
-                <h3>Welcome</h3>
-                <p>
-                  Welcome to Villa Parravicini Revel! Join us for a welcome
-                  drink as you arrive and take in the surroundings.
-                </p>
+                <h3>{t.welcome}</h3>
+                <p>{t.welcomeText}</p>
               </div>
             </div>
 
             <div className="timeline-item">
               <div className="timeline-time">
                 <span className="time-icon">💍</span>
-                <span className="time-text">16:15</span>
+                <span className="time-text">{t.ceremonyTime}</span>
               </div>
               <div className="timeline-content">
-                <h3>Ceremony</h3>
-                <p>
-                  Join us for our symbolic ceremony at the villa, overlooking
-                  Lake Como.
-                </p>
+                <h3>{t.ceremony}</h3>
+                <p>{t.ceremonyText}</p>
               </div>
             </div>
 
             <div className="timeline-item">
               <div className="timeline-time">
                 <span className="time-icon">🍾</span>
-                <span className="time-text">16:45</span>
+                <span className="time-text">{t.aperitifTime}</span>
               </div>
               <div className="timeline-content">
-                <h3>Aperitif</h3>
-                <p>Enjoy aperitivo with drinks and canapés on the terrace.</p>
+                <h3>{t.aperitif}</h3>
+                <p>{t.aperitifText}</p>
               </div>
             </div>
 
             <div className="timeline-item">
               <div className="timeline-time">
                 <span className="time-icon">🍽️</span>
-                <span className="time-text">19:00</span>
+                <span className="time-text">{t.dinnerTime}</span>
               </div>
               <div className="timeline-content">
-                <h3>Dinner</h3>
-                <p>
-                  A delicious Italian feast awaits! Enjoy a multi-course dinner
-                  featuring local specialties and fine wines.
-                </p>
+                <h3>{t.dinner}</h3>
+                <p>{t.dinnerText}</p>
               </div>
             </div>
 
             <div className="timeline-item">
               <div className="timeline-time">
                 <span className="time-icon">🎂</span>
-                <span className="time-text">21:00</span>
+                <span className="time-text">{t.cakeTime}</span>
               </div>
               <div className="timeline-content">
-                <h3>Cutting of the Cake</h3>
-                <p>
-                  Join us for the traditional cutting of the wedding cake and a
-                  sweet toast to celebrate.
-                </p>
+                <h3>{t.cake}</h3>
+                <p>{t.cakeText}</p>
               </div>
             </div>
 
             <div className="timeline-item">
               <div className="timeline-time">
                 <span className="time-icon">💃</span>
-                <span className="time-text">21:30</span>
+                <span className="time-text">{t.partyTime}</span>
               </div>
               <div className="timeline-content">
-                <h3>Party & Open Bar</h3>
-                <p>
-                  Let's dance the night away! Join us on the dance floor for an
-                  evening of music, celebration, and unforgettable moments with
-                  an open bar.
-                </p>
+                <h3>{t.party}</h3>
+                <p>{t.partyText}</p>
               </div>
             </div>
 
             <div className="timeline-item">
               <div className="timeline-time">
                 <span className="time-icon">🌙</span>
-                <span className="time-text">24:00</span>
+                <span className="time-text">{t.midnightTime}</span>
               </div>
               <div className="timeline-content">
-                <h3>Saluto di Mezzanotte</h3>
-                <p>Midnight farewell - everyone goes home like Cinderella!</p>
+                <h3>{t.midnight}</h3>
+                <p>{t.midnightText}</p>
               </div>
             </div>
           </div>
@@ -189,47 +165,32 @@ const TheDay = () => {
           <div className="details-grid">
             <div className="detail-card">
               <div className="detail-icon">👔</div>
-              <h3>Dress Code</h3>
-              <p>Formal attire, please.</p>
+              <h3>{t.dressCode}</h3>
+              <p>{t.dressCodeText}</p>
             </div>
 
             <div className="detail-card">
               <div className="detail-icon">📸</div>
-              <h3>Photography</h3>
-              <p>
-                We have a professional photographer capturing our special day.
-                Feel free to take photos, but we kindly ask for an unplugged
-                ceremony.
-              </p>
+              <h3>{t.photography}</h3>
+              <p>{t.photographyText}</p>
             </div>
 
             <div className="detail-card">
               <div className="detail-icon">🎁</div>
-              <h3>Gifts</h3>
-              <p>
-                Your presence is the greatest gift! If you wish to give
-                something, we would appreciate a donation to our home renovation
-                fund.
-              </p>
+              <h3>{t.gifts}</h3>
+              <p>{t.giftsText}</p>
             </div>
 
             <div className="detail-card">
               <div className="detail-icon">🌤️</div>
-              <h3>Weather</h3>
-              <p>
-                October in Lake Como is typically mild and pleasant. We
-                recommend bringing a light jacket or wrap for the evening.
-              </p>
+              <h3>{t.weather}</h3>
+              <p>{t.weatherText}</p>
             </div>
 
             <div className="detail-card">
               <div className="detail-icon">🍽️</div>
-              <h3>Menu</h3>
-              <p>
-                Expect a full traditional Italian food and wine and a
-                full-course dinner! Please let us know of any dietary
-                requirements in advance!
-              </p>
+              <h3>{t.menu}</h3>
+              <p>{t.menuText}</p>
             </div>
           </div>
         </div>
