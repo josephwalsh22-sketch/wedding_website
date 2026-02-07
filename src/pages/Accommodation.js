@@ -3,6 +3,9 @@ import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../translations/translations";
 import "./Accommodation.scss";
 import villaRoomView from "../images/wedding backgrounds/villa-room-view.webp";
+import myHomesInComoLogo from "../images/my-homes-in-como.webp";
+import bookingComLogo from "../images/booking-com.webp";
+import airbnbLogo from "../images/air-bnb.webp";
 
 const Accommodation = () => {
   const { language } = useLanguage();
@@ -297,7 +300,13 @@ const Accommodation = () => {
 
           <div className="sources-grid">
             <div className="source-card">
-              <div className="source-icon">🏠</div>
+              <div className="source-logo">
+                <img
+                  src={myHomesInComoLogo}
+                  alt="My Home In Como"
+                  loading="lazy"
+                />
+              </div>
               <h3>My Home In Como</h3>
               <p>
                 Curated selection of quality apartments in Como city center and
@@ -314,7 +323,9 @@ const Accommodation = () => {
             </div>
 
             <div className="source-card">
-              <div className="source-icon">🏨</div>
+              <div className="source-logo">
+                <img src={bookingComLogo} alt="Booking.com" loading="lazy" />
+              </div>
               <h3>Booking.com</h3>
               <p>
                 Wide range of hotels, apartments, and B&Bs with verified reviews
@@ -331,7 +342,9 @@ const Accommodation = () => {
             </div>
 
             <div className="source-card">
-              <div className="source-icon">🌍</div>
+              <div className="source-logo">
+                <img src={airbnbLogo} alt="Airbnb" loading="lazy" />
+              </div>
               <h3>Airbnb</h3>
               <p>
                 Unique homes and experiences hosted by locals throughout the
@@ -360,8 +373,8 @@ const Accommodation = () => {
                 <div className="tip-content">
                   <h3>Book Early</h3>
                   <p>
-                    Lake Como is a popular destination, especially in summer. We
-                    recommend securing your accommodation as soon as possible.
+                    Lake Como is a popular tourist destination. We recommend
+                    securing your accommodation as soon as possible.
                   </p>
                 </div>
               </div>

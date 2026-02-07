@@ -22,9 +22,75 @@ const RSVP = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: Implement form submission logic
-    console.log("RSVP submitted:", formData);
-    alert("Thank you for your RSVP! (Form submission to be implemented)");
+
+    console.log("Form submitted with data:", formData);
+
+    // Prepare the data to send
+    const attendingValue =
+      formData.attending === "yes"
+        ? "Yes,  I'll be there"
+        : "Sorry, can't make it";
+
+    console.log("Attending value:", attendingValue);
+    console.log("Name:", formData.name);
+    console.log("Dietary:", formData.dietaryRestrictions);
+    console.log("Message:", formData.message);
+
+    // Create a hidden iframe to submit the form
+    const iframe = document.createElement("iframe");
+    iframe.name = "hidden_iframe";
+    iframe.style.display = "none";
+    iframe.onload = () => {
+      console.log("Form submitted successfully to Google Forms");
+    };
+    document.body.appendChild(iframe);
+
+    // Create a form element
+    const form = document.createElement("form");
+    form.action =
+      "https://docs.google.com/forms/d/e/1FAIpQLScY6uhxRAkvqdRtNd76sUvXSgbZKXZCmdX9FG0kaU5M3_vQ4w/formResponse";
+    form.method = "POST";
+    form.target = "hidden_iframe";
+
+    // Add form fields matching Google Form exactly
+    const fields = {
+      "entry.877086558": attendingValue,
+      "entry.1498135098": formData.name,
+      "entry.2606285": formData.dietaryRestrictions || "",
+      "entry.920658279": formData.message || "",
+    };
+
+    console.log("Fields being sent:", fields);
+
+    Object.keys(fields).forEach((key) => {
+      const input = document.createElement("input");
+      input.type = "hidden";
+      input.name = key;
+      input.value = fields[key];
+      form.appendChild(input);
+    });
+
+    document.body.appendChild(form);
+
+    console.log("Submitting form to Google...");
+    form.submit();
+
+    // Clean up
+    setTimeout(() => {
+      document.body.removeChild(form);
+      document.body.removeChild(iframe);
+      console.log("Cleanup complete");
+    }, 2000);
+
+    alert("Thank you for your RSVP! We'll see you there! 💒");
+    setFormData({
+      name: "",
+      email: "",
+      guests: "1",
+      attending: "yes",
+      dietaryRestrictions: "",
+      message: "",
+    });
   };
 
   return (

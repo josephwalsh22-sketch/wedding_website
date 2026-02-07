@@ -2,9 +2,8 @@ import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../translations/translations";
 import "./TheDay.scss";
-import villaWithLights from "../images/wedding backgrounds/villa-with-lights.webp";
+
 import villaAboveHigher from "../images/wedding backgrounds/villa-above-higher.webp";
-import villaAbove from "../images/wedding backgrounds/villa-above.webp";
 import villaSide from "../images/wedding backgrounds/villa-side.webp";
 import villaChairsInside from "../images/wedding backgrounds/villa-chairs-inside.webp";
 

@@ -393,6 +393,26 @@
       line-height: 1;
     }
 
+    .source-logo {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: $spacing-md;
+
+      img {
+        max-height: 100%;
+        max-width: 200px;
+        width: auto;
+        object-fit: contain;
+      }
+
+      img[alt="My Home In Como"] {
+        max-width: 280px;
+        max-height: 120%;
+      }
+    }
+
     h3 {
       font-family: $font-primary;
       font-size: 1.6rem;

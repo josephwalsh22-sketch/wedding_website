@@ -30,6 +30,9 @@ const Navigation = () => {
           <li>
             <Link to="/location">{t.lakeComo}</Link>
           </li>
+          <li>
+            <Link to="/rsvp">{t.rsvp}</Link>
+          </li>
         </ul>
         <button className="language-toggle" onClick={toggleLanguage}>
           {language === "en" ? "IT" : "EN"}

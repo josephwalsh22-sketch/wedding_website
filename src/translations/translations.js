@@ -7,6 +7,7 @@ export const translations = {
       gettingThere: "Getting There",
       accommodation: "Accommodation",
       lakeComo: "Lake Como",
+      rsvp: "RSVP",
     },
     // Home Page
     home: {
@@ -265,6 +266,7 @@ export const translations = {
       gettingThere: "Come Arrivare",
       accommodation: "Alloggio",
       lakeComo: "Lago di Como",
+      rsvp: "RSVP",
     },
     // Home Page
     home: {
