@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wedding_website/static/css/main.4f256ccf.css",
-    "main.js": "/wedding_website/static/js/main.951dfe33.js",
+    "main.js": "/wedding_website/static/js/main.999ef210.js",
     "static/js/453.08501e96.chunk.js": "/wedding_website/static/js/453.08501e96.chunk.js",
     "static/media/villa-como-city.webp": "/wedding_website/static/media/villa-como-city.84bef7cd48565640f065.webp",
     "static/media/varenna-panorama.webp": "/wedding_website/static/media/varenna-panorama.6a5bc84e93c1512b2bec.webp",
@@ -27,11 +27,11 @@
     "static/media/risotto.jpeg": "/wedding_website/static/media/risotto.ca1225a95b04258c556a.jpeg",
     "index.html": "/wedding_website/index.html",
     "main.4f256ccf.css.map": "/wedding_website/static/css/main.4f256ccf.css.map",
-    "main.951dfe33.js.map": "/wedding_website/static/js/main.951dfe33.js.map",
+    "main.999ef210.js.map": "/wedding_website/static/js/main.999ef210.js.map",
     "453.08501e96.chunk.js.map": "/wedding_website/static/js/453.08501e96.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f256ccf.css",
-    "static/js/main.951dfe33.js"
+    "static/js/main.999ef210.js"
   ]
 }
