@@ -155,9 +155,79 @@ export const translations = {
       comoPara3:
         "For breathtaking panoramic views, take the funicular railway up to Brunate, a hillside village offering stunning vistas of the lake and surrounding mountains. Art and history enthusiasts can explore Como's beautiful villas, such as the neoclassical Villa Olmo with its lakeside gardens and rotating art exhibitions.",
       restaurantsTitle: "Recommended Restaurants & Bars",
+      restaurants: [
+        {
+          name: "Bar Krudo",
+          type: "Italian Bar & Cafe",
+          description:
+            "Located on the beautiful Piazza Alessandro Volta, this Italian bar and cafe is perfect for drinks and casual dining with a view of the lake.",
+        },
+        {
+          name: "Osteria del Gallo",
+          type: "Traditional Osteria",
+          description:
+            "One of Como's last true osterias, run for 41 years by Giuseppe De Toma and family. Authentic old-world atmosphere with daily changing menu based on seasonal ingredients. Specialties include fresh ravioli, pizzoccheri, braised meats with polenta, lake fish, and homemade desserts. Extensive wine selection.",
+        },
+        {
+          name: "Bar Hemingway",
+          type: "Cocktail Bar & Restaurant",
+          description:
+            "A cozy, intimate cocktail bar that's been a historical landmark for over 20 years. Offers seasonal menu with selected background music creating a unique atmosphere. Features a cozy gazebo on beautiful Piazza Volta during summer.",
+        },
+        {
+          name: "Pronobis",
+          type: "Wine Shop & Eatery",
+          description:
+            "A wine shop and eatery specializing in wines from small Italian producers, featuring natural, organic, and biodynamic options. Kitchen open daily for lunch and Saturday evenings with seasonal menu. Also offers artisanal cheeses, cured meats, and local products.",
+        },
+        {
+          name: "Ristorante Osteria dal Pain",
+          type: "Traditional Local Cuisine",
+          description:
+            "A true institution in Como's local restaurant tradition with Lake Como as its backdrop. Offers authentic regional fare combining local ingredients with traditional Italian culinary excellence.",
+        },
+        {
+          name: "Caffè Maya",
+          type: "Café & Coffee Roastery",
+          description:
+            "Artisan coffee roastery with multiple locations in Como. Perfect for a quick drink at the bar or to enjoy their famous Italian hot chocolate. Known for quality coffee and cozy atmosphere.",
+        },
+      ],
       recommendedPlatesTitle: "Recommended Plates",
       platesIntro:
         "Como's cuisine reflects its location in the foothills of the Alps, blending mountain and alpine traditions with northern Italian flavors. The region is known for hearty, rustic dishes that showcase local ingredients like polenta, lake fish, and rich meats. Here are some must-try traditional dishes during your visit:",
+      plates: [
+        {
+          name: "Pizzoccheri",
+          description:
+            "A hearty buckwheat pasta dish from the nearby Valtellina valley, layered with potatoes, cabbage, garlic, and generous amounts of local cheese (usually Casera and Bitto), finished with butter and sage. Perfect for cooler mountain evenings.",
+        },
+        {
+          name: "Ossobuco",
+          description:
+            "Braised veal shanks cooked slowly in white wine, broth, and vegetables until the meat is fall-off-the-bone tender. Traditionally served with risotto alla milanese or polenta, and topped with gremolata (lemon zest, garlic, and parsley).",
+        },
+        {
+          name: "Risotto alla Milanese",
+          description:
+            "The iconic golden risotto from nearby Milan, colored and flavored with saffron. Creamy and luxurious, made with butter, Parmigiano-Reggiano, and bone marrow. Often served alongside ossobuco but delicious on its own.",
+        },
+        {
+          name: "Cotoletta alla Milanese",
+          description:
+            "A breaded veal cutlet, pounded thin and fried in butter until golden and crispy. Similar to Wiener schnitzel but with its own Milanese character. Simple, classic, and utterly satisfying.",
+        },
+        {
+          name: "Polenta",
+          description:
+            "A cornerstone of northern Italian mountain cuisine, this cornmeal porridge is served soft and creamy or cooled and grilled. Often accompanied by braised meats, mushrooms, or local cheeses. Look for polenta taragna, made with buckwheat flour for extra flavor.",
+        },
+        {
+          name: "Tagliatelle con Porcini",
+          description:
+            "Fresh ribbon pasta tossed with porcini mushrooms, a prized ingredient from the alpine forests. The earthy, aromatic mushrooms are typically sautéed with garlic, parsley, and a touch of cream or butter. A celebration of the region's foraging traditions and autumn harvest.",
+        },
+      ],
       exploringLakeTitle: "Exploring Lake Como",
       lakePara1:
         "Lake Como is dotted with picturesque villages, all easily accessible by boat from the ferry terminal in Como city. Each village offers its own unique charm and character, making boat hopping a delightful way to explore the region.",
@@ -346,9 +416,79 @@ export const translations = {
       comoPara3:
         "Per viste panoramiche mozzafiato, prendete la funicolare fino a Brunate, un villaggio collinare che offre viste stupende del lago e delle montagne circostanti. Gli appassionati d'arte e storia possono esplorare le bellissime ville di Como, come la neoclassica Villa Olmo con i suoi giardini sul lago e le mostre d'arte a rotazione.",
       restaurantsTitle: "Ristoranti e Bar Consigliati",
+      restaurants: [
+        {
+          name: "Bar Krudo",
+          type: "Bar e Caffè Italiano",
+          description:
+            "Situato sulla bellissima Piazza Alessandro Volta, questo bar e caffè italiano è perfetto per drink e pranzi informali con vista sul lago.",
+        },
+        {
+          name: "Osteria del Gallo",
+          type: "Osteria Tradizionale",
+          description:
+            "Una delle ultime vere osterie di Como, gestita da 41 anni da Giuseppe De Toma e famiglia. Atmosfera autentica del vecchio mondo con menu giornaliero che cambia in base agli ingredienti di stagione. Le specialità includono ravioli freschi, pizzoccheri, carni brasate con polenta, pesce di lago e dolci fatti in casa. Ampia selezione di vini.",
+        },
+        {
+          name: "Bar Hemingway",
+          type: "Cocktail Bar e Ristorante",
+          description:
+            "Un cocktail bar accogliente e intimo che è stato un punto di riferimento storico per oltre 20 anni. Offre un menu stagionale con musica di sottofondo selezionata che crea un'atmosfera unica. Dispone di un gazebo accogliente sulla bellissima Piazza Volta durante l'estate.",
+        },
+        {
+          name: "Pronobis",
+          type: "Enoteca e Ristorante",
+          description:
+            "Un'enoteca e ristorante specializzato in vini di piccoli produttori italiani, con opzioni naturali, biologiche e biodinamiche. Cucina aperta tutti i giorni a pranzo e il sabato sera con menu stagionale. Offre anche formaggi artigianali, salumi e prodotti locali.",
+        },
+        {
+          name: "Ristorante Osteria dal Pain",
+          type: "Cucina Locale Tradizionale",
+          description:
+            "Una vera istituzione nella tradizione dei ristoranti locali di Como con il Lago di Como come sfondo. Offre autentica cucina regionale che combina ingredienti locali con l'eccellenza culinaria italiana tradizionale.",
+        },
+        {
+          name: "Caffè Maya",
+          type: "Caffetteria e Torrefazione",
+          description:
+            "Torrefazione artigianale con più sedi a Como. Perfetto per un drink veloce al bar o per gustare la loro famosa cioccolata calda italiana. Conosciuto per il caffè di qualità e l'atmosfera accogliente.",
+        },
+      ],
       recommendedPlatesTitle: "Piatti Consigliati",
       platesIntro:
         "La cucina di Como riflette la sua posizione ai piedi delle Alpi, fondendo le tradizioni montane e alpine con i sapori del nord Italia. La regione è conosciuta per piatti sostanziosi e rustici che mettono in mostra ingredienti locali come polenta, pesce di lago e carni ricche. Ecco alcuni piatti tradizionali da provare assolutamente durante la vostra visita:",
+      plates: [
+        {
+          name: "Pizzoccheri",
+          description:
+            "Un sostanzioso piatto di pasta di grano saraceno dalla vicina Valtellina, stratificato con patate, verza, aglio e generose quantità di formaggio locale (solitamente Casera e Bitto), rifinito con burro e salvia. Perfetto per le serate di montagna più fresche.",
+        },
+        {
+          name: "Ossobuco",
+          description:
+            "Stinchi di vitello brasati cotti lentamente in vino bianco, brodo e verdure fino a quando la carne si stacca dall'osso. Tradizionalmente servito con risotto alla milanese o polenta, e guarnito con gremolata (scorza di limone, aglio e prezzemolo).",
+        },
+        {
+          name: "Risotto alla Milanese",
+          description:
+            "L'iconico risotto dorato della vicina Milano, colorato e aromatizzato con zafferano. Cremoso e lussuoso, fatto con burro, Parmigiano-Reggiano e midollo osseo. Spesso servito insieme all'ossobuco ma delizioso anche da solo.",
+        },
+        {
+          name: "Cotoletta alla Milanese",
+          description:
+            "Una cotoletta di vitello impanata, battuta sottile e fritta nel burro fino a diventare dorata e croccante. Simile alla Wiener schnitzel ma con il proprio carattere milanese. Semplice, classica e assolutamente soddisfacente.",
+        },
+        {
+          name: "Polenta",
+          description:
+            "Un pilastro della cucina montana del nord Italia, questa polenta di farina di mais viene servita morbida e cremosa o raffreddata e grigliata. Spesso accompagnata da carni brasate, funghi o formaggi locali. Cercate la polenta taragna, fatta con farina di grano saraceno per un sapore extra.",
+        },
+        {
+          name: "Tagliatelle con Porcini",
+          description:
+            "Pasta fresca a nastro condita con funghi porcini, un ingrediente pregiato delle foreste alpine. I funghi terrosi e aromatici sono tipicamente saltati con aglio, prezzemolo e un tocco di panna o burro. Una celebrazione delle tradizioni di raccolta della regione e del raccolto autunnale.",
+        },
+      ],
       exploringLakeTitle: "Esplorare il Lago di Como",
       lakePara1:
         "Il Lago di Como è punteggiato di villaggi pittoreschi, tutti facilmente accessibili in barca dal terminal dei traghetti nella città di Como. Ogni villaggio offre il proprio fascino e carattere unici, rendendo il giro in barca un modo delizioso per esplorare la regione.",
