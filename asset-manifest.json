@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wedding_website/static/css/main.98f5f6ab.css",
-    "main.js": "/wedding_website/static/js/main.022a1acb.js",
+    "main.js": "/wedding_website/static/js/main.21a849ed.js",
     "static/css/353.2a29daa8.chunk.css": "/wedding_website/static/css/353.2a29daa8.chunk.css",
     "static/js/353.25162ce5.chunk.js": "/wedding_website/static/js/353.25162ce5.chunk.js",
     "static/css/729.b4ce4894.chunk.css": "/wedding_website/static/css/729.b4ce4894.chunk.css",
@@ -13,7 +13,7 @@
     "static/css/274.3401fee9.chunk.css": "/wedding_website/static/css/274.3401fee9.chunk.css",
     "static/js/274.66d81a17.chunk.js": "/wedding_website/static/js/274.66d81a17.chunk.js",
     "static/css/449.86528827.chunk.css": "/wedding_website/static/css/449.86528827.chunk.css",
-    "static/js/449.37402a1b.chunk.js": "/wedding_website/static/js/449.37402a1b.chunk.js",
+    "static/js/449.9ee469c5.chunk.js": "/wedding_website/static/js/449.9ee469c5.chunk.js",
     "static/js/453.08501e96.chunk.js": "/wedding_website/static/js/453.08501e96.chunk.js",
     "static/media/villa-como-city.webp": "/wedding_website/static/media/villa-como-city.84bef7cd48565640f065.webp",
     "static/media/varenna-panorama.webp": "/wedding_website/static/media/varenna-panorama.6a5bc84e93c1512b2bec.webp",
@@ -41,7 +41,7 @@
     "static/media/risotto.jpeg": "/wedding_website/static/media/risotto.ca1225a95b04258c556a.jpeg",
     "index.html": "/wedding_website/index.html",
     "main.98f5f6ab.css.map": "/wedding_website/static/css/main.98f5f6ab.css.map",
-    "main.022a1acb.js.map": "/wedding_website/static/js/main.022a1acb.js.map",
+    "main.21a849ed.js.map": "/wedding_website/static/js/main.21a849ed.js.map",
     "353.2a29daa8.chunk.css.map": "/wedding_website/static/css/353.2a29daa8.chunk.css.map",
     "353.25162ce5.chunk.js.map": "/wedding_website/static/js/353.25162ce5.chunk.js.map",
     "729.b4ce4894.chunk.css.map": "/wedding_website/static/css/729.b4ce4894.chunk.css.map",
@@ -53,11 +53,11 @@
     "274.3401fee9.chunk.css.map": "/wedding_website/static/css/274.3401fee9.chunk.css.map",
     "274.66d81a17.chunk.js.map": "/wedding_website/static/js/274.66d81a17.chunk.js.map",
     "449.86528827.chunk.css.map": "/wedding_website/static/css/449.86528827.chunk.css.map",
-    "449.37402a1b.chunk.js.map": "/wedding_website/static/js/449.37402a1b.chunk.js.map",
+    "449.9ee469c5.chunk.js.map": "/wedding_website/static/js/449.9ee469c5.chunk.js.map",
     "453.08501e96.chunk.js.map": "/wedding_website/static/js/453.08501e96.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98f5f6ab.css",
-    "static/js/main.022a1acb.js"
+    "static/js/main.21a849ed.js"
   ]
 }
