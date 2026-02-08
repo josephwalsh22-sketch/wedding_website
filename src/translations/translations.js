@@ -184,12 +184,6 @@ export const translations = {
             "One of Como's last true osterias, run for 41 years by Giuseppe De Toma and family. Authentic old-world atmosphere with daily changing menu based on seasonal ingredients. Specialties include fresh ravioli, pizzoccheri, braised meats with polenta, lake fish, and homemade desserts. Extensive wine selection.",
         },
         {
-          name: "Bar Hemingway",
-          type: "Cocktail Bar & Restaurant",
-          description:
-            "A cozy, intimate cocktail bar that's been a historical landmark for over 20 years. Offers seasonal menu with selected background music creating a unique atmosphere. Features a cozy gazebo on beautiful Piazza Volta during summer.",
-        },
-        {
           name: "Pronobis",
           type: "Wine Shop & Eatery",
           description:
@@ -209,8 +203,10 @@ export const translations = {
         },
       ],
       recommendedPlatesTitle: "Recommended Plates",
-      platesIntro:
-        "Como's cuisine reflects its location in the foothills of the Alps, blending mountain and alpine traditions with northern Italian flavors. The region is known for hearty, rustic dishes that showcase local ingredients like polenta, lake fish, and rich meats. Here are some must-try traditional dishes during your visit:",
+      platesPara1:
+        "Como's cuisine reflects its location in the foothills of the Alps, blending mountain and alpine traditions with northern Italian flavors.",
+      platesPara2:
+        "The region is known for hearty, rustic dishes that showcase local ingredients like polenta, lake fish, and rich meats. Here are some must-try traditional dishes during your visit:",
       plates: [
         {
           name: "Pizzoccheri",
@@ -540,12 +536,6 @@ export const translations = {
             "Una delle ultime vere osterie di Como, gestita da 41 anni da Giuseppe De Toma e famiglia. Atmosfera autentica in stile tradizionale con menu giornaliero che cambia in base agli ingredienti di stagione. Le specialità includono ravioli freschi, pizzoccheri, carni brasate con polenta, pesce di lago e dolci fatti in casa. Ampia selezione di vini.",
         },
         {
-          name: "Bar Hemingway",
-          type: "Cocktail Bar e Ristorante",
-          description:
-            "Un cocktail bar accogliente e intimo, punto di riferimento storico per oltre 20 anni. Offre un menu stagionale con musica di sottofondo che crea un'atmosfera unica. Dispone di un gazebo accogliente sulla bellissima Piazza Volta durante l'estate.",
-        },
-        {
           name: "Pronobis",
           type: "Enoteca e Ristorante",
           description:
@@ -565,8 +555,10 @@ export const translations = {
         },
       ],
       recommendedPlatesTitle: "Piatti Consigliati",
-      platesIntro:
-        "La cucina di Como riflette la sua posizione ai piedi delle Alpi, fondendo le tradizioni montane e alpine con i sapori del nord Italia. La regione è conosciuta per piatti sostanziosi e rustici che mettono in mostra ingredienti locali come polenta, pesce di lago e carni ricche. Ecco alcuni piatti tradizionali da provare assolutamente durante la vostra visita:",
+      platesPara1:
+        "La cucina di Como riflette la sua posizione ai piedi delle Alpi, fondendo le tradizioni montane e alpine con i sapori del nord Italia.",
+      platesPara2:
+        "La regione è conosciuta per piatti sostanziosi e rustici che mettono in mostra ingredienti locali come polenta, pesce di lago e carni ricche. Ecco alcuni piatti tradizionali da provare assolutamente durante la vostra visita:",
       plates: [
         {
           name: "Pizzoccheri",

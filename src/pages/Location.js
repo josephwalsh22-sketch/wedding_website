@@ -85,7 +85,11 @@ const Location = () => {
         <div className="container">
           <h3 className="subsection-title">{t.recommendedPlatesTitle}</h3>
 
-          <p className="intro-text">{t.platesIntro}</p>
+          <div className="content-with-image">
+            <p>{t.platesPara1}</p>
+
+            <p>{t.platesPara2}</p>
+          </div>
 
           <div className="plates-grid">
             {t.plates.map((plate, index) => {
