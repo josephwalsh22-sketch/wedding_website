@@ -10,6 +10,7 @@ import airbnbLogo from "../images/air-bnb.webp";
 const Accommodation = () => {
   const { language } = useLanguage();
   const t = translations[language].accommodation;
+  const isItalian = language === "it";
 
   return (
     <div className="accommodation-page">
@@ -40,17 +41,20 @@ const Accommodation = () => {
               <div className="hotel-content">
                 <h3>Palace Hotel</h3>
                 <p className="hotel-description">
-                  An elegant palazzo liberty building in Como's historic center,
-                  directly on the lake. Features the renowned Antica Darsena
-                  restaurant and offers a perfect blend of historic charm and
-                  lakeside luxury.
+                  {isItalian
+                    ? "Un elegante palazzo in stile liberty nel centro storico di Como, direttamente affacciato sul lago. Ospita il rinomato ristorante Antica Darsena e offre un perfetto connubio tra fascino storico e lusso sul lago."
+                    : "An elegant palazzo liberty building in Como's historic center, directly on the lake. Features the renowned Antica Darsena restaurant and offers a perfect blend of historic charm and lakeside luxury."}
                 </p>
                 <div className="hotel-details">
                   <span className="detail-item">
-                    <span className="detail-icon">📍</span> Como Historic Center
+                    <span className="detail-icon">📍</span>{" "}
+                    {isItalian
+                      ? "Centro storico di Como"
+                      : "Como Historic Center"}
                   </span>
                   <span className="detail-item">
-                    <span className="detail-icon">🌊</span> On the Lake
+                    <span className="detail-icon">🌊</span>{" "}
+                    {isItalian ? "Direttamente sul lago" : "On the Lake"}
                   </span>
                   <span className="detail-item">
                     <span className="detail-icon">💰</span> $$$$$
@@ -71,9 +75,9 @@ const Accommodation = () => {
               <div className="hotel-content">
                 <h3>Albergo Terminus</h3>
                 <p className="hotel-description">
-                  A beautiful liberty building located on Lungo Lario Trieste,
-                  right on the lakefront in Como's historic center. Features the
-                  charming Bar delle Terme and offers stunning lake views.
+                  {isItalian
+                    ? "Un elegante edificio in stile liberty situato su Lungo Lario Trieste, proprio sul lungolago nel centro storico di Como. Ospita il caratteristico Bar delle Terme e offre splendide viste sul lago."
+                    : "A beautiful liberty building located on Lungo Lario Trieste, right on the lakefront in Como's historic center. Features the charming Bar delle Terme and offers stunning lake views."}
                 </p>
                 <div className="hotel-details">
                   <span className="detail-item">
@@ -81,7 +85,8 @@ const Accommodation = () => {
                     14
                   </span>
                   <span className="detail-item">
-                    <span className="detail-icon">🌊</span> Lakefront Location
+                    <span className="detail-icon">🌊</span>{" "}
+                    {isItalian ? "Posizione fronte lago" : "Lakefront Location"}
                   </span>
                   <span className="detail-item">
                     <span className="detail-icon">💰</span> $$$$
@@ -102,16 +107,20 @@ const Accommodation = () => {
               <div className="hotel-content">
                 <h3>Hotel Engadina</h3>
                 <p className="hotel-description">
-                  A welcoming 24-room hotel in Como city center, just 5 minutes
-                  from the train station and close to the lake. Perfect for
-                  exploring the city while enjoying comfortable accommodations.
+                  {isItalian
+                    ? "Un accogliente hotel di 24 camere nel centro di Como, a soli 5 minuti dalla stazione e vicino al lago. Perfetto per esplorare la città godendo di un alloggio confortevole."
+                    : "A welcoming 24-room hotel in Como city center, just 5 minutes from the train station and close to the lake. Perfect for exploring the city while enjoying comfortable accommodations."}
                 </p>
                 <div className="hotel-details">
                   <span className="detail-item">
-                    <span className="detail-icon">📍</span> Como City Center
+                    <span className="detail-icon">📍</span>{" "}
+                    {isItalian ? "Centro città di Como" : "Como City Center"}
                   </span>
                   <span className="detail-item">
-                    <span className="detail-icon">🚂</span> 5 min from station
+                    <span className="detail-icon">🚂</span>{" "}
+                    {isItalian
+                      ? "A 5 minuti dalla stazione"
+                      : "5 min from station"}
                   </span>
                   <span className="detail-item">
                     <span className="detail-icon">💰</span> $$$$$
@@ -132,16 +141,18 @@ const Accommodation = () => {
               <div className="hotel-content">
                 <h3>La Perla By Sedar</h3>
                 <p className="hotel-description">
-                  A collection of 12 stylish design apartments in Como center,
-                  near the lake. Features a rooftop terrace with stunning views
-                  and an on-site gelateria for authentic Italian gelato.
+                  {isItalian
+                    ? "Una collezione di 12 eleganti appartamenti di design nel centro di Como, vicino al lago. Dispone di una terrazza panoramica sul tetto con viste mozzafiato e di una gelateria interna per gustare il vero gelato italiano."
+                    : "A collection of 12 stylish design apartments in Como center, near the lake. Features a rooftop terrace with stunning views and an on-site gelateria for authentic Italian gelato."}
                 </p>
                 <div className="hotel-details">
                   <span className="detail-item">
-                    <span className="detail-icon">📍</span> Como Center
+                    <span className="detail-icon">📍</span>{" "}
+                    {isItalian ? "Centro di Como" : "Como Center"}
                   </span>
                   <span className="detail-item">
-                    <span className="detail-icon">🏠</span> 12 Apartments
+                    <span className="detail-icon">🏠</span>{" "}
+                    {isItalian ? "12 appartamenti" : "12 Apartments"}
                   </span>
                   <span className="detail-item">
                     <span className="detail-icon">💰</span> $$$
@@ -171,10 +182,9 @@ const Accommodation = () => {
               <div className="hotel-content">
                 <h3>Valli</h3>
                 <p className="hotel-description">
-                  A spacious 3-room apartment accommodating up to 6 guests with
-                  2 bedrooms. Located in a quiet residential area near the lake,
-                  perfect for families or groups seeking comfort and
-                  tranquility.
+                  {isItalian
+                    ? "Spazioso appartamento di 3 locali che può ospitare fino a 6 persone con 2 camere da letto. Situato in una tranquilla zona residenziale vicino al lago, perfetto per famiglie o gruppi in cerca di comfort e tranquillità."
+                    : "A spacious 3-room apartment accommodating up to 6 guests with 2 bedrooms. Located in a quiet residential area near the lake, perfect for families or groups seeking comfort and tranquility."}
                 </p>
                 <div className="hotel-details">
                   <span className="detail-item">
@@ -182,7 +192,8 @@ const Accommodation = () => {
                     Zamenhof 9
                   </span>
                   <span className="detail-item">
-                    <span className="detail-icon">🛏️</span> 2 Bedrooms
+                    <span className="detail-icon">🛏️</span>{" "}
+                    {isItalian ? "2 camere da letto" : "2 Bedrooms"}
                   </span>
                   <span className="detail-item">
                     <span className="detail-icon">💰</span> $$$
@@ -194,7 +205,7 @@ const Accommodation = () => {
                   rel="noopener noreferrer"
                   className="hotel-link"
                 >
-                  View Details →
+                  {isItalian ? "Vedi dettagli →" : "View Details →"}
                 </a>
               </div>
             </div>
@@ -203,16 +214,17 @@ const Accommodation = () => {
               <div className="hotel-content">
                 <h3>Midnight Borgo</h3>
                 <p className="hotel-description">
-                  A bright and welcoming 3-room apartment for up to 4 guests
-                  with 2 bedrooms. Conveniently located near Como's old town,
-                  offering easy access to historic sites and local restaurants.
+                  {isItalian
+                    ? "Luminoso e accogliente appartamento di 3 locali per un massimo di 4 persone con 2 camere da letto. Situato in posizione comoda vicino al centro storico di Como, offre facile accesso ai luoghi di interesse e ai ristoranti locali."
+                    : "A bright and welcoming 3-room apartment for up to 4 guests with 2 bedrooms. Conveniently located near Como's old town, offering easy access to historic sites and local restaurants."}
                 </p>
                 <div className="hotel-details">
                   <span className="detail-item">
                     <span className="detail-icon">📍</span> Via Borgo Vico 114
                   </span>
                   <span className="detail-item">
-                    <span className="detail-icon">🛏️</span> 2 Bedrooms
+                    <span className="detail-icon">🛏️</span>{" "}
+                    {isItalian ? "2 camere da letto" : "2 Bedrooms"}
                   </span>
                   <span className="detail-item">
                     <span className="detail-icon">💰</span> $$$
@@ -224,7 +236,7 @@ const Accommodation = () => {
                   rel="noopener noreferrer"
                   className="hotel-link"
                 >
-                  View Details →
+                  {isItalian ? "Vedi dettagli →" : "View Details →"}
                 </a>
               </div>
             </div>
@@ -233,9 +245,9 @@ const Accommodation = () => {
               <div className="hotel-content">
                 <h3>Casa Olmo</h3>
                 <p className="hotel-description">
-                  A modern 2-room apartment accommodating up to 4 guests with 1
-                  bedroom. Located near the lake in a peaceful setting, ideal
-                  for couples or small families.
+                  {isItalian
+                    ? "Moderno appartamento di 2 locali che può ospitare fino a 4 persone con 1 camera da letto. Situato vicino al lago in una zona tranquilla, ideale per coppie o piccole famiglie."
+                    : "A modern 2-room apartment accommodating up to 4 guests with 1 bedroom. Located near the lake in a peaceful setting, ideal for couples or small families."}
                 </p>
                 <div className="hotel-details">
                   <span className="detail-item">
@@ -243,7 +255,8 @@ const Accommodation = () => {
                     Zamenhof 9
                   </span>
                   <span className="detail-item">
-                    <span className="detail-icon">🛏️</span> 1 Bedroom
+                    <span className="detail-icon">🛏️</span>{" "}
+                    {isItalian ? "1 camera da letto" : "1 Bedroom"}
                   </span>
                   <span className="detail-item">
                     <span className="detail-icon">💰</span> $$
@@ -255,7 +268,7 @@ const Accommodation = () => {
                   rel="noopener noreferrer"
                   className="hotel-link"
                 >
-                  View Details →
+                  {isItalian ? "Vedi dettagli →" : "View Details →"}
                 </a>
               </div>
             </div>
@@ -264,16 +277,17 @@ const Accommodation = () => {
               <div className="hotel-content">
                 <h3>The Gallery</h3>
                 <p className="hotel-description">
-                  A stylish modern 2-room apartment for up to 4 guests with 1
-                  bedroom, featuring contemporary art throughout. Located near
-                  Como's historic center for easy exploration.
+                  {isItalian
+                    ? "Elegante appartamento moderno di 2 locali per un massimo di 4 persone con 1 camera da letto, decorato con opere d'arte contemporanea. Situato vicino al centro storico di Como, ideale per esplorare la città."
+                    : "A stylish modern 2-room apartment for up to 4 guests with 1 bedroom, featuring contemporary art throughout. Located near Como's historic center for easy exploration."}
                 </p>
                 <div className="hotel-details">
                   <span className="detail-item">
                     <span className="detail-icon">📍</span> Via Prato Pasquè 2
                   </span>
                   <span className="detail-item">
-                    <span className="detail-icon">🛏️</span> 1 Bedroom
+                    <span className="detail-icon">🛏️</span>{" "}
+                    {isItalian ? "1 camera da letto" : "1 Bedroom"}
                   </span>
                   <span className="detail-item">
                     <span className="detail-icon">💰</span> $$
@@ -285,7 +299,7 @@ const Accommodation = () => {
                   rel="noopener noreferrer"
                   className="hotel-link"
                 >
-                  View Details →
+                  {isItalian ? "Vedi dettagli →" : "View Details →"}
                 </a>
               </div>
             </div>
@@ -309,8 +323,9 @@ const Accommodation = () => {
               </div>
               <h3>My Home In Como</h3>
               <p>
-                Curated selection of quality apartments in Como city center and
-                surrounding areas
+                {isItalian
+                  ? "Selezione curata di appartamenti di qualità nel centro di Como e nelle zone circostanti"
+                  : "Curated selection of quality apartments in Como city center and surrounding areas"}
               </p>
               <a
                 href="https://www.myhomeincomo.com/"
@@ -328,8 +343,9 @@ const Accommodation = () => {
               </div>
               <h3>Booking.com</h3>
               <p>
-                Wide range of hotels, apartments, and B&Bs with verified reviews
-                and flexible booking
+                {isItalian
+                  ? "Ampia gamma di hotel, appartamenti e B&B con recensioni verificate e prenotazioni flessibili"
+                  : "Wide range of hotels, apartments, and B&Bs with verified reviews and flexible booking"}
               </p>
               <a
                 href="https://www.booking.com/"
@@ -347,8 +363,9 @@ const Accommodation = () => {
               </div>
               <h3>Airbnb</h3>
               <p>
-                Unique homes and experiences hosted by locals throughout the
-                Lake Como region
+                {isItalian
+                  ? "Case uniche ed esperienze ospitate da persone del posto in tutta la regione del Lago di Como"
+                  : "Unique homes and experiences hosted by locals throughout the Lake Como region"}
               </p>
               <a
                 href="https://www.airbnb.it/"
@@ -366,26 +383,33 @@ const Accommodation = () => {
       <section className="booking-section">
         <div className="container">
           <div className="booking-card">
-            <h2>Planning Your Stay</h2>
+            <h2>
+              {isItalian
+                ? "Organizzare il vostro soggiorno"
+                : "Planning Your Stay"}
+            </h2>
             <div className="booking-tips">
               <div className="tip">
                 <span className="tip-icon">📅</span>
                 <div className="tip-content">
-                  <h3>Book Early</h3>
+                  <h3>{isItalian ? "Prenotate in anticipo" : "Book Early"}</h3>
                   <p>
-                    Lake Como is a popular tourist destination. We recommend
-                    securing your accommodation as soon as possible.
+                    {isItalian
+                      ? "Il Lago di Como è una destinazione turistica molto popolare. Vi consigliamo di prenotare il vostro alloggio il prima possibile."
+                      : "Lake Como is a popular tourist destination. We recommend securing your accommodation as soon as possible."}
                   </p>
                 </div>
               </div>
               <div className="tip">
                 <span className="tip-icon">💬</span>
                 <div className="tip-content">
-                  <h3>Need Help?</h3>
+                  <h3>
+                    {isItalian ? "Avete bisogno di aiuto?" : "Need Help?"}
+                  </h3>
                   <p>
-                    If you need assistance with bookings or have questions about
-                    the area, please don't hesitate to reach out to us. We're
-                    happy to help!
+                    {isItalian
+                      ? "Se avete bisogno di assistenza con le prenotazioni o avete domande sulla zona, non esitate a contattarci. Saremo felici di aiutarvi!"
+                      : "If you need assistance with bookings or have questions about the area, please don't hesitate to reach out to us. We're happy to help!"}
                   </p>
                 </div>
               </div>

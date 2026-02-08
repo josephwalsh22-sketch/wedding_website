@@ -127,7 +127,14 @@
     }
 
     @media (max-width: $breakpoint-mobile) {
-      margin-top: $spacing-xs;
+      width: auto;
+      padding: 0.3rem 0.6rem;
+      font-size: 0.7rem;
+      gap: 0.3rem;
+
+      .flag-icon {
+        width: 16px;
+      }
     }
   }
 }

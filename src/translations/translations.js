@@ -15,7 +15,7 @@ export const translations = {
       lakeComo: "Lake Como, Italy",
       saveTheDate: "Save the Date",
       date: "17th October 2026",
-      sposiamo: "Ci Sposiamo!",
+      sposiamo: "Celebrate With Us",
       welcomeText:
         "We are so excited to celebrate our special day with you at beautiful Lake Como in Italy! Please explore our website to learn more about the wedding details, accommodation, and things to do.",
       ourCeremony: "Our Marriage Ceremony",
@@ -23,10 +23,10 @@ export const translations = {
         "Join us for our symbolic ceremony in Como. We would be delighted to share this moment with you!",
       joinUs: "Join Us in Italy",
       joinUsText:
-        "We have a private event in the heart of Como, where we'll eat, drink, and dance the day away. So many of us are spread throughout the world and we don't see each other often anymore—it will be fantastic to have a day with you all.",
+        "We will have a private event in the heart of Como, where we'll eat, drink, and dance the day away. So many of us are spread throughout the world and we don't see each other often anymore — it will be fantastic to have a day with you all.",
       eveningTitle: "An Evening to Remember",
       eveningText:
-        "As the sun sets over Lake Como, join us for an enchanting evening of celebration under the stars. The villa will be illuminated, creating a magical atmosphere for dining, dancing, and making memories that will last a lifetime.",
+        "As the sun sets over Lake Como, join us for an enchanting evening of celebration under the stars. The timeless beauty of Villa Revel Parravicini combined with the stunning panoramic view of the lake at night will create a magical atmosphere for dining, dancing, and making memories that will last a lifetime.",
       exploreLakeComo: "Explore Lake Como",
       exploreIntro: "Stay for a few days and enjoy Cinzia's homeland!",
       breathtakingViews: "Breathtaking Views",
@@ -47,22 +47,23 @@ export const translations = {
         "Join us for a day of celebration, love, and unforgettable memories at our beautiful Lake Como wedding. Here's what to expect on our special day.",
       venue: "The Venue",
       venueDescription:
-        "Our wedding will take place at the stunning Villa Parravicini, a historic 18th-century villa nestled in the heart of Como city, overlooking the magnificent Lake Como. This elegant neoclassical villa features beautiful terraced gardens, breathtaking lake views, and timeless Italian architecture—the perfect romantic setting for our special day.",
-      venueTitle: "Villa Parravicini Revel",
+        "Our wedding will take place at Villa Revel Parravicini, a historic 18th-century villa nestled in the heart of Como city, overlooking Lake Como. This elegant neoclassical villa features beautiful gardens, breathtaking lake views, and timeless Italian architecture — the perfect romantic setting for our special day.",
+      venueTitle: "Villa Revel Parravicini",
       venueAddress: "Via Museo Giovio, 6, 22100 Como CO, Italy",
       scheduleTitle: "Schedule of Events",
       scheduleSubtitle: "A day filled with love, laughter, and celebration",
       welcome: "Welcome",
       welcomeTime: "15:30",
       welcomeText:
-        "Welcome to Villa Parravicini Revel! Join us for a welcome drink as you arrive and take in the surroundings.",
+        "Welcome to Villa Revel Parravicini! Join us for a welcome drink as you arrive and take in the surroundings.",
       ceremony: "Ceremony",
       ceremonyTime: "16:15",
       ceremonyText:
         "Join us for our symbolic ceremony at the villa, overlooking Lake Como.",
       aperitif: "Aperitif",
       aperitifTime: "16:45",
-      aperitifText: "Enjoy aperitivo with drinks and canapés on the terrace.",
+      aperitifText:
+        "Enjoy aperitivo with drinks and canapés on the Italian-style garden.",
       dinner: "Dinner",
       dinnerTime: "19:00",
       dinnerText:
@@ -115,50 +116,50 @@ export const translations = {
       title: "Getting There",
       subtitle: "Travel Information for Lake Como",
       introText1:
-        "Lake Como is easily accessible from Milan and other major European cities. Here's everything you need to know about traveling to our wedding.",
+        "Lake Como is easily accessible from Milan and other major European cities. Here's everything you need to know about travelling to our wedding.",
       introText2:
         "Cars can be rented at airports. If you rent a car when booking your airline ticket, it is much cheaper.",
       byAir: "By Air",
       byTrain: "By Train",
       malpensaTitle: "Milan Malpensa Airport (MXP)",
       malpensaText:
-        "The closest major international airport, approximately 1 hour from Lake Como. Direct flights available from most major cities worldwide.",
+        "The closest major international airport, approximately 1 hour by car from Lake Como. Direct flights available from most major cities worldwide.",
       linateTitle: "Milan Linate Airport (LIN)",
       linateText:
         "Closer to Milan city center, about 1 hour by car from Lake Como. Good option for European flights.",
       bergamoTitle: "Milan Bergamo Airport (BGY)",
       bergamoText:
-        "Popular with budget airlines, approximately 1 hour from Lake Como. Often has competitive fares from European cities.",
+        "Popular with budget airlines, approximately 1 hour by car from Lake Como. Often has competitive fares from European cities.",
       fromMalpensaTitle: "From Milan Malpensa Airport",
       fromMalpensaText:
         "Take the train from Malpensa to Milano Centrale, then connect to Como. Total journey approximately 1 hour. Alternatively, take the train to Mendrisio in Switzerland and transfer to Como Lago.",
       fromLinateTitle: "From Milan Linate Airport",
       fromLinateText:
-        "Take the metro from Linate to San Babila (blue line), change to the red line to reach Milano Cadorna station (approximately 15 minutes). From Cadorna, take the train to Como Lago (approximately 45 minutes).",
+        "Take the metro from Linate to San Babila (blue line), change to the red line to reach Milano Cadorna station (approximately 15 minutes). From Cadorna, take the train to Como Lago (approximately 1 hour).",
       fromBergamoTitle: "From Milan Bergamo Airport",
       fromBergamoText:
         "Take the airport bus to Milano Centrale station (approximately 1 hour). From Milano Centrale, take the train to Como (approximately 1 hour).",
       directToComoTitle: "Direct to Como",
       directToComoText:
-        "Como has two main train stations: Como San Giovanni (for trains from Milano Centrale) and Como Lago (for trains from Milano Cadorna). Como Lago is closer to the city center and the lakefront.",
+        "Como has two main train stations: Como San Giovanni (for trains from Milano Centrale) and Como Lago (for trains from Milano Cadorna). Como Lago is closer to the lakefront.",
       lastTrainsTitle: "Last Trains to Como",
       lastTrainsText:
-        "Please note the last train times when planning your arrival: the last train from Milano Centrale to Como San Giovanni departs around 22:43, and the last train from Milano Cadorna to Como Lago departs around 23:16. We recommend booking flights that land at least 2-3 hours before the last train to allow time for baggage collection, customs (if applicable), and travel to the train station.",
+        "Please note the last train times when planning your arrival: the last train from Milano Centrale to Como San Giovanni departs around 22:43, and the last train from Milano Cadorna to Como Lago departs around 23:16. We recommend booking flights that land at least 3 hours before the last train to allow time for baggage collection, customs (if applicable), travel to the train station, and possible flight delays.",
       arrivingAtVenueTitle: "Arriving at the Venue",
       arrivingAtVenueText:
-        "Villa Parravicini Revel is easily accessible on foot from anywhere in Como city center, from the pier, and from both train and bus stations. We strongly recommend staying in Como city center the night of the wedding, as bus, boat, and train services will have ended by the time the wedding finishes at midnight.",
+        "Villa Revel Parravicini is easily accessible on foot from anywhere in Como city center, from the pier, and from both train and bus stations. We strongly recommend staying in Como city center the night of the wedding, as bus, boat, and train services will have ended by the time the wedding finishes at midnight.",
     },
     // Location Page
     location: {
       title: "Lake Como",
       subtitle: "Explore the Area",
       introText:
-        "Lake Como is one of Italy's most enchanting destinations, nestled in the foothills of the Alps. Known for its dramatic scenery, elegant villas, and charming lakeside towns, it has been a retreat for artists, writers, and celebrities for centuries. Whether you're exploring the cobblestone streets of Como city, taking a boat to picturesque villages, or simply enjoying an aperitivo by the water, Lake Como offers unforgettable experiences at every turn.",
+        "Lake Como is one of Italy's most enchanting destinations, nestled in the foothills of the Alps. Known for its dramatic scenery, elegant and aristocratic villas, and charming lakeside towns, it has been a retreat for artists, writers, and celebrities for centuries. Whether you're exploring the cobblestone streets of Como city, taking a boat to picturesque villages, or simply enjoying an aperitivo by the water, Lake Como offers unforgettable experiences at every turn.",
       exploringComoTitle: "Exploring Como City",
       comoPara1:
         "Como is a pretty little city nestled amongst the foothills of the Alps, with the stunning backdrop of Lake Como creating a picturesque setting. The historic center is a delightful maze of narrow cobblestone streets, lined with elegant clothes shops, inviting cafes, lively bars, and authentic restaurants.",
       comoPara2:
-        "Take a leisurely walk along the lakefront promenade, where you can enjoy spectacular views all the way to the charming village of Cernobbio—an easy and scenic stroll. Visit the magnificent Duomo di Como, the city's historic cathedral that beautifully blends Gothic and Renaissance architecture.",
+        "Take a leisurely walk along the lakefront promenade, where you can enjoy spectacular views all the way to the charming village of Cernobbio — an easy and scenic stroll. Visit the magnificent Duomo di Como, the city's historic cathedral that beautifully blends Gothic and Renaissance architecture.",
       comoPara3:
         "For breathtaking panoramic views, take the funicular railway up to Brunate, a hillside village offering stunning vistas of the lake and surrounding mountains. Art and history enthusiasts can explore Como's beautiful villas, such as the neoclassical Villa Olmo with its lakeside gardens and rotating art exhibitions.",
       restaurantsTitle: "Recommended Restaurants & Bars",
@@ -168,6 +169,13 @@ export const translations = {
           type: "Italian Bar & Cafe",
           description:
             "Located on the beautiful Piazza Alessandro Volta, this Italian bar and cafe is perfect for drinks and casual dining with a view of the lake.",
+        },
+        {
+          name: "Il Pinzimonio",
+          type: "Ristorante, Pizzeria, Cotoletteria",
+          description:
+            "Located in the very heart of Como city centre, Il Pinzimonio is a landmark for many locals. Its constantly updated menu offers a wide range of traditional Italian dishes, with chicken and veal cutlets and Neapolitan-style pizza among its specialties.",
+          website: "https://il-pinzimonio.com/",
         },
         {
           name: "Osteria del Gallo",
@@ -256,7 +264,9 @@ export const translations = {
       busesTitle: "Buses",
       busesPara1:
         "Buses are also a cheap and convenient way to travel around the lake. They are not as frequent as boats but they are a good option if you want to avoid the crowds at the pier.",
-      busesPara2: "The bus service typically ends at 00:00.",
+      busesPara2:
+        "You can pay for your ticket directly on the bus using a debit or credit card.",
+      busesPara3: "The bus service typically ends at 00:00.",
       taxisTitle: "Taxis",
       taxisPara1:
         "Taxis are readily available but very expensive. A fifteen minute journey can cost €60.",
@@ -347,7 +357,7 @@ export const translations = {
     // Navigation
     nav: {
       home: "Home",
-      theDay: "Il Giorno",
+      theDay: "Il Grande Giorno",
       gettingThere: "Come Arrivare",
       accommodation: "Alloggio",
       lakeComo: "Lago di Como",
@@ -367,10 +377,10 @@ export const translations = {
         "Unitevi a noi per la nostra cerimonia simbolica a Como. Saremmo felici di condividere questo momento con voi!",
       joinUs: "Unitevi a noi in Italia",
       joinUsText:
-        "Abbiamo un evento privato nel cuore di Como, dove mangeremo, berremo e balleremo tutto il giorno. Molti di noi sono sparsi in tutto il mondo e non ci vediamo più così spesso—sarà fantastico avere una giornata con tutti voi.",
+        "Festeggeremo con un evento privato nel cuore di Como, dove mangeremo, berremo e balleremo tutto il giorno. Molti di noi sono sparsi in tutto il mondo e non ci vediamo più così spesso — sarà fantastico passare una giornata con tutti voi.",
       eveningTitle: "Una Serata Indimenticabile",
       eveningText:
-        "Mentre il sole tramonta sul Lago di Como, unitevi a noi per un'incantevole serata di festa sotto le stelle. La villa sarà illuminata, creando un'atmosfera magica per cenare, ballare e creare ricordi che dureranno per tutta la vita.",
+        "Al calar del sole sul Lago di Como, unitevi a noi per una serata incantevole di festa sotto le stelle. La bellezza senza tempo di Villa Revel Parravicini, unita alla splendida vista panoramica del lago di notte, creerà un'atmosfera magica per cenare, danzare e vivere momenti che dureranno per tutta la vita.",
       exploreLakeComo: "Esplorate il Lago di Como",
       exploreIntro:
         "Restate qualche giorno e godetevi la terra natale di Cinzia!",
@@ -386,21 +396,21 @@ export const translations = {
     },
     // The Day Page
     theDay: {
-      title: "Il Giorno",
+      title: "Il Grande Giorno",
       subtitle: "17 ottobre 2026",
       introText:
-        "Unitevi a noi per una giornata di festa, amore e ricordi indimenticabili al nostro bellissimo matrimonio sul Lago di Como. Ecco cosa aspettarsi nel nostro giorno speciale.",
+        "Unisciti a noi per una giornata di celebrazione, amore e ricordi indimenticabili durante il nostro meraviglioso matrimonio sul Lago di Como. Ecco cosa ti aspetta nel nostro giorno speciale.",
       venue: "La Location",
       venueDescription:
-        "Il nostro matrimonio si svolgerà presso la splendida Villa Parravicini, una villa storica del XVIII secolo situata nel cuore della città di Como, con vista sul magnifico Lago di Como. Questa elegante villa neoclassica dispone di bellissimi giardini terrazzati, viste mozzafiato sul lago e un'architettura italiana senza tempo—l'ambientazione romantica perfetta per il nostro giorno speciale.",
-      venueTitle: "Villa Parravicini Revel",
+        "Il nostro matrimonio si svolgerà presso Villa Revel Parravicini, una villa storica del XVIII secolo situata nel cuore della città di Como, con vista sul Lago di Como. Questa elegante villa neoclassica presenta bellissimi giardini, viste mozzafiato sul lago e un'architettura italiana senza tempo — l'ambientazione romantica perfetta per il nostro giorno speciale.",
+      venueTitle: "Villa Revel Parravicini",
       venueAddress: "Via Museo Giovio, 6, 22100 Como CO, Italia",
       scheduleTitle: "Programma della giornata",
       scheduleSubtitle: "Una giornata piena di amore, risate e festa",
       welcome: "Benvenuto",
       welcomeTime: "15:30",
       welcomeText:
-        "Benvenuti a Villa Parravicini Revel! Unitevi a noi per un drink di benvenuto mentre arrivate e ammirate i dintorni.",
+        "Benvenuti a Villa Revel Parravicini! Unitevi a noi per un drink di benvenuto mentre arrivate e ammirate i dintorni.",
       ceremony: "Cerimonia",
       ceremonyTime: "16:15",
       ceremonyText:
@@ -420,7 +430,7 @@ export const translations = {
       party: "Festa e Open Bar",
       partyTime: "21:30",
       partyText:
-        "Balliamo tutta la notte! Unitevi a noi sulla pista da ballo per una serata di musica, festa e momenti indimenticabili con open bar.",
+        "Balliamo! Unitevi a noi sulla pista da ballo per una serata di musica, festa e momenti indimenticabili con open bar.",
       midnight: "Saluto di Mezzanotte",
       midnightTime: "24:00",
       midnightText: "Saluto di mezzanotte  tutti a casa come Cenerentola!",
@@ -428,10 +438,10 @@ export const translations = {
       dressCodeText: "Abbigliamento formale, per favore.",
       photography: "Fotografia",
       photographyText:
-        "Avremo un fotografo professionista che catturerà il nostro giorno speciale. Sentitevi liberi di scattare foto, ma vi chiediamo gentilmente una cerimonia senza telefoni.",
+        "Avremo un fotografo professionista che catturerà il nostro giorno speciale. Sentitevi liberi di scattare foto, ma Vi invitiamo gentilmente a vivere la cerimonia senza dispositivi elettronici.",
       gifts: "Regali",
       giftsText:
-        "La vostra presenza è il regalo più grande! Se desiderate dare qualcosa, apprezzeremmo una donazione al nostro fondo per la ristrutturazione della casa.",
+        "La vostra presenza è il regalo più grande! Se desiderate fare un pensiero, apprezzeremmo una donazione per il nostro fondo di ristrutturazione della casa.",
       weather: "Meteo",
       weatherText:
         "Ottobre sul Lago di Como è tipicamente mite e piacevole. Vi consigliamo di portare una giacca leggera o uno scialle per la sera.",
@@ -462,50 +472,50 @@ export const translations = {
       title: "Come Arrivare",
       subtitle: "Informazioni di viaggio per il Lago di Como",
       introText1:
-        "Il Lago di Como è facilmente accessibile da Milano e da altre importanti città europee. Ecco tutto ciò che dovete sapere per viaggiare al nostro matrimonio.",
+        "Il Lago di Como è facilmente accessibile da Milano e da altre importanti città europee. Ecco tutto ciò che dovete sapere per raggiungere il nostro matrimonio.",
       introText2:
         "È possibile noleggiare un'auto direttamente in aeroporto. Se la prenotate insieme al volo, di solito è molto più economica.",
       byAir: "In Aereo",
       byTrain: "In Treno",
       malpensaTitle: "Aeroporto di Milano Malpensa (MXP)",
       malpensaText:
-        "L'aeroporto internazionale più vicino, a circa 1 ora dal Lago di Como. Voli diretti disponibili dalla maggior parte delle principali città del mondo.",
+        "L'aeroporto internazionale più vicino, a circa 1 ora di auto dal Lago di Como. Voli diretti disponibili dalla maggior parte delle principali città del mondo.",
       linateTitle: "Aeroporto di Milano Linate (LIN)",
       linateText:
         "Più vicino al centro di Milano, a circa 1 ora di auto dal Lago di Como. Buona opzione per i voli europei.",
       bergamoTitle: "Aeroporto di Milano Bergamo (BGY)",
       bergamoText:
-        "Popolare tra le compagnie aeree low-cost, a circa 1 ora dal Lago di Como. Spesso ha tariffe competitive dalle città europee.",
+        "Popolare tra le compagnie aeree low-cost, a circa 1 ora di auto dal Lago di Como. Spesso offre tariffe competitive dalle città europee.",
       fromMalpensaTitle: "Dall'aeroporto di Milano Malpensa",
       fromMalpensaText:
         "Prendete il treno da Malpensa a Milano Centrale, poi proseguite per Como. Il viaggio complessivo dura circa 1 ora. In alternativa, prendete il treno per Mendrisio in Svizzera e cambiate per Como Lago.",
       fromLinateTitle: "Dall'aeroporto di Milano Linate",
       fromLinateText:
-        "Prendete la metro da Linate a San Babila (linea blu), cambiate con la linea rossa per raggiungere la stazione di Milano Cadorna (circa 15 minuti). Da Cadorna, prendete il treno per Como Lago (circa 45 minuti).",
+        "Prendete la metro da Linate a San Babila (linea blu), cambiate con la linea rossa per raggiungere la stazione di Milano Cadorna (circa 15 minuti). Da Cadorna, prendete il treno per Como Lago (circa 1 ora).",
       fromBergamoTitle: "Dall'aeroporto di Milano Bergamo",
       fromBergamoText:
         "Prendete l'autobus dell'aeroporto per la stazione di Milano Centrale (circa 1 ora). Da Milano Centrale, prendete il treno per Como (circa 1 ora).",
       directToComoTitle: "Direttamente a Como",
       directToComoText:
-        "Como ha due stazioni ferroviarie principali: Como San Giovanni (per i treni da Milano Centrale) e Como Lago (per i treni da Milano Cadorna). Como Lago è più vicina al centro città e al lungolago.",
+        "Como ha due stazioni ferroviarie principali: Como San Giovanni (per i treni da Milano Centrale) e Como Lago (per i treni da Milano Cadorna). Como Lago è più vicina al lungolago.",
       lastTrainsTitle: "Ultimi treni per Como",
       lastTrainsText:
-        "Vi preghiamo di tenere presente gli orari degli ultimi treni quando pianificate il vostro arrivo: l'ultimo treno da Milano Centrale a Como San Giovanni parte intorno alle 22:43, e l'ultimo treno da Milano Cadorna a Como Lago parte intorno alle 23:16. Consigliamo di prenotare voli che atterrano almeno 2-3 ore prima dell'ultimo treno per avere tempo sufficiente per il ritiro bagagli, i controlli doganali (se applicabili) e il viaggio alla stazione ferroviaria.",
+        "Vi preghiamo di tenere presente gli orari degli ultimi treni quando pianificate il vostro arrivo: l'ultimo treno da Milano Centrale a Como San Giovanni parte intorno alle 22:43, e l'ultimo treno da Milano Cadorna a Como Lago parte intorno alle 23:16. Consigliamo di prenotare voli che atterrano almeno 3 ore prima dell'ultimo treno per avere tempo sufficiente per il ritiro bagagli, i controlli doganali (se applicabili), il viaggio alla stazione ferroviaria e possibili ritardi del volo.",
       arrivingAtVenueTitle: "Arrivare alla location",
       arrivingAtVenueText:
-        "Villa Parravicini Revel è facilmente raggiungibile a piedi da qualsiasi punto del centro di Como, dal molo e dalle stazioni ferroviarie e degli autobus. Vi consigliamo vivamente di soggiornare nel centro di Como la notte del matrimonio, poiché i servizi di autobus, battelli e treni saranno terminati quando il matrimonio finirà a mezzanotte.",
+        "Villa Revel Parravicini è facilmente raggiungibile a piedi da qualsiasi punto del centro di Como, dal molo e dalle stazioni ferroviarie e degli autobus. Vi consigliamo vivamente di soggiornare nel centro di Como la notte del matrimonio, poiché i servizi di autobus, battelli e treni saranno terminati quando il matrimonio finirà a mezzanotte.",
     },
     // Location Page
     location: {
       title: "Lago di Como",
       subtitle: "Esplora la Zona",
       introText:
-        "Il Lago di Como è una delle destinazioni più incantevoli d'Italia, immersa ai piedi delle Alpi. Conosciuto per i suoi paesaggi spettacolari, le ville eleganti e gli affascinanti borghi lacustri, è stato un rifugio per artisti, scrittori e celebrità per secoli. Che tu stia esplorando le strade acciottolate della città di Como, prendendo una barca per i pittoreschi villaggi, o semplicemente godendoti un aperitivo in riva al lago, il Lago di Como offre esperienze indimenticabili ad ogni angolo.",
+        "Il Lago di Como è una delle destinazioni più incantevoli d'Italia, immersa ai piedi delle Alpi. Conosciuto per i suoi paesaggi spettacolari, le ville eleganti e aristocratiche e gli affascinanti borghi lacustri, è stato un rifugio per artisti, scrittori e celebrità per secoli. Sia che voi esploriate le strade acciottolate di Como, prendiate un battello per pittoreschi villaggi, o semplicemente gustiate un aperitivo sul lungolago, il Lago di Como offre esperienze indimenticabili a ogni angolo.",
       exploringComoTitle: "Esplorare la Città di Como",
       comoPara1:
         "Como è una graziosa cittadina immersa ai piedi delle Alpi, con lo splendido sfondo del Lago di Como che crea un ambiente pittoresco. Il centro storico è un delizioso labirinto di strette strade acciottolate, fiancheggiate da eleganti negozi di abbigliamento, invitanti caffè, vivaci bar e ristoranti autentici.",
       comoPara2:
-        "Fate una piacevole passeggiata lungo il lungolago, dove potrete godere di viste spettacolari fino all'incantevole villaggio di Cernobbio—una passeggiata facile e panoramica. Visitate il magnifico Duomo di Como, la cattedrale storica della città che fonde magnificamente l'architettura gotica e rinascimentale.",
+        "Fate una piacevole escursione lungo il lungolago, dove potrete godere di viste spettacolari fino all'incantevole villaggio di Cernobbio — una passeggiata facile e panoramica. Visitate il magnifico Duomo di Como, la cattedrale storica della città che fonde magnificamente l'architettura gotica e rinascimentale.",
       comoPara3:
         "Per viste panoramiche mozzafiato, prendete la funicolare fino a Brunate, un villaggio collinare che offre viste stupende del lago e delle montagne circostanti. Gli appassionati d'arte e storia possono esplorare le bellissime ville di Como, come la neoclassica Villa Olmo con i suoi giardini sul lago e le mostre d'arte a rotazione.",
       restaurantsTitle: "Ristoranti e Bar Consigliati",
@@ -514,19 +524,26 @@ export const translations = {
           name: "Bar Krudo",
           type: "Bar e Caffè Italiano",
           description:
-            "Situato sulla bellissima Piazza Alessandro Volta, questo bar e caffè italiano è perfetto per drink e pranzi informali con vista sul lago.",
+            "Situato sulla bellissima Piazza Alessandro Volta, questo bar e caffè italiano è perfetto per drink e pasti informali con vista sul lago.",
+        },
+        {
+          name: "Il Pinzimonio",
+          type: "Ristorante, Pizzeria, Cotoletteria",
+          description:
+            "Situato nel cuore del centro di Como, Il Pinzimonio è un punto di riferimento per molti abitanti locali. Il suo menù, costantemente aggiornato, propone un'ampia gamma di piatti della tradizione italiana, con la cotoletta di pollo e di vitello e la pizza in stile napoletano tra le sue specialità.",
+          website: "https://il-pinzimonio.com/",
         },
         {
           name: "Osteria del Gallo",
           type: "Osteria Tradizionale",
           description:
-            "Una delle ultime vere osterie di Como, gestita da 41 anni da Giuseppe De Toma e famiglia. Atmosfera autentica del vecchio mondo con menu giornaliero che cambia in base agli ingredienti di stagione. Le specialità includono ravioli freschi, pizzoccheri, carni brasate con polenta, pesce di lago e dolci fatti in casa. Ampia selezione di vini.",
+            "Una delle ultime vere osterie di Como, gestita da 41 anni da Giuseppe De Toma e famiglia. Atmosfera autentica in stile tradizionale con menu giornaliero che cambia in base agli ingredienti di stagione. Le specialità includono ravioli freschi, pizzoccheri, carni brasate con polenta, pesce di lago e dolci fatti in casa. Ampia selezione di vini.",
         },
         {
           name: "Bar Hemingway",
           type: "Cocktail Bar e Ristorante",
           description:
-            "Un cocktail bar accogliente e intimo che è stato un punto di riferimento storico per oltre 20 anni. Offre un menu stagionale con musica di sottofondo selezionata che crea un'atmosfera unica. Dispone di un gazebo accogliente sulla bellissima Piazza Volta durante l'estate.",
+            "Un cocktail bar accogliente e intimo, punto di riferimento storico per oltre 20 anni. Offre un menu stagionale con musica di sottofondo che crea un'atmosfera unica. Dispone di un gazebo accogliente sulla bellissima Piazza Volta durante l'estate.",
         },
         {
           name: "Pronobis",
@@ -603,7 +620,9 @@ export const translations = {
       busesTitle: "Autobus",
       busesPara1:
         "Gli autobus sono anche un modo economico e conveniente per viaggiare intorno al lago. Non sono frequenti come le barche ma sono una buona opzione se volete evitare la folla al molo.",
-      busesPara2: "Il servizio di autobus termina tipicamente alle 00:00.",
+      busesPara2:
+        "È possibile pagare il biglietto direttamente sull'autobus utilizzando una carta di debito o di credito.",
+      busesPara3: "Il servizio di autobus termina tipicamente alle 00:00.",
       taxisTitle: "Taxi",
       taxisPara1:
         "I taxi sono facilmente disponibili ma molto costosi. Un viaggio di quindici minuti può costare €60.",
@@ -615,7 +634,7 @@ export const translations = {
       title: "RSVP",
       subtitle: "Unitevi a noi per il nostro giorno speciale",
       intro:
-        "Saremmo onorati di avervi a festeggiare con noi! Vi preghiamo di farci sapere se potrete partecipare.",
+        "Saremmo onorati di festeggiare insieme a voi! Vi preghiamo di farci sapere se potrete partecipare.",
       yourName: "Il tuo nome",
       yourNameTooltip: "Per favore inserisci il tuo nome completo",
       yourNamePlaceholder: "es., Mario Rossi",

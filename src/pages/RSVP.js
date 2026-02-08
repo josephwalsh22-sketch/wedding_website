@@ -22,7 +22,6 @@ const RSVP = () => {
 
   const [validationError, setValidationError] = useState("");
   const [attendingNames, setAttendingNames] = useState([]); // Names of guests attending (including main person)
-  const [notAttendingNames, setNotAttendingNames] = useState([]); // Names of guests not attending
   const [selectedBabies, setSelectedBabies] = useState([]); // Array of guest names who are babies
   const [selectedChildren, setSelectedChildren] = useState([]); // Array of guest names who are children
   const [dietaryRequirements, setDietaryRequirements] = useState([]);
@@ -31,7 +30,6 @@ const RSVP = () => {
   const [isSubmitting, setIsSubmitting] = useState(false); // Loading state
   const [isSubmitted, setIsSubmitted] = useState(false); // Success state
   const [wasAttending, setWasAttending] = useState(true); // Track if user was attending
-  const [hasMixedResponse, setHasMixedResponse] = useState(false); // Track if some guests not attending
   const [submittedName, setSubmittedName] = useState(""); // Track the name of the person who submitted
 
   // Helper function to check if a name is Joe Schuldt
@@ -119,26 +117,6 @@ const RSVP = () => {
       setSelectedBabies((prev) => prev.filter((name) => name !== oldName));
       setSelectedChildren((prev) => prev.filter((name) => name !== oldName));
     }
-  };
-
-  const handleNotAttendingNameChange = (index, value) => {
-    const newNames = [...notAttendingNames];
-    newNames[index] = value;
-    setNotAttendingNames(newNames);
-
-    // Clear validation error when user makes changes
-    if (validationError) {
-      setValidationError("");
-    }
-  };
-
-  const handleAddNotAttendingName = () => {
-    setNotAttendingNames([...notAttendingNames, ""]);
-  };
-
-  const handleRemoveNotAttendingName = (index) => {
-    const newNames = notAttendingNames.filter((_, i) => i !== index);
-    setNotAttendingNames(newNames);
   };
 
   const handleAddDietaryRequirement = () => {
@@ -268,16 +246,11 @@ const RSVP = () => {
       };
     });
 
-    // Build array of not attending guest names
-    const notAttendingList = notAttendingNames.filter(
-      (name) => name.trim() !== "",
-    );
-
     // Prepare data for Google Sheets
     const sheetData = {
       attending: attendingValue,
       guests: guests,
-      notAttending: notAttendingList,
+      notAttending: [],
       message: formData.message || "",
       confirmedBy: formData.yourName, // Use "Your Name" as the person confirming
     };
@@ -288,11 +261,6 @@ const RSVP = () => {
     setIsSubmitting(true);
     setWasAttending(formData.attending === "yes");
     setSubmittedName(formData.yourName);
-
-    // Check if there's a mixed response (some attending, some not attending)
-    const hasNotAttending = notAttendingList.length > 0;
-    const isAttending = formData.attending === "yes";
-    setHasMixedResponse(isAttending && hasNotAttending);
 
     // POST to Google Apps Script
     fetch(
@@ -322,7 +290,6 @@ const RSVP = () => {
           message: "",
         });
         setAttendingNames([]);
-        setNotAttendingNames([]);
         setSelectedBabies([]);
         setSelectedChildren([]);
         setDietaryRequirements([]);
@@ -364,9 +331,8 @@ const RSVP = () => {
               </p>
 
               <p className="message-body">
-                {wasAttending && !hasMixedResponse && t.thankYouAttending}
+                {wasAttending && t.thankYouAttending}
                 {!wasAttending && t.thankYouNotAttending}
-                {hasMixedResponse && t.thankYouMixed}
               </p>
 
               {wasAttending && (
@@ -477,53 +443,6 @@ const RSVP = () => {
                     disabled={!formData.yourName.trim()}
                   >
                     {t.addGuestAttending}
-                  </button>
-                </div>
-
-                {/* Names of Guests Not Attending */}
-                <div
-                  className={`form-group ${!formData.yourName.trim() ? "disabled" : ""}`}
-                >
-                  <label>
-                    {t.otherGuestsNotAttending}
-                    <span
-                      className="tooltip"
-                      title={t.otherGuestsNotAttendingTooltip}
-                    >
-                      ℹ️
-                    </span>
-                  </label>
-                  <div className="guest-names-list">
-                    {notAttendingNames.map((name, index) => (
-                      <div key={index} className="not-attending-row">
-                        <input
-                          type="text"
-                          value={name}
-                          onChange={(e) =>
-                            handleNotAttendingNameChange(index, e.target.value)
-                          }
-                          placeholder={`${t.guestFullName} ${index + 1} ${t.fullName}`}
-                          className="guest-name-input"
-                          disabled={!formData.yourName.trim()}
-                        />
-                        <button
-                          type="button"
-                          onClick={() => handleRemoveNotAttendingName(index)}
-                          className="remove-not-attending-btn"
-                          disabled={!formData.yourName.trim()}
-                        >
-                          ✕
-                        </button>
-                      </div>
-                    ))}
-                  </div>
-                  <button
-                    type="button"
-                    onClick={handleAddNotAttendingName}
-                    className="add-not-attending-btn"
-                    disabled={!formData.yourName.trim()}
-                  >
-                    {t.addGuestNotAttending}
                   </button>
                 </div>
 
