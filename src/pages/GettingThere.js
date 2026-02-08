@@ -93,6 +93,14 @@ const GettingThere = () => {
                 <p>{t.lastTrainsText}</p>
               </div>
             </div>
+
+            <div className="travel-card venue-arrival-card">
+              <h2>
+                {t.arrivingAtVenueTitle}
+                <span className="travel-icon">🏛️</span>
+              </h2>
+              <p>{t.arrivingAtVenueText}</p>
+            </div>
           </div>
         </div>
       </section>

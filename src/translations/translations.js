@@ -144,6 +144,9 @@ export const translations = {
       lastTrainsTitle: "Last Trains to Como",
       lastTrainsText:
         "Please note the last train times when planning your arrival: the last train from Milano Centrale to Como San Giovanni departs around 22:43, and the last train from Milano Cadorna to Como Lago departs around 23:16. We recommend booking flights that land at least 2-3 hours before the last train to allow time for baggage collection, customs (if applicable), and travel to the train station.",
+      arrivingAtVenueTitle: "Arriving at the Venue",
+      arrivingAtVenueText:
+        "Villa Parravicini Revel is easily accessible on foot from anywhere in Como city center, from the pier, and from both train and bus stations. We strongly recommend staying in Como city center the night of the wedding, as bus, boat, and train services will have ended by the time the wedding finishes at midnight.",
     },
     // Location Page
     location: {
@@ -488,6 +491,9 @@ export const translations = {
       lastTrainsTitle: "Ultimi treni per Como",
       lastTrainsText:
         "Vi preghiamo di tenere presente gli orari degli ultimi treni quando pianificate il vostro arrivo: l'ultimo treno da Milano Centrale a Como San Giovanni parte intorno alle 22:43, e l'ultimo treno da Milano Cadorna a Como Lago parte intorno alle 23:16. Consigliamo di prenotare voli che atterrano almeno 2-3 ore prima dell'ultimo treno per avere tempo sufficiente per il ritiro bagagli, i controlli doganali (se applicabili) e il viaggio alla stazione ferroviaria.",
+      arrivingAtVenueTitle: "Arrivare alla location",
+      arrivingAtVenueText:
+        "Villa Parravicini Revel è facilmente raggiungibile a piedi da qualsiasi punto del centro di Como, dal molo e dalle stazioni ferroviarie e degli autobus. Vi consigliamo vivamente di soggiornare nel centro di Como la notte del matrimonio, poiché i servizi di autobus, battelli e treni saranno terminati quando il matrimonio finirà a mezzanotte.",
     },
     // Location Page
     location: {
