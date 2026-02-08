@@ -251,6 +251,20 @@
             }
           }
 
+          .last-trains-info {
+            background: #fff9e6;
+            border-left: 3px solid $primary-color;
+            margin-top: $spacing-xl;
+
+            h3 {
+              color: $primary-color;
+            }
+
+            p {
+              font-weight: 500;
+            }
+          }
+
           .content-with-image {
             position: relative;
 

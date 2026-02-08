@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../translations/translations";
+import enFlag from "../images/en-flag.webp";
+import itFlag from "../images/it-flag.webp";
 import "./Navigation.scss";
 
 const Navigation = () => {
@@ -35,7 +37,15 @@ const Navigation = () => {
           </li>
         </ul>
         <button className="language-toggle" onClick={toggleLanguage}>
-          {language === "en" ? "IT" : "EN"}
+          {language === "en" ? (
+            <>
+              <img src={itFlag} alt="Italian flag" className="flag-icon" /> IT
+            </>
+          ) : (
+            <>
+              <img src={enFlag} alt="English flag" className="flag-icon" /> EN
+            </>
+          )}
         </button>
       </div>
     </nav>

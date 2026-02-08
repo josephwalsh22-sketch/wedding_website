@@ -87,6 +87,11 @@ const GettingThere = () => {
                 <h3>{t.directToComoTitle}</h3>
                 <p>{t.directToComoText}</p>
               </div>
+
+              <div className="train-info last-trains-info">
+                <h3>{t.lastTrainsTitle}</h3>
+                <p>{t.lastTrainsText}</p>
+              </div>
             </div>
           </div>
         </div>

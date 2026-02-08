@@ -141,6 +141,9 @@ export const translations = {
       directToComoTitle: "Direct to Como",
       directToComoText:
         "Como has two main train stations: Como San Giovanni (for trains from Milano Centrale) and Como Lago (for trains from Milano Cadorna). Como Lago is closer to the city center and the lakefront.",
+      lastTrainsTitle: "Last Trains to Como",
+      lastTrainsText:
+        "Please note the last train times when planning your arrival: the last train from Milano Centrale to Como San Giovanni departs around 22:43, and the last train from Milano Cadorna to Como Lago departs around 23:16. We recommend booking flights that land at least 2-3 hours before the last train to allow time for baggage collection, customs (if applicable), and travel to the train station.",
     },
     // Location Page
     location: {
@@ -257,6 +260,85 @@ export const translations = {
       taxisPara2:
         "Uber and other taxi-like services are not readily available or reliable in Como.",
     },
+    // RSVP Page
+    rsvp: {
+      title: "RSVP",
+      subtitle: "Join Us for Our Special Day",
+      intro:
+        "We would be honored to have you celebrate with us! Please let us know if you'll be able to attend.",
+      yourName: "Your Name",
+      yourNameTooltip: "Please enter your full name",
+      yourNamePlaceholder: "e.g., John Smith",
+      willYouAttend: "Will you be attending?",
+      pleaseEnterNameFirst: "Please enter your name first",
+      yesAttending: "Yes, I'll be there! 🎉",
+      noAttending: "Sorry, I can't make it",
+      otherGuestsAttending: "Other Guests in Your RSVP Attending",
+      otherGuestsAttendingTooltip:
+        "Please enter the full name of each guest in your party",
+      guestFullName: "Guest",
+      fullName: "Full Name",
+      addGuestAttending: "+ Add Guest Attending",
+      otherGuestsNotAttending: "Other Guests in Your RSVP Not Attending",
+      otherGuestsNotAttendingTooltip:
+        "If you know of guests who cannot attend, please list their names here",
+      addGuestNotAttending: "+ Add Guest Not Attending",
+      attendingBabies: "Attending Babies (Under 18 Months)",
+      attendingBabiesTooltip: "Select which guests are babies under 18 months",
+      selectBaby: "Select Baby",
+      addBaby: "+ Add Baby",
+      attendingChildren: "Attending Children (Under 10 Years)",
+      attendingChildrenTooltip:
+        "Select which guests are children between 18 months and 10 years",
+      selectChild: "Select Child",
+      addChild: "+ Add Child",
+      dietaryRequirements: "Dietary Requirements",
+      dietaryRequirementsTooltip:
+        "Select dietary requirements for your guests (Vegan, Vegetarian)",
+      none: "None",
+      vegan: "Vegan",
+      vegetarian: "Vegetarian",
+      selectGuest: "Select Guest",
+      addDietaryRequirement: "+ Add Dietary Requirement",
+      foodAllergies: "Food Allergies",
+      foodAllergiesTooltip:
+        "List any food allergies for your guests to ensure everyone's safety",
+      foodAllergiesPlaceholder: "e.g., Peanuts, Shellfish, Dairy",
+      addFoodAllergy: "+ Add Food Allergy",
+      messageToCouple: "Message to the Couple",
+      messageToCoupleTooltip:
+        "Share your excitement, well wishes, or any questions!",
+      messagePlaceholder: "We can't wait to celebrate with you! 💕",
+      submitRSVP: "Submit RSVP",
+      validationError: "Please fill in all required fields correctly.",
+      successMessage: "Thank you for your RSVP! We'll see you there! 💒",
+      successMessageAttending: "We look forward to seeing you there! 🎉",
+      successMessageNotAttending:
+        "We're sorry not to see you and will catch up soon! 💕",
+      // Personalized card messages
+      dearGuest: "Dear",
+      thankYouAttending:
+        "Thank you so much for confirming your attendance at our wedding. We are absolutely delighted that you will be joining us on our special day.",
+      thankYouNotAttending:
+        "Thank you for letting us know. While we are sad that you won't be able to join us on our special day, we completely understand and hope to celebrate with you soon.",
+      thankYouMixed:
+        "Thank you for your response. We're delighted that some of your party will be joining us, and we understand that not everyone can make it. We look forward to celebrating with those who can attend.",
+      lookForwardTo: "We look forward to celebrating with you at Lake Como.",
+      withLove: "With love and excitement,",
+      coupleNames: "Cinzia & Joseph",
+      errorMessage:
+        "There was an error submitting your RSVP. Please try again.",
+      joeAlertTitle: "Not So Fast, Joe Schuldt!",
+      joeAlertMessage: "You are only allowed to attend this wedding.",
+      joeAlertInsult: "Gobshite.",
+      joeAlertButton: "OK, Send Acceptance! 🎉",
+    },
+    // Footer
+    footer: {
+      location: "Lake Como, Italy",
+      year: "2026",
+      message: "With love and anticipation",
+    },
   },
   it: {
     // Navigation
@@ -272,21 +354,21 @@ export const translations = {
     home: {
       wereGettingMarried: "Ci Sposiamo!",
       lakeComo: "Lago di Como, Italia",
-      saveTheDate: "Segna la Data",
-      date: "17 Ottobre 2026",
+      saveTheDate: "Segnate la data",
+      date: "17 ottobre 2026",
       sposiamo: "Ci Sposiamo!",
       welcomeText:
         "Siamo così entusiasti di celebrare il nostro giorno speciale con voi sul bellissimo Lago di Como in Italia! Esplorate il nostro sito web per saperne di più sui dettagli del matrimonio, l'alloggio e le cose da fare.",
       ourCeremony: "La Nostra Cerimonia",
       ceremonyText:
         "Unitevi a noi per la nostra cerimonia simbolica a Como. Saremmo felici di condividere questo momento con voi!",
-      joinUs: "Unitevi a Noi in Italia",
+      joinUs: "Unitevi a noi in Italia",
       joinUsText:
         "Abbiamo un evento privato nel cuore di Como, dove mangeremo, berremo e balleremo tutto il giorno. Molti di noi sono sparsi in tutto il mondo e non ci vediamo più così spesso—sarà fantastico avere una giornata con tutti voi.",
       eveningTitle: "Una Serata Indimenticabile",
       eveningText:
         "Mentre il sole tramonta sul Lago di Como, unitevi a noi per un'incantevole serata di festa sotto le stelle. La villa sarà illuminata, creando un'atmosfera magica per cenare, ballare e creare ricordi che dureranno per tutta la vita.",
-      exploreLakeComo: "Esplora il Lago di Como",
+      exploreLakeComo: "Esplorate il Lago di Como",
       exploreIntro:
         "Restate qualche giorno e godetevi la terra natale di Cinzia!",
       breathtakingViews: "Viste Mozzafiato",
@@ -302,7 +384,7 @@ export const translations = {
     // The Day Page
     theDay: {
       title: "Il Giorno",
-      subtitle: "17 Ottobre 2026",
+      subtitle: "17 ottobre 2026",
       introText:
         "Unitevi a noi per una giornata di festa, amore e ricordi indimenticabili al nostro bellissimo matrimonio sul Lago di Como. Ecco cosa aspettarsi nel nostro giorno speciale.",
       venue: "La Location",
@@ -310,7 +392,7 @@ export const translations = {
         "Il nostro matrimonio si svolgerà presso la splendida Villa Parravicini, una villa storica del XVIII secolo situata nel cuore della città di Como, con vista sul magnifico Lago di Como. Questa elegante villa neoclassica dispone di bellissimi giardini terrazzati, viste mozzafiato sul lago e un'architettura italiana senza tempo—l'ambientazione romantica perfetta per il nostro giorno speciale.",
       venueTitle: "Villa Parravicini Revel",
       venueAddress: "Via Museo Giovio, 6, 22100 Como CO, Italia",
-      scheduleTitle: "Programma degli Eventi",
+      scheduleTitle: "Programma della giornata",
       scheduleSubtitle: "Una giornata piena di amore, risate e festa",
       welcome: "Benvenuto",
       welcomeTime: "15:30",
@@ -338,7 +420,7 @@ export const translations = {
         "Balliamo tutta la notte! Unitevi a noi sulla pista da ballo per una serata di musica, festa e momenti indimenticabili con open bar.",
       midnight: "Saluto di Mezzanotte",
       midnightTime: "24:00",
-      midnightText: "Addio di mezzanotte - tutti a casa come Cenerentola!",
+      midnightText: "Saluto di mezzanotte  tutti a casa come Cenerentola!",
       dressCode: "Codice di Abbigliamento",
       dressCodeText: "Abbigliamento formale, per favore.",
       photography: "Fotografia",
@@ -352,14 +434,14 @@ export const translations = {
         "Ottobre sul Lago di Como è tipicamente mite e piacevole. Vi consigliamo di portare una giacca leggera o uno scialle per la sera.",
       menu: "Menu",
       menuText:
-        "Aspettatevi cibo e vino tradizionali italiani completi e una cena completa! Vi preghiamo di comunicarci eventuali esigenze dietetiche in anticipo!",
+        "Aspettatevi piatti e vini tradizionali italiani e una cena completa! Vi preghiamo di comunicarci eventuali esigenze dietetiche in anticipo!",
     },
     // Accommodation Page
     accommodation: {
       title: "Alloggio",
       subtitle: "Dove Alloggiare sul Lago di Como",
       introText1:
-        "Il Lago di Como offre una meravigliosa selezione di alloggi, da lussuosi hotel sul lago ad affascinanti appartamenti per vacanze. Il nostro wedding planner ha curato delle opzioni per aiutarvi a trovare il posto perfetto dove soggiornare durante la nostra celebrazione.",
+        "Il Lago di Como offre una meravigliosa selezione di alloggi, da lussuosi hotel sul lago ad affascinanti appartamenti per vacanze. Il nostro wedding planner ha selezionato alcune opzioni per aiutarvi a trovare il posto perfetto in cui soggiornare durante la nostra celebrazione.",
       introText2:
         "Vi consigliamo di trascorrere la notte del matrimonio nella città di Como, perché i trasporti pubblici di solito si fermano a mezzanotte. La villa è facilmente raggiungibile a piedi da quasi ogni parte della città.",
       hotelsTitle: "Hotel Consigliati",
@@ -375,11 +457,11 @@ export const translations = {
     // Getting There Page
     gettingThere: {
       title: "Come Arrivare",
-      subtitle: "Informazioni di Viaggio per il Lago di Como",
+      subtitle: "Informazioni di viaggio per il Lago di Como",
       introText1:
         "Il Lago di Como è facilmente accessibile da Milano e da altre importanti città europee. Ecco tutto ciò che dovete sapere per viaggiare al nostro matrimonio.",
       introText2:
-        "Le auto possono essere noleggiate negli aeroporti. Se noleggiate un'auto quando prenotate il biglietto aereo, è molto più economico.",
+        "È possibile noleggiare un'auto direttamente in aeroporto. Se la prenotate insieme al volo, di solito è molto più economica.",
       byAir: "In Aereo",
       byTrain: "In Treno",
       malpensaTitle: "Aeroporto di Milano Malpensa (MXP)",
@@ -391,18 +473,21 @@ export const translations = {
       bergamoTitle: "Aeroporto di Milano Bergamo (BGY)",
       bergamoText:
         "Popolare tra le compagnie aeree low-cost, a circa 1 ora dal Lago di Como. Spesso ha tariffe competitive dalle città europee.",
-      fromMalpensaTitle: "Da Aeroporto di Milano Malpensa",
+      fromMalpensaTitle: "Dall'aeroporto di Milano Malpensa",
       fromMalpensaText:
-        "Prendete il treno da Malpensa a Milano Centrale, poi proseguite per Como. Viaggio totale di circa 1 ora. In alternativa, prendete il treno per Mendrisio in Svizzera e cambiate per Como Lago.",
-      fromLinateTitle: "Da Aeroporto di Milano Linate",
+        "Prendete il treno da Malpensa a Milano Centrale, poi proseguite per Como. Il viaggio complessivo dura circa 1 ora. In alternativa, prendete il treno per Mendrisio in Svizzera e cambiate per Como Lago.",
+      fromLinateTitle: "Dall'aeroporto di Milano Linate",
       fromLinateText:
         "Prendete la metro da Linate a San Babila (linea blu), cambiate con la linea rossa per raggiungere la stazione di Milano Cadorna (circa 15 minuti). Da Cadorna, prendete il treno per Como Lago (circa 45 minuti).",
-      fromBergamoTitle: "Da Aeroporto di Milano Bergamo",
+      fromBergamoTitle: "Dall'aeroporto di Milano Bergamo",
       fromBergamoText:
         "Prendete l'autobus dell'aeroporto per la stazione di Milano Centrale (circa 1 ora). Da Milano Centrale, prendete il treno per Como (circa 1 ora).",
       directToComoTitle: "Direttamente a Como",
       directToComoText:
         "Como ha due stazioni ferroviarie principali: Como San Giovanni (per i treni da Milano Centrale) e Como Lago (per i treni da Milano Cadorna). Como Lago è più vicina al centro città e al lungolago.",
+      lastTrainsTitle: "Ultimi treni per Como",
+      lastTrainsText:
+        "Vi preghiamo di tenere presente gli orari degli ultimi treni quando pianificate il vostro arrivo: l'ultimo treno da Milano Centrale a Como San Giovanni parte intorno alle 22:43, e l'ultimo treno da Milano Cadorna a Como Lago parte intorno alle 23:16. Consigliamo di prenotare voli che atterrano almeno 2-3 ore prima dell'ultimo treno per avere tempo sufficiente per il ritiro bagagli, i controlli doganali (se applicabili) e il viaggio alla stazione ferroviaria.",
     },
     // Location Page
     location: {
@@ -518,6 +603,87 @@ export const translations = {
         "I taxi sono facilmente disponibili ma molto costosi. Un viaggio di quindici minuti può costare €60.",
       taxisPara2:
         "Uber e altri servizi simili ai taxi non sono facilmente disponibili o affidabili a Como.",
+    },
+    // RSVP Page
+    rsvp: {
+      title: "RSVP",
+      subtitle: "Unitevi a noi per il nostro giorno speciale",
+      intro:
+        "Saremmo onorati di avervi a festeggiare con noi! Vi preghiamo di farci sapere se potrete partecipare.",
+      yourName: "Il tuo nome",
+      yourNameTooltip: "Per favore inserisci il tuo nome completo",
+      yourNamePlaceholder: "es., Mario Rossi",
+      willYouAttend: "Parteciperai?",
+      pleaseEnterNameFirst: "Per favore inserisci prima il tuo nome",
+      yesAttending: "Sì, ci sarò! 🎉",
+      noAttending: "Mi dispiace, non posso venire",
+      otherGuestsAttending: "Altri ospiti nel tuo RSVP che partecipano",
+      otherGuestsAttendingTooltip:
+        "Per favore inserisci il nome completo di ogni ospite del tuo gruppo",
+      guestFullName: "Ospite",
+      fullName: "Nome Completo",
+      addGuestAttending: "+ Aggiungi Ospite che Partecipa",
+      otherGuestsNotAttending: "Altri ospiti nel tuo RSVP che non partecipano",
+      otherGuestsNotAttendingTooltip:
+        "Se conosci ospiti che non possono partecipare, elenca i loro nomi qui",
+      addGuestNotAttending: "+ Aggiungi Ospite che Non Partecipa",
+      attendingBabies: "Neonati che partecipano (sotto i 18 mesi)",
+      attendingBabiesTooltip:
+        "Seleziona quali ospiti sono neonati sotto i 18 mesi",
+      selectBaby: "Seleziona neonato",
+      addBaby: "+ Aggiungi Neonato",
+      attendingChildren: "Bambini che partecipano (sotto i 10 anni)",
+      attendingChildrenTooltip:
+        "Seleziona quali ospiti sono bambini tra i 18 mesi e i 10 anni",
+      selectChild: "Seleziona bambino",
+      addChild: "+ Aggiungi Bambino",
+      dietaryRequirements: "Esigenze dietetiche",
+      dietaryRequirementsTooltip:
+        "Seleziona le esigenze dietetiche per i tuoi ospiti (Vegano, Vegetariano)",
+      none: "Nessuna",
+      vegan: "Vegano",
+      vegetarian: "Vegetariano",
+      selectGuest: "Seleziona Ospite",
+      addDietaryRequirement: "+ Aggiungi esigenza dietetica",
+      foodAllergies: "Allergie alimentari",
+      foodAllergiesTooltip:
+        "Elenca eventuali allergie alimentari per i tuoi ospiti per garantire la sicurezza di tutti",
+      foodAllergiesPlaceholder: "es., Arachidi, Crostacei, Latticini",
+      addFoodAllergy: "+ Aggiungi allergia alimentare",
+      messageToCouple: "Messaggio agli sposi",
+      messageToCoupleTooltip:
+        "Condividi il tuo entusiasmo, i tuoi auguri o eventuali domande!",
+      messagePlaceholder: "Non vediamo l'ora di festeggiare con voi! 💕",
+      submitRSVP: "Invia RSVP",
+      validationError:
+        "Per favore compila correttamente tutti i campi obbligatori.",
+      successMessage: "Grazie per il tuo RSVP! Ci vediamo lì! 💒",
+      successMessageAttending: "Non vediamo l'ora di vedervi! 🎉",
+      successMessageNotAttending:
+        "Ci dispiace non vedervi e ci sentiremo presto! 💕",
+      // Personalized card messages
+      dearGuest: "Caro/a",
+      thankYouAttending:
+        "Grazie mille per aver confermato la tua partecipazione al nostro matrimonio. Siamo assolutamente felici che ti unirai a noi nel nostro giorno speciale.",
+      thankYouNotAttending:
+        "Grazie per avercelo fatto sapere. Anche se siamo tristi che non potrai unirti a noi nel nostro giorno speciale, capiamo perfettamente e speriamo di festeggiare con te presto.",
+      thankYouMixed:
+        "Grazie per la tua risposta. Siamo felici che alcuni del tuo gruppo si uniranno a noi, e capiamo che non tutti possono partecipare. Non vediamo l'ora di festeggiare con coloro che potranno essere presenti.",
+      lookForwardTo: "Non vediamo l'ora di festeggiare con te al Lago di Como.",
+      withLove: "Con amore e trepidazione,",
+      coupleNames: "Cinzia & Joseph",
+      errorMessage:
+        "Si è verificato un errore nell'invio del tuo RSVP. Per favore riprova.",
+      joeAlertTitle: "Non Così in Fretta, Joe Schuldt!",
+      joeAlertMessage: "Puoi solo partecipare a questo matrimonio.",
+      joeAlertInsult: "Testa di cazzo.",
+      joeAlertButton: "OK, Invia Accettazione! 🎉",
+    },
+    // Footer
+    footer: {
+      location: "Lago di Como, Italia",
+      year: "2026",
+      message: "Con amore e trepidazione",
     },
   },
 };

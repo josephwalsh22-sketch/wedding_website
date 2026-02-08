@@ -16,13 +16,14 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 $spacing-md;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: $spacing-md;
 
     @media (max-width: $breakpoint-mobile) {
-      flex-direction: column;
+      grid-template-columns: 1fr;
+      justify-items: center;
       gap: $spacing-sm;
     }
   }
@@ -49,6 +50,7 @@
     gap: $spacing-md;
     margin: 0;
     padding: 0;
+    justify-content: center;
 
     @media (max-width: $breakpoint-mobile) {
       flex-wrap: wrap;
@@ -103,8 +105,21 @@
     padding: 0.4rem 0.8rem;
     border-radius: 2px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 75px;
+
+    .flag-icon {
+      width: 20px;
+      height: auto;
+      display: inline-block;
+    }
 
     &:hover {
       background-color: $primary-color;

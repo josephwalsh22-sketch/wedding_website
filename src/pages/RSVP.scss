@@ -76,6 +76,145 @@
         line-height: 1.8;
       }
 
+      .success-message {
+        @include card-style;
+        padding: $spacing-xl * 2;
+        text-align: center;
+        animation: fadeIn 0.5s ease-out;
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+          padding: $spacing-xl;
+        }
+
+        .success-icon {
+          font-size: 5rem;
+          margin-bottom: $spacing-lg;
+          animation: bounceIn 0.6s ease-out 0.2s both;
+
+          @keyframes bounceIn {
+            0% {
+              opacity: 0;
+              transform: scale(0.3);
+            }
+            50% {
+              transform: scale(1.05);
+            }
+            70% {
+              transform: scale(0.9);
+            }
+            100% {
+              opacity: 1;
+              transform: scale(1);
+            }
+          }
+
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 4rem;
+          }
+        }
+
+        h2 {
+          font-family: $font-accent;
+          font-size: 3rem;
+          font-weight: 600;
+          color: $primary-color;
+          margin: 0 0 $spacing-lg 0;
+          letter-spacing: 2px;
+
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 2rem;
+          }
+        }
+
+        .success-text {
+          font-family: $font-secondary;
+          font-size: 1.3rem;
+          font-weight: 400;
+          color: $text-dark;
+          margin: 0 0 $spacing-md 0;
+          line-height: 1.6;
+
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 1.1rem;
+          }
+        }
+
+        .success-subtext {
+          font-family: $font-secondary;
+          font-size: 1.05rem;
+          font-weight: 300;
+          color: $text-medium;
+          margin: 0;
+          line-height: 1.8;
+          max-width: 600px;
+          margin: 0 auto;
+
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 0.95rem;
+          }
+        }
+      }
+
+      .validation-error {
+        @include card-style;
+        background-color: #fff3cd;
+        border-left: 4px solid #ff9800;
+        padding: $spacing-md;
+        margin-bottom: $spacing-lg;
+        display: flex;
+        align-items: flex-start;
+        gap: $spacing-sm;
+        animation: slideDown 0.3s ease-out;
+
+        @keyframes slideDown {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .error-icon {
+          font-size: 1.5rem;
+          flex-shrink: 0;
+        }
+
+        p {
+          margin: 0;
+          font-family: $font-secondary;
+          font-size: 0.95rem;
+          font-weight: 400;
+          color: #856404;
+          line-height: 1.6;
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+          padding: $spacing-sm;
+
+          .error-icon {
+            font-size: 1.2rem;
+          }
+
+          p {
+            font-size: 0.85rem;
+          }
+        }
+      }
+
       .rsvp-form {
         @include card-style;
         padding: $spacing-xl;
@@ -85,10 +224,33 @@
         }
 
         .form-group {
-          margin-bottom: $spacing-md;
+          margin-bottom: $spacing-lg;
+
+          &.disabled {
+            opacity: 0.5;
+            pointer-events: none;
+
+            label {
+              color: $text-medium;
+              cursor: not-allowed;
+            }
+
+            input,
+            select {
+              background-color: #f5f5f5;
+              cursor: not-allowed;
+              color: #999;
+
+              &::placeholder {
+                color: #bbb;
+              }
+            }
+          }
 
           label {
-            display: block;
+            display: flex;
+            align-items: center;
+            gap: $spacing-xs;
             font-family: $font-secondary;
             font-weight: 500;
             font-size: 0.9rem;
@@ -96,6 +258,70 @@
             margin-bottom: $spacing-xs;
             letter-spacing: 0.5px;
             text-transform: uppercase;
+
+            .tooltip {
+              position: relative;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 18px;
+              height: 18px;
+              font-size: 0.75rem;
+              cursor: help;
+              opacity: 0.7;
+              transition: opacity 0.2s ease;
+
+              &:hover {
+                opacity: 1;
+              }
+
+              &::before {
+                content: attr(title);
+                position: absolute;
+                bottom: 125%;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: $spacing-xs $spacing-sm;
+                background-color: rgba(0, 0, 0, 0.9);
+                color: white;
+                font-size: 0.75rem;
+                font-weight: 400;
+                text-transform: none;
+                letter-spacing: 0.3px;
+                white-space: nowrap;
+                border-radius: 4px;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.2s ease;
+                z-index: 1000;
+              }
+
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                border: 5px solid transparent;
+                border-top-color: rgba(0, 0, 0, 0.9);
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.2s ease;
+              }
+
+              &:hover::before,
+              &:hover::after {
+                opacity: 1;
+              }
+
+              @media (max-width: $breakpoint-mobile) {
+                &::before {
+                  white-space: normal;
+                  max-width: 200px;
+                  width: max-content;
+                }
+              }
+            }
           }
 
           input,
@@ -123,6 +349,361 @@
           textarea {
             resize: vertical;
           }
+
+          .guest-names-list {
+            display: flex;
+            flex-direction: column;
+            gap: $spacing-sm;
+
+            .guest-name-input {
+              width: 100%;
+              padding: $spacing-sm;
+              font-family: $font-secondary;
+              font-size: 1rem;
+              font-weight: 300;
+              border: 1px solid $border-subtle;
+              border-radius: 2px;
+              box-sizing: border-box;
+              transition: all 0.3s ease;
+              background-color: $accent-light;
+
+              &:focus {
+                outline: none;
+                border-color: $primary-color;
+                background-color: white;
+                box-shadow: 0 0 0 3px rgba(90, 111, 125, 0.1);
+              }
+
+              &::placeholder {
+                color: #999;
+                font-style: italic;
+              }
+            }
+          }
+
+          .guest-checkbox-list {
+            display: flex;
+            flex-direction: column;
+            gap: $spacing-xs;
+            padding: $spacing-sm;
+            background-color: $accent-light;
+            border: 1px solid $border-subtle;
+            border-radius: 2px;
+
+            .checkbox-label {
+              display: flex;
+              align-items: center;
+              gap: $spacing-sm;
+              padding: $spacing-xs $spacing-sm;
+              cursor: pointer;
+              font-family: $font-secondary;
+              font-size: 0.95rem;
+              transition: background-color 0.2s ease;
+              border-radius: 2px;
+
+              &:hover {
+                background-color: rgba(90, 111, 125, 0.1);
+              }
+
+              input[type="checkbox"] {
+                width: 18px;
+                height: 18px;
+                cursor: pointer;
+                accent-color: $primary-color;
+
+                &:disabled {
+                  cursor: not-allowed;
+                  opacity: 0.5;
+                }
+              }
+
+              .disabled-name {
+                color: $text-medium;
+                font-style: italic;
+              }
+            }
+
+            .no-guests-message {
+              color: $text-medium;
+              font-style: italic;
+              font-size: 0.9rem;
+              margin: 0;
+              padding: $spacing-xs;
+            }
+          }
+
+          .not-attending-row {
+            display: flex;
+            gap: $spacing-sm;
+            align-items: center;
+            margin-bottom: $spacing-sm;
+
+            @media (max-width: $breakpoint-mobile) {
+              flex-direction: column;
+              align-items: stretch;
+            }
+
+            .guest-name-input {
+              flex: 1;
+            }
+
+            .remove-not-attending-btn {
+              padding: $spacing-xs $spacing-sm;
+              background-color: #dc3545;
+              color: white;
+              border: none;
+              border-radius: 2px;
+              cursor: pointer;
+              font-size: 1.2rem;
+              line-height: 1;
+              transition: all 0.2s ease;
+              flex-shrink: 0;
+
+              &:hover {
+                background-color: darken(#dc3545, 10%);
+              }
+
+              @media (max-width: $breakpoint-mobile) {
+                width: 100%;
+                padding: $spacing-sm;
+              }
+            }
+          }
+
+          .add-not-attending-btn {
+            width: 100%;
+            padding: $spacing-sm;
+            background-color: $secondary-color;
+            color: white;
+            font-family: $font-secondary;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: $spacing-sm;
+
+            &:hover {
+              background-color: darken($secondary-color, 8%);
+              transform: translateY(-1px);
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            }
+
+            &:active {
+              transform: translateY(0);
+            }
+          }
+
+          .baby-row,
+          .child-row,
+          .dietary-requirement-row {
+            display: flex;
+            gap: $spacing-sm;
+            align-items: center;
+            margin-bottom: $spacing-sm;
+
+            @media (max-width: $breakpoint-mobile) {
+              flex-direction: column;
+              align-items: stretch;
+            }
+
+            .baby-select,
+            .child-select,
+            .dietary-type-select,
+            .dietary-guest-select {
+              flex: 1;
+              padding: $spacing-sm;
+              font-family: $font-secondary;
+              font-size: 1rem;
+              font-weight: 300;
+              border: 1px solid $border-subtle;
+              border-radius: 2px;
+              box-sizing: border-box;
+              transition: all 0.3s ease;
+              background-color: $accent-light;
+
+              &:focus {
+                outline: none;
+                border-color: $primary-color;
+                background-color: white;
+                box-shadow: 0 0 0 3px rgba(90, 111, 125, 0.1);
+              }
+
+              &:disabled {
+                background-color: #f5f5f5;
+                cursor: not-allowed;
+                color: #999;
+              }
+            }
+
+            .remove-baby-btn,
+            .remove-child-btn,
+            .remove-dietary-btn {
+              padding: $spacing-xs $spacing-sm;
+              background-color: #dc3545;
+              color: white;
+              border: none;
+              border-radius: 2px;
+              cursor: pointer;
+              font-size: 1.2rem;
+              line-height: 1;
+              transition: all 0.2s ease;
+              flex-shrink: 0;
+
+              &:hover {
+                background-color: darken(#dc3545, 10%);
+              }
+
+              @media (max-width: $breakpoint-mobile) {
+                width: 100%;
+                padding: $spacing-sm;
+              }
+            }
+          }
+
+          .add-baby-btn,
+          .add-child-btn,
+          .add-dietary-btn {
+            width: 100%;
+            padding: $spacing-sm;
+            background-color: $secondary-color;
+            color: white;
+            font-family: $font-secondary;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: $spacing-sm;
+
+            &:hover:not(:disabled) {
+              background-color: darken($secondary-color, 8%);
+              transform: translateY(-1px);
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            }
+
+            &:active:not(:disabled) {
+              transform: translateY(0);
+            }
+
+            &:disabled {
+              background-color: lighten($secondary-color, 25%);
+              cursor: not-allowed;
+              opacity: 0.6;
+            }
+          }
+
+          .allergy-row {
+            display: flex;
+            gap: $spacing-sm;
+            align-items: center;
+            margin-bottom: $spacing-sm;
+
+            @media (max-width: $breakpoint-mobile) {
+              flex-direction: column;
+              align-items: stretch;
+            }
+
+            .allergy-input {
+              flex: 1.5;
+              padding: $spacing-sm;
+              font-family: $font-secondary;
+              font-size: 1rem;
+              font-weight: 300;
+              border: 1px solid $border-subtle;
+              border-radius: 2px;
+              box-sizing: border-box;
+              transition: all 0.3s ease;
+              background-color: $accent-light;
+
+              &:focus {
+                outline: none;
+                border-color: $primary-color;
+                background-color: white;
+                box-shadow: 0 0 0 3px rgba(90, 111, 125, 0.1);
+              }
+
+              &::placeholder {
+                color: #999;
+                font-style: italic;
+              }
+            }
+
+            .allergy-guest-select {
+              flex: 1;
+              padding: $spacing-sm;
+              font-family: $font-secondary;
+              font-size: 1rem;
+              font-weight: 300;
+              border: 1px solid $border-subtle;
+              border-radius: 2px;
+              box-sizing: border-box;
+              transition: all 0.3s ease;
+              background-color: $accent-light;
+
+              &:focus {
+                outline: none;
+                border-color: $primary-color;
+                background-color: white;
+                box-shadow: 0 0 0 3px rgba(90, 111, 125, 0.1);
+              }
+            }
+
+            .remove-allergy-btn {
+              padding: $spacing-xs $spacing-sm;
+              background-color: #dc3545;
+              color: white;
+              border: none;
+              border-radius: 2px;
+              cursor: pointer;
+              font-size: 1.2rem;
+              line-height: 1;
+              transition: all 0.2s ease;
+              flex-shrink: 0;
+
+              &:hover {
+                background-color: darken(#dc3545, 10%);
+              }
+
+              @media (max-width: $breakpoint-mobile) {
+                width: 100%;
+                padding: $spacing-sm;
+              }
+            }
+          }
+
+          .add-allergy-btn {
+            width: 100%;
+            padding: $spacing-sm;
+            background-color: $secondary-color;
+            color: white;
+            font-family: $font-secondary;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: $spacing-sm;
+
+            &:hover {
+              background-color: darken($secondary-color, 8%);
+              transform: translateY(-1px);
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            }
+
+            &:active {
+              transform: translateY(0);
+            }
+          }
         }
 
         .submit-btn {
@@ -140,16 +721,206 @@
           cursor: pointer;
           transition: all 0.3s ease;
 
-          &:hover {
+          &:hover:not(:disabled) {
             background-color: darken($primary-color, 8%);
             transform: translateY(-1px);
             box-shadow: 0 4px 12px rgba(90, 111, 125, 0.3);
           }
 
-          &:active {
+          &:active:not(:disabled) {
             transform: translateY(0);
           }
+
+          &:disabled {
+            background-color: lighten($primary-color, 25%);
+            cursor: not-allowed;
+            opacity: 0.6;
+          }
         }
+      }
+    }
+  }
+
+  // Joe Schuldt Alert Modal
+  .joe-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  .joe-alert-modal {
+    background: white;
+    padding: $spacing-xl;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .wagging-finger {
+      width: 150px;
+      height: auto;
+      margin-bottom: $spacing-md;
+    }
+
+    h2 {
+      font-family: $font-accent;
+      font-size: 2rem;
+      color: $primary-color;
+      margin: 0 0 $spacing-md 0;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      font-family: $font-secondary;
+      font-size: 1.2rem;
+      color: $text-dark;
+      margin: 0 0 $spacing-lg 0;
+      line-height: 1.6;
+    }
+
+    .joe-alert-btn {
+      background-color: $primary-color;
+      color: white;
+      font-family: $font-secondary;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: $spacing-sm $spacing-lg;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  // Loading state
+  .rsvp-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    padding: $spacing-xl;
+
+    .loading-gif {
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // Success message
+  .rsvp-success {
+    @include card-style;
+    padding: $spacing-xl * 2;
+    text-align: left;
+    animation: fadeIn 0.5s ease-out;
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      padding: $spacing-xl;
+    }
+
+    p {
+      font-family: $font-secondary;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: $text-dark;
+      line-height: 1.8;
+      margin: 0 0 $spacing-lg 0;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 1rem;
+      }
+    }
+
+    .greeting {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: $spacing-md;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 1.1rem;
+      }
+    }
+
+    .message-body {
+      margin-bottom: $spacing-lg;
+    }
+
+    .look-forward {
+      margin-bottom: $spacing-xl;
+    }
+
+    .closing {
+      font-style: italic;
+      margin-top: $spacing-xl;
+      margin-bottom: $spacing-sm;
+    }
+
+    .signature {
+      font-family: $font-accent;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $primary-color;
+      margin: 0;
+      letter-spacing: 1px;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 1.2rem;
       }
     }
   }

@@ -1,7 +1,12 @@
 import React from "react";
 import "./Footer.scss";
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../translations/translations";
 
 function Footer() {
+  const { language } = useLanguage();
+  const t = translations[language].footer;
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -9,10 +14,12 @@ function Footer() {
           <span className="couple-initials">C & J</span>
         </div>
         <div className="footer-details">
-          <p className="footer-date">Lake Como, Italy · 2026</p>
+          <p className="footer-date">
+            {t.location} · {t.year}
+          </p>
         </div>
         <div className="footer-message">
-          <p>With love and anticipation</p>
+          <p>{t.message}</p>
         </div>
       </div>
     </footer>
