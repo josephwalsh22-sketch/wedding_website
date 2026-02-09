@@ -231,6 +231,10 @@
             font-size: 1.3rem;
             color: $primary-color;
             margin: 0 0 $spacing-xs 0;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 1.15rem;
+            }
           }
 
           .recommendation-type {
@@ -240,6 +244,10 @@
             font-style: italic;
             margin: 0 0 $spacing-sm 0;
             font-weight: 500;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 0.85rem;
+            }
           }
 
           p {
@@ -248,6 +256,10 @@
             color: $text-dark;
             line-height: 1.6;
             margin: 0;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 0.9rem;
+            }
 
             &:not(.recommendation-type) {
               margin-top: $spacing-sm;
@@ -295,6 +307,10 @@
             color: $primary-color;
             margin: 0 0 $spacing-sm 0;
             padding: $spacing-lg $spacing-lg 0 $spacing-lg;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 1.15rem;
+            }
           }
 
           p {
@@ -304,6 +320,10 @@
             line-height: 1.6;
             margin: 0;
             padding: 0 $spacing-lg $spacing-lg $spacing-lg;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 0.9rem;
+            }
           }
         }
       }
@@ -330,6 +350,10 @@
           font-size: 2rem;
           margin-bottom: $spacing-lg;
           color: $primary-color;
+
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 1.6rem;
+          }
         }
 
         h3 {
@@ -338,6 +362,10 @@
           color: $secondary-color;
           margin-top: 0;
           margin-bottom: $spacing-sm;
+
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 1.15rem;
+          }
         }
 
         p {
@@ -346,6 +374,10 @@
           color: $text-dark;
           line-height: 1.7;
           margin-bottom: $spacing-md;
+
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 0.95rem;
+          }
 
           &:last-child {
             margin-bottom: 0;
@@ -357,6 +389,10 @@
           margin-bottom: $spacing-lg;
           color: $text-medium;
           line-height: 1.8;
+
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 1rem;
+          }
         }
 
         .content-with-image {

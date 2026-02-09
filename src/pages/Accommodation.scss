@@ -232,6 +232,10 @@
         line-height: 1.8;
         color: $text-dark;
         margin-bottom: $spacing-md;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 0.95rem;
+        }
       }
 
       .hotel-details {
@@ -249,8 +253,16 @@
           color: $secondary-color;
           font-weight: 400;
 
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 0.85rem;
+          }
+
           .detail-icon {
             font-size: 1rem;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 0.95rem;
+            }
           }
         }
       }
@@ -263,6 +275,10 @@
         color: $primary-color;
         text-decoration: none;
         letter-spacing: 0.5px;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 0.9rem;
+        }
         transition: all 0.3s ease;
         border-bottom: 1px solid transparent;
 
@@ -433,6 +449,10 @@
       line-height: 1.8;
       color: $text-dark;
       margin: 0 0 $spacing-md 0;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 0.95rem;
+      }
     }
 
     .hotel-link {
@@ -443,6 +463,10 @@
       color: $primary-color;
       text-decoration: none;
       letter-spacing: 0.5px;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 0.9rem;
+      }
       transition: all 0.3s ease;
       border-bottom: 1px solid transparent;
       margin-top: $spacing-sm;
@@ -514,6 +538,10 @@
                 color: $primary-color;
                 margin: 0 0 $spacing-xs 0;
                 letter-spacing: 0.5px;
+
+                @media (max-width: $breakpoint-mobile) {
+                  font-size: 1.15rem;
+                }
               }
 
               p {
@@ -523,6 +551,10 @@
                 line-height: 1.8;
                 color: $text-dark;
                 margin: 0;
+
+                @media (max-width: $breakpoint-mobile) {
+                  font-size: 0.95rem;
+                }
               }
             }
           }

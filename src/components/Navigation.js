@@ -11,7 +11,7 @@ const Navigation = () => {
   const t = translations[language].nav;
 
   return (
-    <nav className="navigation">
+    <nav className={`navigation ${language === "it" ? "nav-italian" : ""}`}>
       <div className="nav-container">
         <div className="nav-brand">
           <Link to="/">Cinzia & Joseph</Link>

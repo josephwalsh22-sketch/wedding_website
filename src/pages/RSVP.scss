@@ -74,6 +74,10 @@
         color: $text-medium;
         margin-bottom: $spacing-lg;
         line-height: 1.8;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1rem;
+        }
       }
 
       .success-message {
@@ -338,6 +342,10 @@
             transition: all 0.3s ease;
             background-color: $accent-light;
 
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 0.95rem;
+            }
+
             &:focus {
               outline: none;
               border-color: $primary-color;
@@ -366,6 +374,10 @@
               box-sizing: border-box;
               transition: all 0.3s ease;
               background-color: $accent-light;
+
+              @media (max-width: $breakpoint-mobile) {
+                font-size: 0.95rem;
+              }
 
               &:focus {
                 outline: none;
@@ -809,6 +821,10 @@
       color: $text-dark;
       margin: 0 0 $spacing-lg 0;
       line-height: 1.6;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 1.05rem;
+      }
     }
 
     .joe-alert-btn {
@@ -823,6 +839,10 @@
       cursor: pointer;
       transition: all 0.3s ease;
       text-transform: uppercase;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 0.95rem;
+      }
       letter-spacing: 1px;
 
       &:hover {

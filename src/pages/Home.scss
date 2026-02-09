@@ -83,10 +83,6 @@
       padding: $spacing-md;
       animation: fadeInUp 1.5s ease-out;
 
-      @media (max-width: $breakpoint-mobile) {
-        padding-top: 120px;
-      }
-
       .couple-names {
         font-family: $font-accent;
         font-size: 7.5rem;
@@ -210,6 +206,10 @@
         font-size: 2.8rem;
         font-weight: 400;
         margin-bottom: $spacing-lg;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 2rem;
+        }
       }
 
       p {
@@ -218,6 +218,10 @@
         font-weight: 300;
         line-height: 1.9;
         color: $text-medium;
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -284,6 +288,10 @@
         @media (max-width: $breakpoint-tablet) {
           text-align: center;
         }
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1.9rem;
+        }
       }
 
       p {
@@ -295,6 +303,10 @@
 
         @media (max-width: $breakpoint-tablet) {
           text-align: center;
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1rem;
         }
       }
     }
@@ -338,6 +350,10 @@
         @media (max-width: $breakpoint-tablet) {
           text-align: center;
         }
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1.9rem;
+        }
       }
 
       p {
@@ -349,6 +365,10 @@
 
         @media (max-width: $breakpoint-tablet) {
           text-align: center;
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1rem;
         }
       }
     }
@@ -463,6 +483,10 @@
       text-align: center;
       max-width: 800px;
       margin: 0 auto $spacing-xl auto;
+
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 1rem;
+      }
     }
 
     .explore-grid {
@@ -509,6 +533,10 @@
             color: $primary-color;
             margin-bottom: $spacing-sm;
             letter-spacing: 0.5px;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 1.2rem;
+            }
           }
 
           p {
@@ -517,6 +545,10 @@
             font-weight: 300;
             line-height: 1.7;
             color: $text-medium;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 0.9rem;
+            }
           }
         }
       }

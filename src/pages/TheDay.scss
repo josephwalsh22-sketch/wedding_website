@@ -151,10 +151,18 @@
           margin: $spacing-xs 0;
           letter-spacing: 0.5px;
 
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 0.95rem;
+          }
+
           &:first-child {
             font-weight: 600;
             color: $secondary-color;
             font-size: 1.1rem;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 1.05rem;
+            }
           }
         }
       }

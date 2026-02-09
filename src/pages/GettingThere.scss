@@ -76,6 +76,11 @@
         margin-bottom: $spacing-lg;
         text-align: left;
 
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1.1rem;
+          line-height: 1.8;
+        }
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -127,12 +132,20 @@
             color: $primary-color;
             position: relative;
 
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 1.6rem;
+            }
+
             .travel-icon {
               position: absolute;
               right: 0;
               top: 50%;
               transform: translateY(-50%);
               font-size: 1.8rem;
+
+              @media (max-width: $breakpoint-mobile) {
+                font-size: 1.5rem;
+              }
             }
           }
 
@@ -142,6 +155,10 @@
             color: $secondary-color;
             margin-top: 0;
             margin-bottom: $spacing-sm;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 1.15rem;
+            }
           }
 
           p {
@@ -150,6 +167,10 @@
             color: $text-dark;
             line-height: 1.7;
             margin-bottom: $spacing-md;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 0.95rem;
+            }
 
             &:last-child {
               margin-bottom: 0;
@@ -161,6 +182,10 @@
             margin-bottom: $spacing-lg;
             color: $text-medium;
             line-height: 1.8;
+
+            @media (max-width: $breakpoint-mobile) {
+              font-size: 1rem;
+            }
           }
 
           .content-with-image {
@@ -296,6 +321,10 @@
           @include heading-style;
           font-size: 1.8rem;
           margin-bottom: $spacing-md;
+
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 1.5rem;
+          }
         }
 
         p {
@@ -304,6 +333,10 @@
           color: $text-dark;
           line-height: 1.6;
           margin: 0;
+
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 0.95rem;
+          }
         }
       }
     }
