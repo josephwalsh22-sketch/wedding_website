@@ -75,6 +75,11 @@
         rgba(0, 0, 0, 0.35)
       );
       @include flex-center;
+      padding-top: 80px; // Account for fixed nav height
+
+      @media (max-width: $breakpoint-mobile) {
+        padding-top: 140px; // Extra padding on mobile to clear nav + browser chrome (Safari URL bar)
+      }
     }
 
     .hero-content {

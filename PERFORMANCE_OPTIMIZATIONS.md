@@ -14,10 +14,12 @@ Added `loading="lazy"` attribute to all images across the site:
 
 ### 2. **React Router Optimization**
 
-- Switched from `BrowserRouter` to `HashRouter` for GitHub Pages compatibility
+- Using `BrowserRouter` with GitHub Pages SPA redirect workaround for clean URLs (no `#`)
+- Implemented 404.html redirect script to handle direct URL access on GitHub Pages
+- Added redirect handler in index.html to restore correct URLs after 404 redirect
 - Added `ScrollToTop` component to reset scroll position on navigation
 
-**Impact**: Fixes 404 errors on refresh and improves user experience.
+**Impact**: Clean URLs without hash fragments, proper handling of direct links and page refreshes, improved user experience and SEO.
 
 ---
 
