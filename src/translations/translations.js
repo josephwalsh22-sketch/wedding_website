@@ -102,6 +102,8 @@ export const translations = {
         "Lake Como offers a wonderful selection of accommodations, from luxurious lakeside hotels to charming vacation apartments. Our wedding planner curated options to help you find the perfect place to stay during our celebration.",
       introText2:
         "We recommend spending the night of the wedding in Como city, because public transport typically stops at midnight. The villa is easily reachable on foot from almost any part of the city.",
+      bookingTip:
+        "When booking, we recommend mentioning that you are attending Cinzia and Joseph's wedding.",
       hotelsTitle: "Recommended Hotels",
       hotelsSubtitle: "Elegant accommodations with stunning lake views",
       apartmentsTitle: "Recommended Apartments",
@@ -365,7 +367,7 @@ export const translations = {
       lakeComo: "Lago di Como, Italia",
       saveTheDate: "Segnate la data",
       date: "17 ottobre 2026",
-      sposiamo: "Ci Sposiamo!",
+      sposiamo: "Festeggiate con Noi!",
       welcomeText:
         "Siamo così entusiasti di celebrare il nostro giorno speciale con voi sul bellissimo Lago di Como in Italia! Esplorate il nostro sito web per saperne di più sui dettagli del matrimonio, l'alloggio e le cose da fare.",
       ourCeremony: "La Nostra Cerimonia",
@@ -453,6 +455,8 @@ export const translations = {
         "Il Lago di Como offre una meravigliosa selezione di alloggi, da lussuosi hotel sul lago ad affascinanti appartamenti per vacanze. Il nostro wedding planner ha selezionato alcune opzioni per aiutarvi a trovare il posto perfetto in cui soggiornare durante la nostra celebrazione.",
       introText2:
         "Vi consigliamo di trascorrere la notte del matrimonio nella città di Como, perché i trasporti pubblici di solito si fermano a mezzanotte. La villa è facilmente raggiungibile a piedi da quasi ogni parte della città.",
+      bookingTip:
+        "Al momento della prenotazione, vi consigliamo di indicare che parteciperete al matrimonio di Cinzia e Joseph.",
       hotelsTitle: "Hotel Consigliati",
       hotelsSubtitle: "Alloggi eleganti con splendide viste sul lago",
       apartmentsTitle: "Appartamenti Consigliati",

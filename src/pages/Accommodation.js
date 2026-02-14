@@ -12,6 +12,39 @@ const Accommodation = () => {
   const t = translations[language].accommodation;
   const isItalian = language === "it";
 
+  // Hotel and accommodation URLs based on language
+  const urls = {
+    palaceHotel: isItalian
+      ? "https://www.palacehotel.it/"
+      : "https://www.palacehotel.it/en/",
+    albergoTerminus: isItalian
+      ? "https://albergoterminus.it/"
+      : "https://albergoterminus.it/en/",
+    hotelEngadina: "https://hotelengadina.com/",
+    laPerla: isItalian
+      ? "https://laperlabysedar.com/"
+      : "https://laperlabysedar.com/en/",
+    valli: isItalian
+      ? "https://www.myhomeincomo.com/it/valli"
+      : "https://www.myhomeincomo.com/valli",
+    midnightBorgo: isItalian
+      ? "https://www.myhomeincomo.com/it/midnight-borgo"
+      : "https://www.myhomeincomo.com/midnight-borgo",
+    casaOlmo: isItalian
+      ? "https://www.myhomeincomo.com/it/casa-olmo"
+      : "https://www.myhomeincomo.com/casa-olmo",
+    theGallery: isItalian
+      ? "https://www.myhomeincomo.com/it/TheGallery"
+      : "https://www.myhomeincomo.com/TheGallery",
+    myHomeInComo: isItalian
+      ? "https://www.myhomeincomo.com/it/"
+      : "https://www.myhomeincomo.com/",
+    bookingCom: isItalian
+      ? "https://www.booking.com/index.it.html"
+      : "https://www.booking.com/index.en.html",
+    airbnb: isItalian ? "https://www.airbnb.it/" : "https://www.airbnb.com/",
+  };
+
   return (
     <div className="accommodation-page">
       <div
@@ -28,6 +61,7 @@ const Accommodation = () => {
         <div className="container">
           <p className="intro-text">{t.introText1}</p>
           <p className="intro-text">{t.introText2}</p>
+          <p className="intro-text">{t.bookingTip}</p>
         </div>
       </section>
 
@@ -61,7 +95,7 @@ const Accommodation = () => {
                   </span>
                 </div>
                 <a
-                  href="https://www.palacehotel.it/"
+                  href={urls.palaceHotel}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hotel-link"
@@ -93,7 +127,7 @@ const Accommodation = () => {
                   </span>
                 </div>
                 <a
-                  href="https://albergoterminus.it/"
+                  href={urls.albergoTerminus}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hotel-link"
@@ -127,7 +161,7 @@ const Accommodation = () => {
                   </span>
                 </div>
                 <a
-                  href="http://hotelengadina.com/"
+                  href={urls.hotelEngadina}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hotel-link"
@@ -159,7 +193,7 @@ const Accommodation = () => {
                   </span>
                 </div>
                 <a
-                  href="https://laperlabysedar.com"
+                  href={urls.laPerla}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hotel-link"
@@ -200,7 +234,7 @@ const Accommodation = () => {
                   </span>
                 </div>
                 <a
-                  href="https://www.myhomeincomo.com/valli"
+                  href={urls.valli}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hotel-link"
@@ -231,7 +265,7 @@ const Accommodation = () => {
                   </span>
                 </div>
                 <a
-                  href="https://www.myhomeincomo.com/midnight-borgo"
+                  href={urls.midnightBorgo}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hotel-link"
@@ -263,7 +297,7 @@ const Accommodation = () => {
                   </span>
                 </div>
                 <a
-                  href="https://www.myhomeincomo.com/casa-olmo"
+                  href={urls.casaOlmo}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hotel-link"
@@ -294,7 +328,7 @@ const Accommodation = () => {
                   </span>
                 </div>
                 <a
-                  href="https://www.myhomeincomo.com/TheGallery"
+                  href={urls.theGallery}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hotel-link"
@@ -328,7 +362,7 @@ const Accommodation = () => {
                   : "Curated selection of quality apartments in Como city center and surrounding areas"}
               </p>
               <a
-                href="https://www.myhomeincomo.com/"
+                href={urls.myHomeInComo}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hotel-link"
@@ -348,7 +382,7 @@ const Accommodation = () => {
                   : "Wide range of hotels, apartments, and B&Bs with verified reviews and flexible booking"}
               </p>
               <a
-                href="https://www.booking.com/"
+                href={urls.bookingCom}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hotel-link"
@@ -368,7 +402,7 @@ const Accommodation = () => {
                   : "Unique homes and experiences hosted by locals throughout the Lake Como region"}
               </p>
               <a
-                href="https://www.airbnb.it/"
+                href={urls.airbnb}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hotel-link"
