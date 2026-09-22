@@ -86,7 +86,7 @@ export const translations = {
         "We have a professional photographer capturing our special day. Feel free to take photos, but we kindly ask for an unplugged ceremony.",
       gifts: "Gifts",
       giftsText:
-        "Your presence is the greatest gift! If you wish to give something, we would appreciate a donation to our home renovation fund.",
+        "Your presence is the greatest gift. If you would also like to give us a wedding gift, we kindly ask for a cash contribution towards renovating our home. Thank you for helping us build our future together!",
       weather: "Weather",
       weatherText:
         "October in Lake Como is typically mild and pleasant. We recommend bringing a light jacket or wrap for the evening.",
@@ -439,7 +439,7 @@ export const translations = {
         "Avremo un fotografo professionista che catturerà il nostro giorno speciale. Sentitevi liberi di scattare foto, ma Vi invitiamo gentilmente a vivere la cerimonia senza dispositivi elettronici.",
       gifts: "Regali",
       giftsText:
-        "La vostra presenza è il regalo più grande! Se desiderate fare un pensiero, apprezzeremmo una donazione per il nostro fondo di ristrutturazione della casa.",
+        "La vostra presenza è il regalo più grande. Se desiderate farci anche un regalo di nozze, vi chiediamo gentilmente un contributo in denaro per la ristrutturazione della nostra casa. Grazie per aiutarci a costruire insieme il nostro futuro!",
       weather: "Meteo",
       weatherText:
         "Ottobre sul Lago di Como è tipicamente mite e piacevole. Vi consigliamo di portare una giacca leggera o uno scialle per la sera.",
