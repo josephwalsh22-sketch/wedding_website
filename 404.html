@@ -9,8 +9,9 @@
       // This script takes the current url and converts the path and query
       // string into just a query string, and then redirects the browser
       // to the new url with only a query string and hash fragment
-      // For GitHub Pages subdirectory deployment (e.g., username.github.io/repo-name)
-      var pathSegmentsToKeep = 1;
+      // The custom domain serves this site from the root, so no path segment
+      // should be treated as a GitHub Pages project subdirectory.
+      var pathSegmentsToKeep = 0;
 
       var l = window.location;
       l.replace(
